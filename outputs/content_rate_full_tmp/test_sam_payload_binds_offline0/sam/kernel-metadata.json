@@ -1,0 +1,17 @@
+{
+  "id": "owner123/sam2-od-foreground-bg-20261031",
+  "title": "sam2-od-foreground-bg-20261031",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "awsaf49/coco-2017-dataset/2",
+    "owner123/image-state/1"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}

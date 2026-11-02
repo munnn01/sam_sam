@@ -1,0 +1,2 @@
+{"stage": "sam_cache_progress", "time": 1793513146.4019644, "arm": "control", "sources": 1, "target": 3}
+{"stage": "sam_cache_ready", "time": 1793513146.8473356, "arm": "control", "sources": 3, "empty_sources": 3, "mean_coverage": 0.0}

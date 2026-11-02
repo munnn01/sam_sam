@@ -1,0 +1,2514 @@
+{
+  "client_date": "2026-11-01",
+  "jobs": {
+    "is-h264": {
+      "handle": "tranthihongdieu/coco-is-h264-paired-20261101",
+      "cloud_exit": 0,
+      "matched_schedule_complete": true,
+      "shared_warmup_verified": true,
+      "shared_proxy_verified": true,
+      "arms": {
+        "control": {
+          "state": {
+            "warmup_updates": 7000,
+            "task_updates": 768,
+            "proxy_updates": 256,
+            "stop_reason": "task_schedule_finished",
+            "warmup_calibrated": true,
+            "warmup_converged": true,
+            "warmup_fidelity": {
+              "mse": 0.0030863445790600963,
+              "psnr_db": 25.105555881788334,
+              "passed": true,
+              "threshold_db": 25.0,
+              "sources": 8,
+              "mean_clipped_pixel_fraction": 0.007342445843391943
+            }
+          },
+          "bd_rate": {
+            "valid": true,
+            "percent": 5.753612235254888,
+            "quality_interval": [
+              0.32695565178006436,
+              0.42155977830525126
+            ],
+            "method": "PCHIP log-rate integral",
+            "recomputed": true
+          },
+          "warmup_npp_sha256": "09017db4640b42359bd13b30e87a150f5e2bec631524d0d0cfb7e5fbff67c0e0",
+          "frozen_proxy_sha256": "1399fff551d2476be586d4b920b229baf3dc8c584f3c6f2b5432b40a2eed4cff",
+          "warmup_psnr_db": 25.105555881788334,
+          "last_task_psnr_db": 22.33059647649212,
+          "rate_direction": {
+            "rows": [
+              {
+                "source": "coco/565799",
+                "qp": 30,
+                "minus_bpp": 0.30723057184750735,
+                "plus_bpp": 0.4340405058651026,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 35,
+                "minus_bpp": 0.17980205278592376,
+                "plus_bpp": 0.22596682551319647,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 40,
+                "minus_bpp": 0.11929527126099707,
+                "plus_bpp": 0.13111711876832843,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 45,
+                "minus_bpp": 0.07656708211143695,
+                "plus_bpp": 0.08520436217008798,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 30,
+                "minus_bpp": 0.36224127435064934,
+                "plus_bpp": 0.468065137987013,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 35,
+                "minus_bpp": 0.18739853896103897,
+                "plus_bpp": 0.2467278814935065,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 40,
+                "minus_bpp": 0.10820819805194805,
+                "plus_bpp": 0.12540584415584416,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 45,
+                "minus_bpp": 0.062322443181818184,
+                "plus_bpp": 0.06792816558441558,
+                "aligned": true,
+                "tied": false
+              }
+            ],
+            "aligned": 8,
+            "tied": 0,
+            "total": 8,
+            "scope": "original TRAIN-dev inputs, finite step2/255; local diagnostic, not proof on NPP distribution"
+          },
+          "proxy_real_rate_ratios": {
+            "30": [
+              0.7780944374417771,
+              1.8568008627340757
+            ],
+            "35": [
+              1.1693096705656378,
+              1.7031779764504413
+            ],
+            "40": [
+              1.6698446988662305,
+              1.933096071097472
+            ],
+            "45": [
+              1.8739670529308547,
+              3.0536017016829735
+            ]
+          },
+          "curves": [
+            {
+              "arm": "npp",
+              "qp": 30,
+              "codec": "h264",
+              "quality": 0.42155977830525126,
+              "metrics": {
+                "ap": 0.42155977830525126,
+                "ap50": 0.6574922147569334,
+                "ap75": 0.4528729849545657,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 1321161,
+              "pixels": 22908416,
+              "bpp": 0.4613714016717699
+            },
+            {
+              "arm": "codec_only",
+              "qp": 30,
+              "codec": "h264",
+              "quality": 0.45853201452220715,
+              "metrics": {
+                "ap": 0.45853201452220715,
+                "ap50": 0.7098310332893668,
+                "ap75": 0.5189161377291235,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 2366684,
+              "pixels": 22908416,
+              "bpp": 0.8264854278881613
+            },
+            {
+              "arm": "npp",
+              "qp": 35,
+              "codec": "h264",
+              "quality": 0.3939854645205726,
+              "metrics": {
+                "ap": 0.3939854645205726,
+                "ap50": 0.6238691774568079,
+                "ap75": 0.44171839977885546,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 757708,
+              "pixels": 22908416,
+              "bpp": 0.2646042397693494
+            },
+            {
+              "arm": "codec_only",
+              "qp": 35,
+              "codec": "h264",
+              "quality": 0.4270310610997198,
+              "metrics": {
+                "ap": 0.4270310610997198,
+                "ap50": 0.6569927623674393,
+                "ap75": 0.46951092712874376,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 1388335,
+              "pixels": 22908416,
+              "bpp": 0.48482968006168564
+            },
+            {
+              "arm": "npp",
+              "qp": 40,
+              "codec": "h264",
+              "quality": 0.3221437214747013,
+              "metrics": {
+                "ap": 0.3221437214747013,
+                "ap50": 0.49487560917977164,
+                "ap75": 0.3406881313288364,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 455959,
+              "pixels": 22908416,
+              "bpp": 0.15922846869901436
+            },
+            {
+              "arm": "codec_only",
+              "qp": 40,
+              "codec": "h264",
+              "quality": 0.3979951337043836,
+              "metrics": {
+                "ap": 0.3979951337043836,
+                "ap50": 0.6199048957855737,
+                "ap75": 0.43412077457647436,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 797089,
+              "pixels": 22908416,
+              "bpp": 0.278356740160472
+            },
+            {
+              "arm": "npp",
+              "qp": 45,
+              "codec": "h264",
+              "quality": 0.22553760769559578,
+              "metrics": {
+                "ap": 0.22553760769559578,
+                "ap50": 0.3807325088104167,
+                "ap75": 0.25329044374095333,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 279665,
+              "pixels": 22908416,
+              "bpp": 0.09766367085354134
+            },
+            {
+              "arm": "codec_only",
+              "qp": 45,
+              "codec": "h264",
+              "quality": 0.32695565178006436,
+              "metrics": {
+                "ap": 0.32695565178006436,
+                "ap50": 0.5374315310955662,
+                "ap75": 0.3333385682090547,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 435529,
+              "pixels": 22908416,
+              "bpp": 0.15209397280021456
+            }
+          ],
+          "points": [
+            {
+              "qp": 30,
+              "codec_bpp": 0.8264854278881613,
+              "codec_ap": 45.853201452220716,
+              "npp_bpp": 0.4613714016717699,
+              "npp_ap": 42.155977830525124,
+              "rate_change_percent": -44.176704621318265,
+              "ap_change_points": -3.697223621695589
+            },
+            {
+              "qp": 35,
+              "codec_bpp": 0.48482968006168564,
+              "codec_ap": 42.703106109971976,
+              "npp_bpp": 0.2646042397693494,
+              "npp_ap": 39.39854645205726,
+              "rate_change_percent": -45.423258795607694,
+              "ap_change_points": -3.3045596579147185
+            },
+            {
+              "qp": 40,
+              "codec_bpp": 0.278356740160472,
+              "codec_ap": 39.79951337043836,
+              "npp_bpp": 0.15922846869901436,
+              "npp_ap": 32.21437214747013,
+              "rate_change_percent": -42.79697750188498,
+              "ap_change_points": -7.585141222968233
+            },
+            {
+              "qp": 45,
+              "codec_bpp": 0.15209397280021456,
+              "codec_ap": 32.69556517800643,
+              "npp_bpp": 0.09766367085354134,
+              "npp_ap": 22.553760769559577,
+              "rate_change_percent": -35.78728396960936,
+              "ap_change_points": -10.141804408446859
+            }
+          ],
+          "report_sha256": {
+            "control\\analyzer.json": "8faaf3415825afc880d3a9448a173b93e8e32439cb5bbc2e4164fb34d04de661",
+            "control\\cohort.json": "7c9ebce66d572b4fd490404bf772b4c15904cc2f3dff72ce52ebea341b7939fe",
+            "control\\config.json": "d42997f4d0fdcd9e93b2f7cd2a76cfbe8b9bf909245a4d2807638fa6c7ad2f79",
+            "control\\proxy_probe.json": "3d26ef38d2fecd5a29e074b807a8992daa18974160dd68e33bb5b0e8b2b05e55",
+            "control\\rate_direction.json": "8453966945a8536492d6c103cbe872d1db67dc412339dc7e51a25e347cce46d5",
+            "control\\study_run.json": "107575e23f8cc890affd3a38719d746427e0199db715e23edf5a07ac8ed03f89",
+            "control\\validation\\metrics.json": "3bb18cc6f9e8f238453c2c6e6df749ce665b67272a50dcdee12d3fa3e8f71795"
+          }
+        },
+        "foreground": {
+          "state": {
+            "warmup_updates": 7000,
+            "task_updates": 768,
+            "proxy_updates": 256,
+            "stop_reason": "task_schedule_finished",
+            "warmup_calibrated": true,
+            "warmup_converged": true,
+            "warmup_fidelity": {
+              "mse": 0.0030863445208524354,
+              "psnr_db": 25.105555963695146,
+              "passed": true,
+              "threshold_db": 25.0,
+              "sources": 8,
+              "mean_clipped_pixel_fraction": 0.007342445843391943
+            }
+          },
+          "bd_rate": {
+            "valid": true,
+            "percent": 12.674323238173848,
+            "quality_interval": [
+              0.32695565178006436,
+              0.4248446054313148
+            ],
+            "method": "PCHIP log-rate integral",
+            "recomputed": true
+          },
+          "warmup_npp_sha256": "09017db4640b42359bd13b30e87a150f5e2bec631524d0d0cfb7e5fbff67c0e0",
+          "frozen_proxy_sha256": "1399fff551d2476be586d4b920b229baf3dc8c584f3c6f2b5432b40a2eed4cff",
+          "warmup_psnr_db": 25.105555963695146,
+          "last_task_psnr_db": 23.078803095920897,
+          "rate_direction": {
+            "rows": [
+              {
+                "source": "coco/565799",
+                "qp": 30,
+                "minus_bpp": 0.30723057184750735,
+                "plus_bpp": 0.4340405058651026,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 35,
+                "minus_bpp": 0.17980205278592376,
+                "plus_bpp": 0.22596682551319647,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 40,
+                "minus_bpp": 0.11929527126099707,
+                "plus_bpp": 0.13111711876832843,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 45,
+                "minus_bpp": 0.07656708211143695,
+                "plus_bpp": 0.08520436217008798,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 30,
+                "minus_bpp": 0.36224127435064934,
+                "plus_bpp": 0.468065137987013,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 35,
+                "minus_bpp": 0.18739853896103897,
+                "plus_bpp": 0.2467278814935065,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 40,
+                "minus_bpp": 0.10820819805194805,
+                "plus_bpp": 0.12540584415584416,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 45,
+                "minus_bpp": 0.062322443181818184,
+                "plus_bpp": 0.06792816558441558,
+                "aligned": true,
+                "tied": false
+              }
+            ],
+            "aligned": 8,
+            "tied": 0,
+            "total": 8,
+            "scope": "original TRAIN-dev inputs, finite step2/255; local diagnostic, not proof on NPP distribution"
+          },
+          "proxy_real_rate_ratios": {
+            "30": [
+              0.7780945238055912,
+              1.8568008627340757
+            ],
+            "35": [
+              1.1693096705656378,
+              1.7031779764504413
+            ],
+            "40": [
+              1.6698446988662305,
+              1.933096071097472
+            ],
+            "45": [
+              1.8739672380207477,
+              3.0536017016829735
+            ]
+          },
+          "curves": [
+            {
+              "arm": "npp",
+              "qp": 30,
+              "codec": "h264",
+              "quality": 0.4248446054313148,
+              "metrics": {
+                "ap": 0.4248446054313148,
+                "ap50": 0.6549049600274611,
+                "ap75": 0.4458181553598741,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 1349945,
+              "pixels": 22908416,
+              "bpp": 0.4714232533580672
+            },
+            {
+              "arm": "codec_only",
+              "qp": 30,
+              "codec": "h264",
+              "quality": 0.45853201452220715,
+              "metrics": {
+                "ap": 0.45853201452220715,
+                "ap50": 0.7098310332893668,
+                "ap75": 0.5189161377291235,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 2366684,
+              "pixels": 22908416,
+              "bpp": 0.8264854278881613
+            },
+            {
+              "arm": "npp",
+              "qp": 35,
+              "codec": "h264",
+              "quality": 0.3839877267740688,
+              "metrics": {
+                "ap": 0.3839877267740688,
+                "ap50": 0.60916428620639,
+                "ap75": 0.4086332234114871,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 774491,
+              "pixels": 22908416,
+              "bpp": 0.27046514259213733
+            },
+            {
+              "arm": "codec_only",
+              "qp": 35,
+              "codec": "h264",
+              "quality": 0.4270310610997198,
+              "metrics": {
+                "ap": 0.4270310610997198,
+                "ap50": 0.6569927623674393,
+                "ap75": 0.46951092712874376,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 1388335,
+              "pixels": 22908416,
+              "bpp": 0.48482968006168564
+            },
+            {
+              "arm": "npp",
+              "qp": 40,
+              "codec": "h264",
+              "quality": 0.329206011714153,
+              "metrics": {
+                "ap": 0.329206011714153,
+                "ap50": 0.5294636516187802,
+                "ap75": 0.35176931742565426,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 467174,
+              "pixels": 22908416,
+              "bpp": 0.16314493328565363
+            },
+            {
+              "arm": "codec_only",
+              "qp": 40,
+              "codec": "h264",
+              "quality": 0.3979951337043836,
+              "metrics": {
+                "ap": 0.3979951337043836,
+                "ap50": 0.6199048957855737,
+                "ap75": 0.43412077457647436,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 797089,
+              "pixels": 22908416,
+              "bpp": 0.278356740160472
+            },
+            {
+              "arm": "npp",
+              "qp": 45,
+              "codec": "h264",
+              "quality": 0.23953746265210146,
+              "metrics": {
+                "ap": 0.23953746265210146,
+                "ap50": 0.41093913015939154,
+                "ap75": 0.2558164407879199,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 287819,
+              "pixels": 22908416,
+              "bpp": 0.10051118331359095
+            },
+            {
+              "arm": "codec_only",
+              "qp": 45,
+              "codec": "h264",
+              "quality": 0.32695565178006436,
+              "metrics": {
+                "ap": 0.32695565178006436,
+                "ap50": 0.5374315310955662,
+                "ap75": 0.3333385682090547,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 435529,
+              "pixels": 22908416,
+              "bpp": 0.15209397280021456
+            }
+          ],
+          "points": [
+            {
+              "qp": 30,
+              "codec_bpp": 0.8264854278881613,
+              "codec_ap": 45.853201452220716,
+              "npp_bpp": 0.4714232533580672,
+              "npp_ap": 42.48446054313148,
+              "rate_change_percent": -42.96048817670631,
+              "ap_change_points": -3.368740909089235
+            },
+            {
+              "qp": 35,
+              "codec_bpp": 0.48482968006168564,
+              "codec_ap": 42.703106109971976,
+              "npp_bpp": 0.27046514259213733,
+              "npp_ap": 38.39877267740688,
+              "rate_change_percent": -44.21440070300036,
+              "ap_change_points": -4.3043334325651
+            },
+            {
+              "qp": 40,
+              "codec_bpp": 0.278356740160472,
+              "codec_ap": 39.79951337043836,
+              "npp_bpp": 0.16314493328565363,
+              "npp_ap": 32.9206011714153,
+              "rate_change_percent": -41.389982799913184,
+              "ap_change_points": -6.878912199023063
+            },
+            {
+              "qp": 45,
+              "codec_bpp": 0.15209397280021456,
+              "codec_ap": 32.69556517800643,
+              "npp_bpp": 0.10051118331359095,
+              "npp_ap": 23.953746265210146,
+              "rate_change_percent": -33.91507798562209,
+              "ap_change_points": -8.74181891279629
+            }
+          ],
+          "report_sha256": {
+            "foreground\\analyzer.json": "8faaf3415825afc880d3a9448a173b93e8e32439cb5bbc2e4164fb34d04de661",
+            "foreground\\cohort.json": "7c9ebce66d572b4fd490404bf772b4c15904cc2f3dff72ce52ebea341b7939fe",
+            "foreground\\config.json": "2017fd2b449ff1ece16e10b4b3337f85ec92ca8060a8c862c0c8770325bc619b",
+            "foreground\\proxy_probe.json": "2a7eb91baa38d57ecbfebee21f97e674dd0a31a96fe77bfbd2e5c160cd798e2d",
+            "foreground\\rate_direction.json": "8453966945a8536492d6c103cbe872d1db67dc412339dc7e51a25e347cce46d5",
+            "foreground\\study_run.json": "8c58b3dfd3de38dba222b1c332b24ef7a8fc6ac182dbd82c061e830e4295da4e",
+            "foreground\\validation\\metrics.json": "05f795c64e45d3c1100946bc7308f94c0f573f094ddbd38aba1a82fc51e4f88d"
+          }
+        }
+      },
+      "wall_seconds": 2941.277185201645
+    },
+    "is-h265": {
+      "handle": "dngbolm/coco-is-h265-paired-20261101",
+      "cloud_exit": 1,
+      "matched_schedule_complete": false,
+      "shared_warmup_verified": true,
+      "shared_proxy_verified": true,
+      "arms": {
+        "control": {
+          "state": {
+            "warmup_updates": 7000,
+            "task_updates": 100,
+            "proxy_updates": 256,
+            "stop_reason": "task_fidelity_collapse",
+            "warmup_calibrated": true,
+            "warmup_converged": true,
+            "warmup_fidelity": {
+              "mse": 0.002739760013355408,
+              "psnr_db": 25.62287477121248,
+              "passed": true,
+              "threshold_db": 25.0,
+              "sources": 8,
+              "mean_clipped_pixel_fraction": 0.004672756505954112
+            }
+          },
+          "bd_rate": {
+            "valid": true,
+            "percent": 67.63781699519917,
+            "quality_interval": [
+              0.32897670878267715,
+              0.40281519687714146
+            ],
+            "method": "PCHIP log-rate integral",
+            "recomputed": true
+          },
+          "warmup_npp_sha256": "0f45fb14c2b832ec394b8d5396a4ea0ca7b3872333f809aa97d0103f9179d1f7",
+          "frozen_proxy_sha256": "4ee633fa69742850e4ceebc632d11e72e268da4e65866054d96ac29a97f03d64",
+          "warmup_psnr_db": 25.62287477121248,
+          "last_task_psnr_db": 19.345081882181397,
+          "rate_direction": {
+            "rows": [
+              {
+                "source": "coco/565799",
+                "qp": 30,
+                "minus_bpp": 0.2667934384164223,
+                "plus_bpp": 0.39589442815249265,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 35,
+                "minus_bpp": 0.1825742302052786,
+                "plus_bpp": 0.19980296920821114,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 40,
+                "minus_bpp": 0.12765762463343108,
+                "plus_bpp": 0.13311033724340177,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 45,
+                "minus_bpp": 0.09791972140762463,
+                "plus_bpp": 0.09883614369501466,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 30,
+                "minus_bpp": 0.38499391233766234,
+                "plus_bpp": 0.45845170454545453,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 35,
+                "minus_bpp": 0.2220221185064935,
+                "plus_bpp": 0.25103997564935066,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 40,
+                "minus_bpp": 0.14166497564935066,
+                "plus_bpp": 0.1467380275974026,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 45,
+                "minus_bpp": 0.09963474025974026,
+                "plus_bpp": 0.09988839285714286,
+                "aligned": true,
+                "tied": false
+              }
+            ],
+            "aligned": 8,
+            "tied": 0,
+            "total": 8,
+            "scope": "original TRAIN-dev inputs, finite step2/255; local diagnostic, not proof on NPP distribution"
+          },
+          "proxy_real_rate_ratios": {
+            "30": [
+              1.888998209573886,
+              7.390303242680402
+            ],
+            "35": [
+              6.772603023321441,
+              7.635093174097728
+            ],
+            "40": [
+              9.502343363558671,
+              10.307022412057742
+            ],
+            "45": [
+              11.32182477421526,
+              14.589411542459501
+            ]
+          },
+          "curves": [
+            {
+              "arm": "npp",
+              "qp": 30,
+              "codec": "h265",
+              "quality": 0.40281519687714146,
+              "metrics": {
+                "ap": 0.40281519687714146,
+                "ap50": 0.6420343518114399,
+                "ap75": 0.44091169180742,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 1922982,
+              "pixels": 22908416,
+              "bpp": 0.6715373075117895
+            },
+            {
+              "arm": "codec_only",
+              "qp": 30,
+              "codec": "h265",
+              "quality": 0.45693534365487587,
+              "metrics": {
+                "ap": 0.45693534365487587,
+                "ap50": 0.702497154959059,
+                "ap75": 0.5275816484091929,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 2141431,
+              "pixels": 22908416,
+              "bpp": 0.7478233327000872
+            },
+            {
+              "arm": "npp",
+              "qp": 35,
+              "codec": "h265",
+              "quality": 0.37296070330296693,
+              "metrics": {
+                "ap": 0.37296070330296693,
+                "ap50": 0.6040669963081889,
+                "ap75": 0.4170792087458204,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 1095211,
+              "pixels": 22908416,
+              "bpp": 0.38246590248754
+            },
+            {
+              "arm": "codec_only",
+              "qp": 35,
+              "codec": "h265",
+              "quality": 0.44807583613717444,
+              "metrics": {
+                "ap": 0.44807583613717444,
+                "ap50": 0.6839769090098079,
+                "ap75": 0.48748945122406384,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 1310429,
+              "pixels": 22908416,
+              "bpp": 0.45762360872091723
+            },
+            {
+              "arm": "npp",
+              "qp": 40,
+              "codec": "h265",
+              "quality": 0.32865919057759607,
+              "metrics": {
+                "ap": 0.32865919057759607,
+                "ap50": 0.5296460341729103,
+                "ap75": 0.35530117413425144,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 639150,
+              "pixels": 22908416,
+              "bpp": 0.22320181369152717
+            },
+            {
+              "arm": "codec_only",
+              "qp": 40,
+              "codec": "h265",
+              "quality": 0.40106338822284016,
+              "metrics": {
+                "ap": 0.40106338822284016,
+                "ap50": 0.6536977394154948,
+                "ap75": 0.4618605143909323,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 795865,
+              "pixels": 22908416,
+              "bpp": 0.27792929899649105
+            },
+            {
+              "arm": "npp",
+              "qp": 45,
+              "codec": "h265",
+              "quality": 0.19816186277788525,
+              "metrics": {
+                "ap": 0.19816186277788525,
+                "ap50": 0.355211172107756,
+                "ap75": 0.2147475688235454,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 384866,
+              "pixels": 22908416,
+              "bpp": 0.13440161030775763
+            },
+            {
+              "arm": "codec_only",
+              "qp": 45,
+              "codec": "h265",
+              "quality": 0.32897670878267715,
+              "metrics": {
+                "ap": 0.32897670878267715,
+                "ap50": 0.5173093532206935,
+                "ap75": 0.3552234733185739,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 480168,
+              "pixels": 22908416,
+              "bpp": 0.16768265426994167
+            }
+          ],
+          "points": [
+            {
+              "qp": 30,
+              "codec_bpp": 0.7478233327000872,
+              "codec_ap": 45.69353436548759,
+              "npp_bpp": 0.6715373075117895,
+              "npp_ap": 40.281519687714145,
+              "rate_change_percent": -10.201075822662508,
+              "ap_change_points": -5.412014677773441
+            },
+            {
+              "qp": 35,
+              "codec_bpp": 0.45762360872091723,
+              "codec_ap": 44.80758361371745,
+              "npp_bpp": 0.38246590248754,
+              "npp_ap": 37.29607033029669,
+              "rate_change_percent": -16.423476586675044,
+              "ap_change_points": -7.511513283420751
+            },
+            {
+              "qp": 40,
+              "codec_bpp": 0.27792929899649105,
+              "codec_ap": 40.106338822284016,
+              "npp_bpp": 0.22320181369152717,
+              "npp_ap": 32.865919057759605,
+              "rate_change_percent": -19.69115365043066,
+              "ap_change_points": -7.240419764524408
+            },
+            {
+              "qp": 45,
+              "codec_bpp": 0.16768265426994167,
+              "codec_ap": 32.89767087826772,
+              "npp_bpp": 0.13440161030775763,
+              "npp_ap": 19.816186277788525,
+              "rate_change_percent": -19.847636660502165,
+              "ap_change_points": -13.08148460047919
+            }
+          ],
+          "report_sha256": {
+            "control\\analyzer.json": "8faaf3415825afc880d3a9448a173b93e8e32439cb5bbc2e4164fb34d04de661",
+            "control\\cohort.json": "7c9ebce66d572b4fd490404bf772b4c15904cc2f3dff72ce52ebea341b7939fe",
+            "control\\config.json": "460744d34a6958498150a77a92876bb9cc71d9d665cf2b0c1d3ad67c9d777d12",
+            "control\\proxy_probe.json": "4e730c262f18326a0efbd733961a6fc0f57e19b8c414a858d9f0e5f187c31166",
+            "control\\rate_direction.json": "684a9efabc6cf749b505a3c1972ef26b9d4633be748da5dced936506d854ed84",
+            "control\\study_run.json": "21ea28ada716a42bfdabab9100a901470b72958a03902c2e5957e5f916118d3b",
+            "control\\validation\\metrics.json": "b9420129a1b89b7903f4d9fe87cbe89321e3636b07ffd79adc425feb07c0c061"
+          }
+        },
+        "foreground": {
+          "state": {
+            "warmup_updates": 7000,
+            "task_updates": 550,
+            "proxy_updates": 256,
+            "stop_reason": "task_fidelity_collapse",
+            "warmup_calibrated": true,
+            "warmup_converged": true,
+            "warmup_fidelity": {
+              "mse": 0.0027397600715630688,
+              "psnr_db": 25.622874678944303,
+              "passed": true,
+              "threshold_db": 25.0,
+              "sources": 8,
+              "mean_clipped_pixel_fraction": 0.004672756505954112
+            }
+          },
+          "bd_rate": {
+            "valid": true,
+            "percent": 53.41852023902963,
+            "quality_interval": [
+              0.32897670878267715,
+              0.383666251790869
+            ],
+            "method": "PCHIP log-rate integral",
+            "recomputed": true
+          },
+          "warmup_npp_sha256": "0f45fb14c2b832ec394b8d5396a4ea0ca7b3872333f809aa97d0103f9179d1f7",
+          "frozen_proxy_sha256": "4ee633fa69742850e4ceebc632d11e72e268da4e65866054d96ac29a97f03d64",
+          "warmup_psnr_db": 25.622874678944303,
+          "last_task_psnr_db": 17.079367361653013,
+          "rate_direction": {
+            "rows": [
+              {
+                "source": "coco/565799",
+                "qp": 30,
+                "minus_bpp": 0.2667934384164223,
+                "plus_bpp": 0.39451979472140764,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 35,
+                "minus_bpp": 0.1825742302052786,
+                "plus_bpp": 0.19980296920821114,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 40,
+                "minus_bpp": 0.12765762463343108,
+                "plus_bpp": 0.13311033724340177,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 45,
+                "minus_bpp": 0.09791972140762463,
+                "plus_bpp": 0.09883614369501466,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 30,
+                "minus_bpp": 0.38499391233766234,
+                "plus_bpp": 0.45845170454545453,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 35,
+                "minus_bpp": 0.2220221185064935,
+                "plus_bpp": 0.25103997564935066,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 40,
+                "minus_bpp": 0.14166497564935066,
+                "plus_bpp": 0.1467380275974026,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 45,
+                "minus_bpp": 0.09963474025974026,
+                "plus_bpp": 0.09988839285714286,
+                "aligned": true,
+                "tied": false
+              }
+            ],
+            "aligned": 8,
+            "tied": 0,
+            "total": 8,
+            "scope": "original TRAIN-dev inputs, finite step2/255; local diagnostic, not proof on NPP distribution"
+          },
+          "proxy_real_rate_ratios": {
+            "30": [
+              1.888998209573886,
+              7.390303242680402
+            ],
+            "35": [
+              6.772603023321441,
+              7.6350926592306125
+            ],
+            "40": [
+              9.502343363558671,
+              10.307022412057742
+            ],
+            "45": [
+              11.32182477421526,
+              14.589411542459501
+            ]
+          },
+          "curves": [
+            {
+              "arm": "npp",
+              "qp": 30,
+              "codec": "h265",
+              "quality": 0.383666251790869,
+              "metrics": {
+                "ap": 0.383666251790869,
+                "ap50": 0.6024222175529035,
+                "ap75": 0.42792726195559405,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 1886589,
+              "pixels": 22908416,
+              "bpp": 0.6588282664327381
+            },
+            {
+              "arm": "codec_only",
+              "qp": 30,
+              "codec": "h265",
+              "quality": 0.45693534365487587,
+              "metrics": {
+                "ap": 0.45693534365487587,
+                "ap50": 0.702497154959059,
+                "ap75": 0.5275816484091929,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 2141431,
+              "pixels": 22908416,
+              "bpp": 0.7478233327000872
+            },
+            {
+              "arm": "npp",
+              "qp": 35,
+              "codec": "h265",
+              "quality": 0.3737046825911547,
+              "metrics": {
+                "ap": 0.3737046825911547,
+                "ap50": 0.5739497452058345,
+                "ap75": 0.40287393833955004,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 1026056,
+              "pixels": 22908416,
+              "bpp": 0.35831582593925304
+            },
+            {
+              "arm": "codec_only",
+              "qp": 35,
+              "codec": "h265",
+              "quality": 0.44807583613717444,
+              "metrics": {
+                "ap": 0.44807583613717444,
+                "ap50": 0.6839769090098079,
+                "ap75": 0.48748945122406384,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 1310429,
+              "pixels": 22908416,
+              "bpp": 0.45762360872091723
+            },
+            {
+              "arm": "npp",
+              "qp": 40,
+              "codec": "h265",
+              "quality": 0.3099156214086917,
+              "metrics": {
+                "ap": 0.3099156214086917,
+                "ap50": 0.5098777836968227,
+                "ap75": 0.32665471732805273,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 605145,
+              "pixels": 22908416,
+              "bpp": 0.21132670194220324
+            },
+            {
+              "arm": "codec_only",
+              "qp": 40,
+              "codec": "h265",
+              "quality": 0.40106338822284016,
+              "metrics": {
+                "ap": 0.40106338822284016,
+                "ap50": 0.6536977394154948,
+                "ap75": 0.4618605143909323,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 795865,
+              "pixels": 22908416,
+              "bpp": 0.27792929899649105
+            },
+            {
+              "arm": "npp",
+              "qp": 45,
+              "codec": "h265",
+              "quality": 0.22213035472496945,
+              "metrics": {
+                "ap": 0.22213035472496945,
+                "ap50": 0.37001098891898065,
+                "ap75": 0.2701555224723572,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 380946,
+              "pixels": 22908416,
+              "bpp": 0.13303268108977942
+            },
+            {
+              "arm": "codec_only",
+              "qp": 45,
+              "codec": "h265",
+              "quality": 0.32897670878267715,
+              "metrics": {
+                "ap": 0.32897670878267715,
+                "ap50": 0.5173093532206935,
+                "ap75": 0.3552234733185739,
+                "iou_type": "segm"
+              },
+              "sources": 64,
+              "bytes": 480168,
+              "pixels": 22908416,
+              "bpp": 0.16768265426994167
+            }
+          ],
+          "points": [
+            {
+              "qp": 30,
+              "codec_bpp": 0.7478233327000872,
+              "codec_ap": 45.69353436548759,
+              "npp_bpp": 0.6588282664327381,
+              "npp_ap": 38.3666251790869,
+              "rate_change_percent": -11.900546877298412,
+              "ap_change_points": -7.3269091864006874
+            },
+            {
+              "qp": 35,
+              "codec_bpp": 0.45762360872091723,
+              "codec_ap": 44.80758361371745,
+              "npp_bpp": 0.35831582593925304,
+              "npp_ap": 37.37046825911547,
+              "rate_change_percent": -21.700756011962497,
+              "ap_change_points": -7.437115354601975
+            },
+            {
+              "qp": 40,
+              "codec_bpp": 0.27792929899649105,
+              "codec_ap": 40.106338822284016,
+              "npp_bpp": 0.21132670194220324,
+              "npp_ap": 30.99156214086917,
+              "rate_change_percent": -23.963863218008076,
+              "ap_change_points": -9.114776681414844
+            },
+            {
+              "qp": 45,
+              "codec_bpp": 0.16768265426994167,
+              "codec_ap": 32.89767087826772,
+              "npp_bpp": 0.13303268108977942,
+              "npp_ap": 22.213035472496944,
+              "rate_change_percent": -20.664017593842143,
+              "ap_change_points": -10.68463540577077
+            }
+          ],
+          "report_sha256": {
+            "foreground\\analyzer.json": "8faaf3415825afc880d3a9448a173b93e8e32439cb5bbc2e4164fb34d04de661",
+            "foreground\\cohort.json": "7c9ebce66d572b4fd490404bf772b4c15904cc2f3dff72ce52ebea341b7939fe",
+            "foreground\\config.json": "4924bda928c7e45f725703813e30c1aece9662ad38e9bc3656cf2e957a996ce4",
+            "foreground\\proxy_probe.json": "a3bd41644a62f2d0072a08fe638d75b2bdf8fc55132ecf0f1ffb5e1394be7629",
+            "foreground\\rate_direction.json": "6eb0b8810ab82956110322ef64c076d7212b6b4b69a7528403aaab3e9763842e",
+            "foreground\\study_run.json": "2780138bb9909c03600b334f41f512b198f8ea3a23c2f5867d947578b7734a36",
+            "foreground\\validation\\metrics.json": "6d4157bbdd437e5c9594bb68be9782f633ea2ea13f0b96d94fe7e780500f8338"
+          }
+        }
+      },
+      "wall_seconds": 2372.265477657318
+    },
+    "od-h264": {
+      "handle": "hoangminhhuy123/coco-od-h264-paired-20261101",
+      "cloud_exit": 0,
+      "matched_schedule_complete": true,
+      "shared_warmup_verified": true,
+      "shared_proxy_verified": true,
+      "arms": {
+        "control": {
+          "state": {
+            "warmup_updates": 6000,
+            "task_updates": 768,
+            "proxy_updates": 256,
+            "stop_reason": "task_schedule_finished",
+            "warmup_calibrated": true,
+            "warmup_converged": true,
+            "warmup_fidelity": {
+              "mse": 0.0031402587264892645,
+              "psnr_db": 25.030345688510977,
+              "passed": true,
+              "threshold_db": 25.0,
+              "sources": 8,
+              "mean_clipped_pixel_fraction": 0.023992083524262853
+            }
+          },
+          "bd_rate": {
+            "valid": true,
+            "percent": 8.028020620429622,
+            "quality_interval": [
+              0.3469982253482868,
+              0.4677564124273497
+            ],
+            "method": "PCHIP log-rate integral",
+            "recomputed": true
+          },
+          "warmup_npp_sha256": "d1da99e1a82212b95ecba564b6f35ad6167a0ce2294a054a6d08192c3fd057dd",
+          "frozen_proxy_sha256": "03532230d71dc7598ebd7e6f5247d53391a9c457549c9eb500eb4596296f00ef",
+          "warmup_psnr_db": 25.030345688510977,
+          "last_task_psnr_db": 21.570304751976845,
+          "rate_direction": {
+            "rows": [
+              {
+                "source": "coco/565799",
+                "qp": 30,
+                "minus_bpp": 0.31085043988269795,
+                "plus_bpp": 0.43394886363636365,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 35,
+                "minus_bpp": 0.17980205278592376,
+                "plus_bpp": 0.22596682551319647,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 40,
+                "minus_bpp": 0.11883706011730205,
+                "plus_bpp": 0.13327071114369501,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 45,
+                "minus_bpp": 0.07656708211143695,
+                "plus_bpp": 0.08520436217008798,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 30,
+                "minus_bpp": 0.36470170454545453,
+                "plus_bpp": 0.47161627435064934,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 35,
+                "minus_bpp": 0.18739853896103897,
+                "plus_bpp": 0.2467278814935065,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 40,
+                "minus_bpp": 0.10803064123376624,
+                "plus_bpp": 0.12786627435064934,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 45,
+                "minus_bpp": 0.062322443181818184,
+                "plus_bpp": 0.06792816558441558,
+                "aligned": true,
+                "tied": false
+              }
+            ],
+            "aligned": 8,
+            "tied": 0,
+            "total": 8,
+            "scope": "original TRAIN-dev inputs, finite step2/255; local diagnostic, not proof on NPP distribution"
+          },
+          "proxy_real_rate_ratios": {
+            "30": [
+              0.7780846783307868,
+              1.856694392025965
+            ],
+            "35": [
+              1.169309294521533,
+              1.7031778324113636
+            ],
+            "40": [
+              1.6664567619435284,
+              1.9331840805924394
+            ],
+            "45": [
+              1.8739672380207477,
+              3.0536017016829735
+            ]
+          },
+          "curves": [
+            {
+              "arm": "npp",
+              "qp": 30,
+              "codec": "h264",
+              "quality": 0.4677564124273497,
+              "metrics": {
+                "ap": 0.4677564124273497,
+                "ap50": 0.6643643546724751,
+                "ap75": 0.5090528692748254,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 1209720,
+              "pixels": 22908416,
+              "bpp": 0.42245435040118007
+            },
+            {
+              "arm": "codec_only",
+              "qp": 30,
+              "codec": "h264",
+              "quality": 0.5107680295108498,
+              "metrics": {
+                "ap": 0.5107680295108498,
+                "ap50": 0.7087570868234807,
+                "ap75": 0.566492617409424,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 2366684,
+              "pixels": 22908416,
+              "bpp": 0.8264854278881613
+            },
+            {
+              "arm": "npp",
+              "qp": 35,
+              "codec": "h264",
+              "quality": 0.43157502569090966,
+              "metrics": {
+                "ap": 0.43157502569090966,
+                "ap50": 0.6281285372724117,
+                "ap75": 0.44606384547169453,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 698195,
+              "pixels": 22908416,
+              "bpp": 0.24382131003732427
+            },
+            {
+              "arm": "codec_only",
+              "qp": 35,
+              "codec": "h264",
+              "quality": 0.4977941399649052,
+              "metrics": {
+                "ap": 0.4977941399649052,
+                "ap50": 0.6864020512834329,
+                "ap75": 0.5465939683566825,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 1388335,
+              "pixels": 22908416,
+              "bpp": 0.48482968006168564
+            },
+            {
+              "arm": "npp",
+              "qp": 40,
+              "codec": "h264",
+              "quality": 0.3433987439493634,
+              "metrics": {
+                "ap": 0.3433987439493634,
+                "ap50": 0.5151078662196765,
+                "ap75": 0.3649810889338734,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 426657,
+              "pixels": 22908416,
+              "bpp": 0.14899572279462708
+            },
+            {
+              "arm": "codec_only",
+              "qp": 40,
+              "codec": "h264",
+              "quality": 0.4541663462456038,
+              "metrics": {
+                "ap": 0.4541663462456038,
+                "ap50": 0.6618771938631113,
+                "ap75": 0.49093210115879377,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 797089,
+              "pixels": 22908416,
+              "bpp": 0.278356740160472
+            },
+            {
+              "arm": "npp",
+              "qp": 45,
+              "codec": "h264",
+              "quality": 0.22995098175502557,
+              "metrics": {
+                "ap": 0.22995098175502557,
+                "ap50": 0.36903447674648665,
+                "ap75": 0.25063841997833447,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 267452,
+              "pixels": 22908416,
+              "bpp": 0.09339868806293722
+            },
+            {
+              "arm": "codec_only",
+              "qp": 45,
+              "codec": "h264",
+              "quality": 0.3469982253482868,
+              "metrics": {
+                "ap": 0.3469982253482868,
+                "ap50": 0.5313364444046225,
+                "ap75": 0.3642292567728,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 435529,
+              "pixels": 22908416,
+              "bpp": 0.15209397280021456
+            }
+          ],
+          "points": [
+            {
+              "qp": 30,
+              "codec_bpp": 0.8264854278881613,
+              "codec_ap": 51.07680295108498,
+              "npp_bpp": 0.42245435040118007,
+              "npp_ap": 46.77564124273497,
+              "rate_change_percent": -48.88544478265793,
+              "ap_change_points": -4.301161708350004
+            },
+            {
+              "qp": 35,
+              "codec_bpp": 0.48482968006168564,
+              "codec_ap": 49.77941399649052,
+              "npp_bpp": 0.24382131003732427,
+              "npp_ap": 43.157502569090965,
+              "rate_change_percent": -49.70990430983877,
+              "ap_change_points": -6.621911427399551
+            },
+            {
+              "qp": 40,
+              "codec_bpp": 0.278356740160472,
+              "codec_ap": 45.41663462456038,
+              "npp_bpp": 0.14899572279462708,
+              "npp_ap": 34.339874394936345,
+              "rate_change_percent": -46.473104007206224,
+              "ap_change_points": -11.076760229624039
+            },
+            {
+              "qp": 45,
+              "codec_bpp": 0.15209397280021456,
+              "codec_ap": 34.69982253482868,
+              "npp_bpp": 0.09339868806293722,
+              "npp_ap": 22.995098175502555,
+              "rate_change_percent": -38.591460040548384,
+              "ap_change_points": -11.704724359326121
+            }
+          ],
+          "report_sha256": {
+            "control\\analyzer.json": "02247523fb4e2749d599bdd9e1921a2a00040acbc318ab3720d77fa9a2b990f9",
+            "control\\cohort.json": "6cce3b2007dd5abb14a7b0e114cf4247242a280e20987686bbb1e0f739b5bc71",
+            "control\\config.json": "06f85abad200b88fed85628386ea6d61b4bb20428694d01979c3fe974eaed119",
+            "control\\proxy_probe.json": "9b188dcdbce76879815fa5e39b19b44b5cdd5f48c0c1c322aadd4c043895a6c1",
+            "control\\rate_direction.json": "afa28699f8d7f9e15b97e34a5cd4b7ab72632f3b000e8b437f9720057d97b0f1",
+            "control\\study_run.json": "0a10495caeb0473cca1137c2680e202970e2a69b97408f18d97bd18dde576bf5",
+            "control\\validation\\metrics.json": "b5ce642e1d50b341940f2977f5f8f4a51fe49f0b90c5ee8e7af5ff99591d1741"
+          }
+        },
+        "foreground": {
+          "state": {
+            "warmup_updates": 6000,
+            "task_updates": 768,
+            "proxy_updates": 256,
+            "stop_reason": "task_schedule_finished",
+            "warmup_calibrated": true,
+            "warmup_converged": true,
+            "warmup_fidelity": {
+              "mse": 0.003140258777420968,
+              "psnr_db": 25.030345618072968,
+              "passed": true,
+              "threshold_db": 25.0,
+              "sources": 8,
+              "mean_clipped_pixel_fraction": 0.023992083524262853
+            }
+          },
+          "bd_rate": {
+            "valid": true,
+            "percent": -2.9764672789241664,
+            "quality_interval": [
+              0.3469982253482868,
+              0.44881637000878144
+            ],
+            "method": "PCHIP log-rate integral",
+            "recomputed": true
+          },
+          "warmup_npp_sha256": "d1da99e1a82212b95ecba564b6f35ad6167a0ce2294a054a6d08192c3fd057dd",
+          "frozen_proxy_sha256": "03532230d71dc7598ebd7e6f5247d53391a9c457549c9eb500eb4596296f00ef",
+          "warmup_psnr_db": 25.030345618072968,
+          "last_task_psnr_db": 21.44184987503659,
+          "rate_direction": {
+            "rows": [
+              {
+                "source": "coco/565799",
+                "qp": 30,
+                "minus_bpp": 0.31085043988269795,
+                "plus_bpp": 0.43394886363636365,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 35,
+                "minus_bpp": 0.17980205278592376,
+                "plus_bpp": 0.22596682551319647,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 40,
+                "minus_bpp": 0.11883706011730205,
+                "plus_bpp": 0.13327071114369501,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 45,
+                "minus_bpp": 0.07656708211143695,
+                "plus_bpp": 0.08520436217008798,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 30,
+                "minus_bpp": 0.3647270698051948,
+                "plus_bpp": 0.4727830762987013,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 35,
+                "minus_bpp": 0.18739853896103897,
+                "plus_bpp": 0.2467278814935065,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 40,
+                "minus_bpp": 0.10803064123376624,
+                "plus_bpp": 0.12786627435064934,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 45,
+                "minus_bpp": 0.062322443181818184,
+                "plus_bpp": 0.06792816558441558,
+                "aligned": true,
+                "tied": false
+              }
+            ],
+            "aligned": 8,
+            "tied": 0,
+            "total": 8,
+            "scope": "original TRAIN-dev inputs, finite step2/255; local diagnostic, not proof on NPP distribution"
+          },
+          "proxy_real_rate_ratios": {
+            "30": [
+              0.7780846783307868,
+              1.856694392025965
+            ],
+            "35": [
+              1.169309294521533,
+              1.7031778324113636
+            ],
+            "40": [
+              1.6664567619435284,
+              1.933184468869623
+            ],
+            "45": [
+              1.8739672380207477,
+              3.0536017016829735
+            ]
+          },
+          "curves": [
+            {
+              "arm": "npp",
+              "qp": 30,
+              "codec": "h264",
+              "quality": 0.44881637000878144,
+              "metrics": {
+                "ap": 0.44881637000878144,
+                "ap50": 0.6373787537391392,
+                "ap75": 0.4748426707088951,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 1213182,
+              "pixels": 22908416,
+              "bpp": 0.4236633383993027
+            },
+            {
+              "arm": "codec_only",
+              "qp": 30,
+              "codec": "h264",
+              "quality": 0.5107680295108498,
+              "metrics": {
+                "ap": 0.5107680295108498,
+                "ap50": 0.7087570868234807,
+                "ap75": 0.566492617409424,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 2366684,
+              "pixels": 22908416,
+              "bpp": 0.8264854278881613
+            },
+            {
+              "arm": "npp",
+              "qp": 35,
+              "codec": "h264",
+              "quality": 0.4358808593322682,
+              "metrics": {
+                "ap": 0.4358808593322682,
+                "ap50": 0.6341597725269107,
+                "ap75": 0.45689086231929477,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 696665,
+              "pixels": 22908416,
+              "bpp": 0.24328700858234809
+            },
+            {
+              "arm": "codec_only",
+              "qp": 35,
+              "codec": "h264",
+              "quality": 0.4977941399649052,
+              "metrics": {
+                "ap": 0.4977941399649052,
+                "ap50": 0.6864020512834329,
+                "ap75": 0.5465939683566825,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 1388335,
+              "pixels": 22908416,
+              "bpp": 0.48482968006168564
+            },
+            {
+              "arm": "npp",
+              "qp": 40,
+              "codec": "h264",
+              "quality": 0.3679104584600721,
+              "metrics": {
+                "ap": 0.3679104584600721,
+                "ap50": 0.5287866238242676,
+                "ap75": 0.40515465144885415,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 424670,
+              "pixels": 22908416,
+              "bpp": 0.14830182933643252
+            },
+            {
+              "arm": "codec_only",
+              "qp": 40,
+              "codec": "h264",
+              "quality": 0.4541663462456038,
+              "metrics": {
+                "ap": 0.4541663462456038,
+                "ap50": 0.6618771938631113,
+                "ap75": 0.49093210115879377,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 797089,
+              "pixels": 22908416,
+              "bpp": 0.278356740160472
+            },
+            {
+              "arm": "npp",
+              "qp": 45,
+              "codec": "h264",
+              "quality": 0.23109622442079567,
+              "metrics": {
+                "ap": 0.23109622442079567,
+                "ap50": 0.3494311583043991,
+                "ap75": 0.25633215110416935,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 267229,
+              "pixels": 22908416,
+              "bpp": 0.09332081275283284
+            },
+            {
+              "arm": "codec_only",
+              "qp": 45,
+              "codec": "h264",
+              "quality": 0.3469982253482868,
+              "metrics": {
+                "ap": 0.3469982253482868,
+                "ap50": 0.5313364444046225,
+                "ap75": 0.3642292567728,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 435529,
+              "pixels": 22908416,
+              "bpp": 0.15209397280021456
+            }
+          ],
+          "points": [
+            {
+              "qp": 30,
+              "codec_bpp": 0.8264854278881613,
+              "codec_ap": 51.07680295108498,
+              "npp_bpp": 0.4236633383993027,
+              "npp_ap": 44.88163700087814,
+              "rate_change_percent": -48.73916416386809,
+              "ap_change_points": -6.195165950206833
+            },
+            {
+              "qp": 35,
+              "codec_bpp": 0.48482968006168564,
+              "codec_ap": 49.77941399649052,
+              "npp_bpp": 0.24328700858234809,
+              "npp_ap": 43.58808593322682,
+              "rate_change_percent": -49.82010825917376,
+              "ap_change_points": -6.191328063263696
+            },
+            {
+              "qp": 40,
+              "codec_bpp": 0.278356740160472,
+              "codec_ap": 45.41663462456038,
+              "npp_bpp": 0.14830182933643252,
+              "npp_ap": 36.79104584600721,
+              "rate_change_percent": -46.72238608235717,
+              "ap_change_points": -8.625588778553173
+            },
+            {
+              "qp": 45,
+              "codec_bpp": 0.15209397280021456,
+              "codec_ap": 34.69982253482868,
+              "npp_bpp": 0.09332081275283284,
+              "npp_ap": 23.109622442079566,
+              "rate_change_percent": -38.642662141901,
+              "ap_change_points": -11.590200092749111
+            }
+          ],
+          "report_sha256": {
+            "foreground\\analyzer.json": "02247523fb4e2749d599bdd9e1921a2a00040acbc318ab3720d77fa9a2b990f9",
+            "foreground\\cohort.json": "6cce3b2007dd5abb14a7b0e114cf4247242a280e20987686bbb1e0f739b5bc71",
+            "foreground\\config.json": "be678a0554dbb6aaa32f2f63e3f6cb7673c50dcbfb75c63c2206118a9de73044",
+            "foreground\\proxy_probe.json": "cdd5517a3b035c5e27ebfebdb7f733f64d815a94a93318ff73c398e60af6a55e",
+            "foreground\\rate_direction.json": "1e00663609470e09b5e2c306f3ecff3f4a619be27703932872dc8fed21bc00d0",
+            "foreground\\study_run.json": "6113adbe141764919bc92685ec4ec271785d8b7363b1fad29a02d54ae1f7237e",
+            "foreground\\validation\\metrics.json": "69f24e3a20d017e9f2d555f82500f184a760379da80855abbc0f2c3d94f99ca1"
+          }
+        }
+      },
+      "wall_seconds": 2525.9618220329285
+    },
+    "od-h265": {
+      "handle": "ngynanhthuw/coco-od-h265-paired-20261101",
+      "cloud_exit": 1,
+      "matched_schedule_complete": false,
+      "shared_warmup_verified": true,
+      "shared_proxy_verified": true,
+      "arms": {
+        "control": {
+          "state": {
+            "warmup_updates": 7000,
+            "task_updates": 50,
+            "proxy_updates": 256,
+            "stop_reason": "task_fidelity_collapse",
+            "warmup_calibrated": true,
+            "warmup_converged": true,
+            "warmup_fidelity": {
+              "mse": 0.002522957933251746,
+              "psnr_db": 25.98089990667105,
+              "passed": true,
+              "threshold_db": 25.0,
+              "sources": 8,
+              "mean_clipped_pixel_fraction": 0.028460400782932993
+            }
+          },
+          "bd_rate": {
+            "valid": true,
+            "percent": 75.25613212339049,
+            "quality_interval": [
+              0.3933578113398919,
+              0.46913469962625415
+            ],
+            "method": "PCHIP log-rate integral",
+            "recomputed": true
+          },
+          "warmup_npp_sha256": "5edb027ff507af660cd9e9ea54b6e722e7d5194a17099d7d6ffc30a2d14e62f9",
+          "frozen_proxy_sha256": "26e1a49350298d35a8cd4bf9e997113e5015242a93d49d0f6b545f7ec519dfb3",
+          "warmup_psnr_db": 25.98089990667105,
+          "last_task_psnr_db": 19.442710802284573,
+          "rate_direction": {
+            "rows": [
+              {
+                "source": "coco/565799",
+                "qp": 30,
+                "minus_bpp": 0.26583119501466274,
+                "plus_bpp": 0.39731488269794724,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 35,
+                "minus_bpp": 0.1819556451612903,
+                "plus_bpp": 0.19961968475073313,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 40,
+                "minus_bpp": 0.12894061583577712,
+                "plus_bpp": 0.13327071114369501,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 45,
+                "minus_bpp": 0.09794263196480939,
+                "plus_bpp": 0.09883614369501466,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 30,
+                "minus_bpp": 0.3843851461038961,
+                "plus_bpp": 0.45654931006493504,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 35,
+                "minus_bpp": 0.22131189123376624,
+                "plus_bpp": 0.25215604707792205,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 40,
+                "minus_bpp": 0.14171570616883117,
+                "plus_bpp": 0.1486911525974026,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 45,
+                "minus_bpp": 0.099609375,
+                "plus_bpp": 0.09988839285714286,
+                "aligned": true,
+                "tied": false
+              }
+            ],
+            "aligned": 8,
+            "tied": 0,
+            "total": 8,
+            "scope": "original TRAIN-dev inputs, finite step2/255; local diagnostic, not proof on NPP distribution"
+          },
+          "proxy_real_rate_ratios": {
+            "30": [
+              1.888988177606527,
+              7.390884405190261
+            ],
+            "35": [
+              6.772728240300179,
+              7.635072579413104
+            ],
+            "40": [
+              9.51734737276653,
+              10.317873815268246
+            ],
+            "45": [
+              11.321964880218081,
+              14.589811594208326
+            ]
+          },
+          "curves": [
+            {
+              "arm": "npp",
+              "qp": 30,
+              "codec": "h265",
+              "quality": 0.46913469962625415,
+              "metrics": {
+                "ap": 0.46913469962625415,
+                "ap50": 0.6784528901901289,
+                "ap75": 0.4809764539169446,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 1855256,
+              "pixels": 22908416,
+              "bpp": 0.6478862615381177
+            },
+            {
+              "arm": "codec_only",
+              "qp": 30,
+              "codec": "h265",
+              "quality": 0.5133001098543505,
+              "metrics": {
+                "ap": 0.5133001098543505,
+                "ap50": 0.7249009458896865,
+                "ap75": 0.561211679476001,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 2141431,
+              "pixels": 22908416,
+              "bpp": 0.7478233327000872
+            },
+            {
+              "arm": "npp",
+              "qp": 35,
+              "codec": "h265",
+              "quality": 0.43141743307480185,
+              "metrics": {
+                "ap": 0.43141743307480185,
+                "ap50": 0.6529790126769033,
+                "ap75": 0.44837908656393477,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 1100801,
+              "pixels": 22908416,
+              "bpp": 0.3844180234897079
+            },
+            {
+              "arm": "codec_only",
+              "qp": 35,
+              "codec": "h265",
+              "quality": 0.5060785574387499,
+              "metrics": {
+                "ap": 0.5060785574387499,
+                "ap50": 0.7157380465548232,
+                "ap75": 0.5599372866946037,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 1310429,
+              "pixels": 22908416,
+              "bpp": 0.45762360872091723
+            },
+            {
+              "arm": "npp",
+              "qp": 40,
+              "codec": "h265",
+              "quality": 0.37430028495250023,
+              "metrics": {
+                "ap": 0.37430028495250023,
+                "ap50": 0.5781397381188393,
+                "ap75": 0.3924683707354728,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 661215,
+              "pixels": 22908416,
+              "bpp": 0.23090727879221332
+            },
+            {
+              "arm": "codec_only",
+              "qp": 40,
+              "codec": "h265",
+              "quality": 0.4560009485801842,
+              "metrics": {
+                "ap": 0.4560009485801842,
+                "ap50": 0.6664328859137351,
+                "ap75": 0.46736935038566285,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 795865,
+              "pixels": 22908416,
+              "bpp": 0.27792929899649105
+            },
+            {
+              "arm": "npp",
+              "qp": 45,
+              "codec": "h265",
+              "quality": 0.30404961304463013,
+              "metrics": {
+                "ap": 0.30404961304463013,
+                "ap50": 0.4582464204107101,
+                "ap75": 0.33570598475224156,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 404528,
+              "pixels": 22908416,
+              "bpp": 0.14126790782915763
+            },
+            {
+              "arm": "codec_only",
+              "qp": 45,
+              "codec": "h265",
+              "quality": 0.3933578113398919,
+              "metrics": {
+                "ap": 0.3933578113398919,
+                "ap50": 0.5993313377590136,
+                "ap75": 0.4078133081474656,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 480168,
+              "pixels": 22908416,
+              "bpp": 0.16768265426994167
+            }
+          ],
+          "points": [
+            {
+              "qp": 30,
+              "codec_bpp": 0.7478233327000872,
+              "codec_ap": 51.330010985435045,
+              "npp_bpp": 0.6478862615381177,
+              "npp_ap": 46.91346996262541,
+              "rate_change_percent": -13.363727339335242,
+              "ap_change_points": -4.416541022809634
+            },
+            {
+              "qp": 35,
+              "codec_bpp": 0.45762360872091723,
+              "codec_ap": 50.607855743874985,
+              "npp_bpp": 0.3844180234897079,
+              "npp_ap": 43.14174330748018,
+              "rate_change_percent": -15.99689872553187,
+              "ap_change_points": -7.4661124363948
+            },
+            {
+              "qp": 40,
+              "codec_bpp": 0.27792929899649105,
+              "codec_ap": 45.60009485801842,
+              "npp_bpp": 0.23090727879221332,
+              "npp_ap": 37.43002849525002,
+              "rate_change_percent": -16.918698522990695,
+              "ap_change_points": -8.170066362768397
+            },
+            {
+              "qp": 45,
+              "codec_bpp": 0.16768265426994167,
+              "codec_ap": 39.33578113398919,
+              "npp_bpp": 0.14126790782915763,
+              "npp_ap": 30.40496130446301,
+              "rate_change_percent": -15.752819846387101,
+              "ap_change_points": -8.930819829526177
+            }
+          ],
+          "report_sha256": {
+            "control\\analyzer.json": "02247523fb4e2749d599bdd9e1921a2a00040acbc318ab3720d77fa9a2b990f9",
+            "control\\cohort.json": "6cce3b2007dd5abb14a7b0e114cf4247242a280e20987686bbb1e0f739b5bc71",
+            "control\\config.json": "4d59ed5b0235349f913fc353bdd9c334fdd6d4431e25109468efa14ff5690b49",
+            "control\\proxy_probe.json": "cc34775c6918b1e90fca398581105f483446f55cacb983eaa3a3e5012fa36c09",
+            "control\\rate_direction.json": "a225072b73ae01863a758a9cbed4b0541eda5933b77a18db5a65a1cbe5020d9f",
+            "control\\study_run.json": "6aa8119c9e2868f37537eeda3ec8e67c31a58728020e39a786444879322cd785",
+            "control\\validation\\metrics.json": "142236dda01066af51dc91321181d7ba7094fb6e82b43485923479b6ff4f3053"
+          }
+        },
+        "foreground": {
+          "state": {
+            "warmup_updates": 7000,
+            "task_updates": 50,
+            "proxy_updates": 256,
+            "stop_reason": "task_fidelity_collapse",
+            "warmup_calibrated": true,
+            "warmup_converged": true,
+            "warmup_fidelity": {
+              "mse": 0.002522957933251746,
+              "psnr_db": 25.98089990667105,
+              "passed": true,
+              "threshold_db": 25.0,
+              "sources": 8,
+              "mean_clipped_pixel_fraction": 0.028460400782932993
+            }
+          },
+          "bd_rate": {
+            "valid": true,
+            "percent": 46.32179905994487,
+            "quality_interval": [
+              0.3933578113398919,
+              0.4732068012419219
+            ],
+            "method": "PCHIP log-rate integral",
+            "recomputed": true
+          },
+          "warmup_npp_sha256": "5edb027ff507af660cd9e9ea54b6e722e7d5194a17099d7d6ffc30a2d14e62f9",
+          "frozen_proxy_sha256": "26e1a49350298d35a8cd4bf9e997113e5015242a93d49d0f6b545f7ec519dfb3",
+          "warmup_psnr_db": 25.98089990667105,
+          "last_task_psnr_db": 19.897374082759413,
+          "rate_direction": {
+            "rows": [
+              {
+                "source": "coco/565799",
+                "qp": 30,
+                "minus_bpp": 0.26583119501466274,
+                "plus_bpp": 0.39731488269794724,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 35,
+                "minus_bpp": 0.1819556451612903,
+                "plus_bpp": 0.19961968475073313,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 40,
+                "minus_bpp": 0.12894061583577712,
+                "plus_bpp": 0.13327071114369501,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/565799",
+                "qp": 45,
+                "minus_bpp": 0.09794263196480939,
+                "plus_bpp": 0.09883614369501466,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 30,
+                "minus_bpp": 0.3843851461038961,
+                "plus_bpp": 0.45654931006493504,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 35,
+                "minus_bpp": 0.22131189123376624,
+                "plus_bpp": 0.25215604707792205,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 40,
+                "minus_bpp": 0.14171570616883117,
+                "plus_bpp": 0.1486911525974026,
+                "aligned": true,
+                "tied": false
+              },
+              {
+                "source": "coco/574996",
+                "qp": 45,
+                "minus_bpp": 0.099609375,
+                "plus_bpp": 0.09988839285714286,
+                "aligned": true,
+                "tied": false
+              }
+            ],
+            "aligned": 8,
+            "tied": 0,
+            "total": 8,
+            "scope": "original TRAIN-dev inputs, finite step2/255; local diagnostic, not proof on NPP distribution"
+          },
+          "proxy_real_rate_ratios": {
+            "30": [
+              1.888988177606527,
+              7.390884405190261
+            ],
+            "35": [
+              6.772728240300179,
+              7.635079787552722
+            ],
+            "40": [
+              9.51734737276653,
+              10.317873815268246
+            ],
+            "45": [
+              11.321964880218081,
+              14.589811594208326
+            ]
+          },
+          "curves": [
+            {
+              "arm": "npp",
+              "qp": 30,
+              "codec": "h265",
+              "quality": 0.4732068012419219,
+              "metrics": {
+                "ap": 0.4732068012419219,
+                "ap50": 0.6792639091301144,
+                "ap75": 0.47449578655313873,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 1875318,
+              "pixels": 22908416,
+              "bpp": 0.6548922457144134
+            },
+            {
+              "arm": "codec_only",
+              "qp": 30,
+              "codec": "h265",
+              "quality": 0.5133001098543505,
+              "metrics": {
+                "ap": 0.5133001098543505,
+                "ap50": 0.7249009458896865,
+                "ap75": 0.561211679476001,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 2141431,
+              "pixels": 22908416,
+              "bpp": 0.7478233327000872
+            },
+            {
+              "arm": "npp",
+              "qp": 35,
+              "codec": "h265",
+              "quality": 0.4447389241281075,
+              "metrics": {
+                "ap": 0.4447389241281075,
+                "ap50": 0.6404130297732377,
+                "ap75": 0.4650420666545802,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 1096399,
+              "pixels": 22908416,
+              "bpp": 0.3828807718525803
+            },
+            {
+              "arm": "codec_only",
+              "qp": 35,
+              "codec": "h265",
+              "quality": 0.5060785574387499,
+              "metrics": {
+                "ap": 0.5060785574387499,
+                "ap50": 0.7157380465548232,
+                "ap75": 0.5599372866946037,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 1310429,
+              "pixels": 22908416,
+              "bpp": 0.45762360872091723
+            },
+            {
+              "arm": "npp",
+              "qp": 40,
+              "codec": "h265",
+              "quality": 0.40467959121098246,
+              "metrics": {
+                "ap": 0.40467959121098246,
+                "ap50": 0.5877806219726138,
+                "ap75": 0.434712744128296,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 652522,
+              "pixels": 22908416,
+              "bpp": 0.2278715385646917
+            },
+            {
+              "arm": "codec_only",
+              "qp": 40,
+              "codec": "h265",
+              "quality": 0.4560009485801842,
+              "metrics": {
+                "ap": 0.4560009485801842,
+                "ap50": 0.6664328859137351,
+                "ap75": 0.46736935038566285,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 795865,
+              "pixels": 22908416,
+              "bpp": 0.27792929899649105
+            },
+            {
+              "arm": "npp",
+              "qp": 45,
+              "codec": "h265",
+              "quality": 0.30915619659773436,
+              "metrics": {
+                "ap": 0.30915619659773436,
+                "ap50": 0.46583831574190926,
+                "ap75": 0.3244216112710147,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 398489,
+              "pixels": 22908416,
+              "bpp": 0.13915898855686923
+            },
+            {
+              "arm": "codec_only",
+              "qp": 45,
+              "codec": "h265",
+              "quality": 0.3933578113398919,
+              "metrics": {
+                "ap": 0.3933578113398919,
+                "ap50": 0.5993313377590136,
+                "ap75": 0.4078133081474656,
+                "iou_type": "bbox"
+              },
+              "sources": 64,
+              "bytes": 480168,
+              "pixels": 22908416,
+              "bpp": 0.16768265426994167
+            }
+          ],
+          "points": [
+            {
+              "qp": 30,
+              "codec_bpp": 0.7478233327000872,
+              "codec_ap": 51.330010985435045,
+              "npp_bpp": 0.6548922457144134,
+              "npp_ap": 47.32068012419219,
+              "rate_change_percent": -12.426877167650986,
+              "ap_change_points": -4.00933086124286
+            },
+            {
+              "qp": 35,
+              "codec_bpp": 0.45762360872091723,
+              "codec_ap": 50.607855743874985,
+              "npp_bpp": 0.3828807718525803,
+              "npp_ap": 44.47389241281075,
+              "rate_change_percent": -16.332819252321183,
+              "ap_change_points": -6.133963331064235
+            },
+            {
+              "qp": 40,
+              "codec_bpp": 0.27792929899649105,
+              "codec_ap": 45.60009485801842,
+              "npp_bpp": 0.2278715385646917,
+              "npp_ap": 40.46795912109825,
+              "rate_change_percent": -18.010969197037173,
+              "ap_change_points": -5.132135736920174
+            },
+            {
+              "qp": 45,
+              "codec_bpp": 0.16768265426994167,
+              "codec_ap": 39.33578113398919,
+              "npp_bpp": 0.13915898855686923,
+              "npp_ap": 30.915619659773437,
+              "rate_change_percent": -17.010504656703485,
+              "ap_change_points": -8.420161474215753
+            }
+          ],
+          "report_sha256": {
+            "foreground\\analyzer.json": "02247523fb4e2749d599bdd9e1921a2a00040acbc318ab3720d77fa9a2b990f9",
+            "foreground\\cohort.json": "6cce3b2007dd5abb14a7b0e114cf4247242a280e20987686bbb1e0f739b5bc71",
+            "foreground\\config.json": "492278ac1a71680c6fa5b5b5b1d89235eaf98cb7c6c99f606e57c897702d1cd2",
+            "foreground\\proxy_probe.json": "c48d40c0b22722f8ab95262ce6d4d1314ae882cb39b56736fc6a8aa1f73d4e22",
+            "foreground\\rate_direction.json": "a225072b73ae01863a758a9cbed4b0541eda5933b77a18db5a65a1cbe5020d9f",
+            "foreground\\study_run.json": "f3a4831e31b11d670cbb2b969009959f3a92a4b7d526404faeef63b25f95a023",
+            "foreground\\validation\\metrics.json": "22bfb62ef5948be8683bb1119104284af98285fa4d9539c11d46fc0d7caea6f6"
+          }
+        }
+      },
+      "wall_seconds": 1638.8685166835785
+    }
+  },
+  "validation_images": 64,
+  "qps": [
+    30,
+    35,
+    40,
+    45
+  ],
+  "completed_pairs": 2,
+  "scope": "independent single-frame COCO streams, not temporal video coding",
+  "limitations": [
+    "64-image pilot; no confidence interval or repeated seeds.",
+    "H265 arms stopped below20dB pre-codec fidelity: diagnostic BD-rates are not completed matched768-step results.",
+    "Individual BD-rates integrate different overlapping AP intervals; do not subtract them as a direct SAM effect.",
+    "Gradient directions measured on two original TRAIN-dev images, not NPP outputs; do not establish gradient fidelity after adaptation."
+  ],
+  "cpu_flat_probe": {
+    "scope": "CPU FFmpeg flat images; overhead diagnostic, not exact header separation or Kaggle encoder version parity",
+    "rows": [
+      {
+        "codec": "h264",
+        "size": 128,
+        "qp": 35,
+        "bytes": 634,
+        "bpp": 0.3095703125
+      },
+      {
+        "codec": "h264",
+        "size": 128,
+        "qp": 45,
+        "bytes": 620,
+        "bpp": 0.302734375
+      },
+      {
+        "codec": "h264",
+        "size": 512,
+        "qp": 35,
+        "bytes": 684,
+        "bpp": 0.0208740234375
+      },
+      {
+        "codec": "h264",
+        "size": 512,
+        "qp": 45,
+        "bytes": 687,
+        "bpp": 0.020965576171875
+      },
+      {
+        "codec": "h265",
+        "size": 128,
+        "qp": 35,
+        "bytes": 2352,
+        "bpp": 1.1484375
+      },
+      {
+        "codec": "h265",
+        "size": 128,
+        "qp": 45,
+        "bytes": 2350,
+        "bpp": 1.1474609375
+      },
+      {
+        "codec": "h265",
+        "size": 512,
+        "qp": 35,
+        "bytes": 2432,
+        "bpp": 0.07421875
+      },
+      {
+        "codec": "h265",
+        "size": 512,
+        "qp": 45,
+        "bytes": 2426,
+        "bpp": 0.07403564453125
+      }
+    ]
+  },
+  "diagnostic_inference": "Proxy fitted on128px crops learns mostly geometry-dependent stream overhead, especially x265; this can explain rate-scale mismatch at full resolution. Rate/task gradient norms and paired NPP-output probes are still required to establish the cause of fidelity collapse."
+}

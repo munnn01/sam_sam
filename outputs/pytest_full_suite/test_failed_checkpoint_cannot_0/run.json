@@ -1,0 +1,11 @@
+{
+  "task": "ot",
+  "stage": "recover",
+  "diagnostic_complete": false,
+  "scientific_complete": false,
+  "npp_updates": 0,
+  "started": 1793521021.5333617,
+  "checkpoint_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "error": "ValueError: checkpoint SHA differs",
+  "wall_seconds": 0.0
+}

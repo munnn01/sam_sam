@@ -1,0 +1,38 @@
+{
+  "is-h264": {
+    "passed": true,
+    "median_relative_error": 0.06477519961362793,
+    "p90_relative_error": 0.12965950665470657,
+    "content_median_relative_error": 0.06911075074660927,
+    "content_p90_relative_error": 0.1393144472129168,
+    "direction_alignment": 1.0,
+    "direction_untied": 16
+  },
+  "is-h265": {
+    "passed": true,
+    "median_relative_error": 0.06536453931849867,
+    "p90_relative_error": 0.1555114914800184,
+    "content_median_relative_error": 0.08528999612101312,
+    "content_p90_relative_error": 0.19452239951310868,
+    "direction_alignment": 1.0,
+    "direction_untied": 16
+  },
+  "od-h264": {
+    "passed": true,
+    "median_relative_error": 0.06178316065345124,
+    "p90_relative_error": 0.12507502427230988,
+    "content_median_relative_error": 0.06841855561909477,
+    "content_p90_relative_error": 0.1308946314009064,
+    "direction_alignment": 1.0,
+    "direction_untied": 16
+  },
+  "od-h265": {
+    "passed": true,
+    "median_relative_error": 0.052446099125920076,
+    "p90_relative_error": 0.13997010437253105,
+    "content_median_relative_error": 0.0794332613113179,
+    "content_p90_relative_error": 0.16871435531074563,
+    "direction_alignment": 1.0,
+    "direction_untied": 16
+  }
+}

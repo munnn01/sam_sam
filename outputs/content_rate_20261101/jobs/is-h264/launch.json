@@ -1,0 +1,68 @@
+{
+  "key": "is-h264",
+  "handle": "tranthihongdieu/sam-content-is-h264-20261101",
+  "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\ntranthihongdieu/sam-content-is-h264-20261101 has status \"KernelWorkerStatus.ERROR\"",
+  "checked": 1793518799.7099557,
+  "latest": {
+    "stage": "cloud_end",
+    "task": "is",
+    "mode": "full",
+    "source_sha256": "aa741f13901d513ba4c1615d03580a55ec3be3703d4c6f263f832df95ec29cb2",
+    "bootstrap_complete": false,
+    "started": 1793513403.4572096,
+    "worker_exit_code": 1,
+    "error": "RuntimeError: paper runner failed; inspect run.json and console.log",
+    "wall_seconds": 1127.1703472137451
+  },
+  "screens": [
+    {
+      "stage": "content_rate_audit",
+      "time": 1793514523.5455818,
+      "label": "initial",
+      "passed": false,
+      "median_relative_error": 0.340050219017512,
+      "p90_relative_error": 1.1641500137266956,
+      "content_median_relative_error": 0.35749713104048875,
+      "content_p90_relative_error": 1.320889785150232,
+      "direction_alignment": 1.0,
+      "direction_untied": 16
+    }
+  ],
+  "gradients": [],
+  "terminal": [
+    {
+      "stage": "tri_end",
+      "time": 1793514525.079911,
+      "task": "is",
+      "execution_complete": false,
+      "state": {
+        "warmup_updates": 7000,
+        "task_updates": 0,
+        "proxy_updates": 256,
+        "stop_reason": null,
+        "warmup_calibrated": true,
+        "warmup_converged": true,
+        "warmup_fidelity": {
+          "mse": 0.002879232088162098,
+          "psnr_db": 25.407233262488383,
+          "passed": true,
+          "threshold_db": 25.0,
+          "sources": 8,
+          "mean_clipped_pixel_fraction": 0.017664350836639642
+        }
+      },
+      "error": "RuntimeError: content proxy failed held-out screening before task optimization"
+    },
+    {
+      "stage": "cloud_end",
+      "task": "is",
+      "mode": "full",
+      "source_sha256": "aa741f13901d513ba4c1615d03580a55ec3be3703d4c6f263f832df95ec29cb2",
+      "bootstrap_complete": false,
+      "started": 1793513403.4572096,
+      "worker_exit_code": 1,
+      "error": "RuntimeError: paper runner failed; inspect run.json and console.log",
+      "wall_seconds": 1127.1703472137451
+    }
+  ]
+}

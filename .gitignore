@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest_tmp/
+build/
+dist/
+*.egg-info/
+*.pt
+*.pth
+*.tgz
+*.tar.gz
+outputs/content_audit_tmp/
+outputs/content_cloud_red_tmp/
+outputs/**/downloads/

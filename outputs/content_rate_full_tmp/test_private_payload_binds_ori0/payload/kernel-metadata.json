@@ -1,0 +1,17 @@
+{
+  "id": "baooo25r/paper-video-ar-qp4-20261023",
+  "title": "paper-video-ar-qp4-20261023",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "qktttttttttt/kineticscleaned/4",
+    "jizeyong/kinetics400-rgb256-f10-val-data/1"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}

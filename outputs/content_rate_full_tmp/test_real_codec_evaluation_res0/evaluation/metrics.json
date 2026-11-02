@@ -1,0 +1,151 @@
+{
+  "complete": true,
+  "task": "ic",
+  "curves": [
+    {
+      "arm": "codec_only",
+      "codec": "h264",
+      "qp": 30,
+      "quality": 0.0,
+      "bpp": 9.296875,
+      "mean_source_bpp": 9.296875,
+      "bytes": 1190,
+      "pixels": 1024,
+      "metrics": {
+        "top1": 0.0,
+        "top5": 1.0,
+        "mean_class_accuracy": 0.0
+      },
+      "sources": 1,
+      "scope": "declared_validation_subset"
+    },
+    {
+      "arm": "codec_only",
+      "codec": "h264",
+      "qp": 35,
+      "quality": 0.0,
+      "bpp": 7.984375,
+      "mean_source_bpp": 7.984375,
+      "bytes": 1022,
+      "pixels": 1024,
+      "metrics": {
+        "top1": 0.0,
+        "top5": 1.0,
+        "mean_class_accuracy": 0.0
+      },
+      "sources": 1,
+      "scope": "declared_validation_subset"
+    },
+    {
+      "arm": "codec_only",
+      "codec": "h264",
+      "qp": 40,
+      "quality": 0.0,
+      "bpp": 6.234375,
+      "mean_source_bpp": 6.234375,
+      "bytes": 798,
+      "pixels": 1024,
+      "metrics": {
+        "top1": 0.0,
+        "top5": 1.0,
+        "mean_class_accuracy": 0.0
+      },
+      "sources": 1,
+      "scope": "declared_validation_subset"
+    },
+    {
+      "arm": "codec_only",
+      "codec": "h264",
+      "qp": 45,
+      "quality": 0.0,
+      "bpp": 5.25,
+      "mean_source_bpp": 5.25,
+      "bytes": 672,
+      "pixels": 1024,
+      "metrics": {
+        "top1": 0.0,
+        "top5": 1.0,
+        "mean_class_accuracy": 0.0
+      },
+      "sources": 1,
+      "scope": "declared_validation_subset"
+    },
+    {
+      "arm": "npp",
+      "codec": "h264",
+      "qp": 30,
+      "quality": 0.0,
+      "bpp": 9.2890625,
+      "mean_source_bpp": 9.2890625,
+      "bytes": 1189,
+      "pixels": 1024,
+      "metrics": {
+        "top1": 0.0,
+        "top5": 1.0,
+        "mean_class_accuracy": 0.0
+      },
+      "sources": 1,
+      "scope": "declared_validation_subset"
+    },
+    {
+      "arm": "npp",
+      "codec": "h264",
+      "qp": 35,
+      "quality": 0.0,
+      "bpp": 7.984375,
+      "mean_source_bpp": 7.984375,
+      "bytes": 1022,
+      "pixels": 1024,
+      "metrics": {
+        "top1": 0.0,
+        "top5": 1.0,
+        "mean_class_accuracy": 0.0
+      },
+      "sources": 1,
+      "scope": "declared_validation_subset"
+    },
+    {
+      "arm": "npp",
+      "codec": "h264",
+      "qp": 40,
+      "quality": 0.0,
+      "bpp": 6.2265625,
+      "mean_source_bpp": 6.2265625,
+      "bytes": 797,
+      "pixels": 1024,
+      "metrics": {
+        "top1": 0.0,
+        "top5": 1.0,
+        "mean_class_accuracy": 0.0
+      },
+      "sources": 1,
+      "scope": "declared_validation_subset"
+    },
+    {
+      "arm": "npp",
+      "codec": "h264",
+      "qp": 45,
+      "quality": 0.0,
+      "bpp": 5.2421875,
+      "mean_source_bpp": 5.2421875,
+      "bytes": 671,
+      "pixels": 1024,
+      "metrics": {
+        "top1": 0.0,
+        "top5": 1.0,
+        "mean_class_accuracy": 0.0
+      },
+      "sources": 1,
+      "scope": "declared_validation_subset"
+    }
+  ],
+  "bd_rate": {
+    "h264": {
+      "valid": false,
+      "percent": null,
+      "reason": "nonmonotone or tied four-QP operating curve"
+    }
+  },
+  "scope": "declared_validation_subset",
+  "hidden_test_evaluated": false
+}

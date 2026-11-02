@@ -1,0 +1,10 @@
+{
+  "config_sha256": "b8592855dd499f66c9a39248684439c793456f9a938a00e6f197caf57bfa1f2f",
+  "sources": [
+    "kinetics/short"
+  ],
+  "records_sha256": "a20a3e5f514225313ebdf96eaa56febe425fa6209f68dbd901f53392af4f3505",
+  "annotation_sha256": null,
+  "npp_sha256": "a5ac7645d245c5bfb8f44c19bc4157b588e6f8e2759846ff937e42d2c9fc949e",
+  "analyzer_sha256": "a42e9651fb4897b64f67e7e1155e0610ef183017ecdea8b6b6bda51acbc66ba3"
+}

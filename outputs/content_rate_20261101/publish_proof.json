@@ -1,0 +1,47 @@
+{
+  "source_sha256": "aa741f13901d513ba4c1615d03580a55ec3be3703d4c6f263f832df95ec29cb2",
+  "source_files": 90,
+  "original_core_unchanged": 42,
+  "files": [
+    {
+      "path": "paper_reproduction/docs/superpowers/plans/2026-11-01-codec-content-rate.md",
+      "sha": "801200571c50ce018347c5b638360d2ea90ae888"
+    },
+    {
+      "path": "paper_reproduction/reproduce/coco_content_rate_cloud.py",
+      "sha": "9d38fe3f92cb383839e9a9293c07d7cab7e8dcce"
+    },
+    {
+      "path": "paper_reproduction/reproduce/coco_content_rate_study.py",
+      "sha": "d944f35fb025a8db022099472c8c6eed31faa49c"
+    },
+    {
+      "path": "paper_reproduction/reproduce/codec_content_rate.py",
+      "sha": "2007bca345c9086319d316ba777aa5144d2e9fa2"
+    },
+    {
+      "path": "paper_reproduction/reproduce/tri_task_study.py",
+      "sha": "61fadb6225ba37cc1518cedb2225deff3b5dc9e4"
+    },
+    {
+      "path": "paper_reproduction/tests/test_codec_content_rate.py",
+      "sha": "900e1d89e14b7b1d757e0682a5182b7213c7cfdc"
+    },
+    {
+      "path": "paper_reproduction/tests/test_content_calibration.py",
+      "sha": "dfe8c38f2b574e67953c874a084d505514ffe45c"
+    },
+    {
+      "path": "paper_reproduction/tests/test_content_cloud.py",
+      "sha": "180bd42269a5e9d87fc1e0cfc29670f441a97a80"
+    },
+    {
+      "path": "paper_reproduction/tests/test_content_rate_gate.py",
+      "sha": "0370a0194c7710db4b4cc0c6fa572b05de316880"
+    },
+    {
+      "path": "paper_reproduction/SOURCE_MANIFEST.json",
+      "sha": "e17e5ec04599ba1e5a1b0cfdc4857ea68b7945ac"
+    }
+  ]
+}

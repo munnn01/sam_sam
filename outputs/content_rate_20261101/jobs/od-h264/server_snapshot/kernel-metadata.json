@@ -1,0 +1,22 @@
+{
+  "id": "hoangminhhuy123/sam-content-od-h264-20261101",
+  "id_no": 142059817,
+  "title": "sam-content-od-h264-20261101",
+  "code_file": "sam-content-od-h264-20261101.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [
+    "awsaf49/coco-2017-dataset",
+    "wagur124705/image-paper-proxy-inputs-20261031"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:9a6bcfda6d03b2cd9aa347ee8c1bae62043328ed0f4afe9bda014e4f8bbf9435",
+  "machine_shape": "NvidiaTeslaT4"
+}

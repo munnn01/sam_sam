@@ -1,0 +1,1272 @@
+{
+  "study": "paired_IS_OD_H264_H265",
+  "updated": 1793511172.9076068,
+  "code_commit": "fe767cb17357266348ba3d018033f85992523ae5",
+  "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+  "tests_passed": 165,
+  "third_party_warnings": 4,
+  "cpu_real_codec_smoke_points": 8,
+  "original_core_files_unchanged": 42,
+  "independent_review": "one Important paired completion finding fixed RED to GREEN; full suite165passed",
+  "jobs": [
+    {
+      "key": "is-h264",
+      "handle": "tranthihongdieu/coco-is-h264-paired-20261101",
+      "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+      "config": {
+        "task": "is",
+        "paper": "image",
+        "qps": [
+          30,
+          35,
+          40,
+          45
+        ],
+        "codecs": [
+          "h264"
+        ],
+        "identity_fallback": false,
+        "seed": 20261101,
+        "mode": "full",
+        "scope": "COCO_independent_single_frame_intra_not_temporal_video",
+        "lr": 3e-05,
+        "beta": 5.0,
+        "alpha": 10.0,
+        "rate_weight": 0.001,
+        "fixed_qp": 35,
+        "proxy_steps": 256,
+        "fixed_steps": 120000,
+        "adaptive_steps": 100000,
+        "npp_size": 512,
+        "frames": 1,
+        "batch_size": 1,
+        "preset": "medium",
+        "fps": 25,
+        "gop": 16,
+        "checkpoint_every": 100,
+        "log_every": 50,
+        "max_session_seconds": 6000,
+        "validation_sources": 64,
+        "full_validation_sources": 5000,
+        "video_width": 16,
+        "temporal_kernel": 3,
+        "block_size": 8,
+        "motion_radius": 4,
+        "prior_steps": 0,
+        "proxy_quality": {
+          "30": 5,
+          "35": 4,
+          "40": 3,
+          "45": 2
+        },
+        "source_pins": {
+          "image_npp": "6a77c4633cd5bb6750c77ea9d213d38ffc88ee7a",
+          "pytracking": "7eb9e74bd3d40e29dbcec444902237da13de247b"
+        },
+        "input_condition": "released_lambda_over_8",
+        "checkpoint_selection": "last_trained",
+        "use_amp": false,
+        "fidelity_notes": [
+          "Four QPs30/35/40/45 explicitly requested by user.",
+          "One representative published backbone family per original task; Torchvision image/AR adapters differ from original OpenMMLab implementations.",
+          "Full mode evaluates all available original validation sources with resumable per-source caches; pilot mode is a declared subset.",
+          "Official released image NPP used; source conditioning uses loss-lambda/8 rather than raw QP.",
+          "Proxy is CompressAI Minnen2018 pretrained implementation, independently calibrated to actual BPG reconstructions.",
+          "400k proxy updates are global across four QP-specific proxies; paper does not disambiguate per-proxy accounting.",
+          "Image proxy/task lambda values at new QPs are log-linearly interpolated/extrapolated from published tables.",
+          "Released image NPP for all tasks; frozen offline per-frame SAM2 masks.",
+          "MSE warm-up and fidelity gates precede short task training; no identity fallback.",
+          "Training-only STE clipping preserves clipped forward values; task coefficient0.1, beta5 are declared trials.",
+          "Tracking uses framewise Minnen proxy recalibrated to H264, not an exact motion-aware codec model.",
+          "Codec-specific proxy refit; exact shared warm-up/proxy/RNG per paired worker.",
+          "Each COCO image is one independent H264/H265 stream; include all stream headers; no inter-frame claim.",
+          "Mask task loss weight3 for both IS arms; improved IS adds TRAIN-GT instance boundary fidelity; bundled intervention."
+        ],
+        "study_profile": "coco_codecs",
+        "sam_arm": "control",
+        "backbone": "maskrcnn_resnet50_fpn",
+        "max_size": 768,
+        "evaluation_frames": 32,
+        "train_sources": 64,
+        "dev_sources": 8,
+        "warmup_steps": 12000,
+        "warmup_min_steps": 2000,
+        "warmup_probe_every": 1000,
+        "task_steps": 768,
+        "proxy_crop": 128,
+        "evaluation_reserve": 1800,
+        "gate_psnr": 25.0,
+        "collapse_psnr": 20.0,
+        "lambda_scale": 0.1,
+        "sam2": {
+          "source_commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69",
+          "model": "sam2.1_hiera_tiny",
+          "model_cfg": "configs/sam2.1/sam2.1_hiera_t.yaml",
+          "points_per_side": 16,
+          "points_per_batch": 32,
+          "pred_iou_thresh": 0.8,
+          "stability_score_thresh": 0.95,
+          "min_area_fraction": 0.005,
+          "max_area_fraction": 0.6,
+          "max_masks": 8,
+          "smoothing": 5,
+          "foreground_extra": 0.0,
+          "gamma": 0.0,
+          "mask_kind": "confidence_weighted_smoothed_binary_AMG_not_probability",
+          "clip_frames": 1,
+          "clip_seed": 20261101
+        },
+        "mask_task_weight": 3.0,
+        "boundary_weight": 0.0
+      },
+      "input_spec": {
+        "kind": "dataset",
+        "ref": "wagur124705/image-paper-proxy-inputs-20261031/1",
+        "member": "od_proxy.pt",
+        "sha256": "ab9fde3e3418be44b532eb9c4492382a4a8204e0d64ab5d2b15dad1b2f535dbf",
+        "visibility": "public"
+      },
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/tranthihongdieu/coco-is-h264-paired-20261101",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "server_verification": {
+        "handle": "tranthihongdieu/coco-is-h264-paired-20261101",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+        "checked": 1793506566.9616022
+      },
+      "launch": {
+        "key": "is-h264",
+        "handle": "tranthihongdieu/coco-is-h264-paired-20261101",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\ntranthihongdieu/coco-is-h264-paired-20261101 has status \"KernelWorkerStatus.COMPLETE\"",
+        "observed": 1793511075.5595407,
+        "latest": {
+          "stage": "cloud_end",
+          "task": "is",
+          "mode": "full",
+          "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+          "bootstrap_complete": true,
+          "started": 1793506550.2721393,
+          "worker_exit_code": 0,
+          "wall_seconds": 2941.277185201645
+        },
+        "ready": true,
+        "warmup_seen": true,
+        "task_gradient_passed": true,
+        "task_training_seen": true,
+        "terminal": [
+          {
+            "stage": "tri_end",
+            "time": 1793508331.420285,
+            "task": "is",
+            "execution_complete": true,
+            "state": {
+              "warmup_updates": 7000,
+              "task_updates": 768,
+              "proxy_updates": 256,
+              "stop_reason": "task_schedule_finished",
+              "warmup_calibrated": true,
+              "warmup_converged": true,
+              "warmup_fidelity": {
+                "mse": 0.0030863445790600963,
+                "psnr_db": 25.105555881788334,
+                "passed": true,
+                "threshold_db": 25.0,
+                "sources": 8,
+                "mean_clipped_pixel_fraction": 0.007342445843391943
+              }
+            },
+            "error": null
+          },
+          {
+            "stage": "tri_end",
+            "time": 1793509487.9171045,
+            "task": "is",
+            "execution_complete": true,
+            "state": {
+              "warmup_updates": 7000,
+              "task_updates": 768,
+              "proxy_updates": 256,
+              "stop_reason": "task_schedule_finished",
+              "warmup_calibrated": true,
+              "warmup_converged": true,
+              "warmup_fidelity": {
+                "mse": 0.0030863445208524354,
+                "psnr_db": 25.105555963695146,
+                "passed": true,
+                "threshold_db": 25.0,
+                "sources": 8,
+                "mean_clipped_pixel_fraction": 0.007342445843391943
+              }
+            },
+            "error": null
+          },
+          {
+            "stage": "cloud_end",
+            "task": "is",
+            "mode": "full",
+            "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+            "bootstrap_complete": true,
+            "started": 1793506550.2721393,
+            "worker_exit_code": 0,
+            "wall_seconds": 2941.277185201645
+          }
+        ]
+      },
+      "status": "COMPLETE",
+      "matched_schedule_complete": true,
+      "results": {
+        "control": {
+          "state": {
+            "warmup_updates": 7000,
+            "task_updates": 768,
+            "proxy_updates": 256,
+            "stop_reason": "task_schedule_finished",
+            "warmup_calibrated": true,
+            "warmup_converged": true,
+            "warmup_fidelity": {
+              "mse": 0.0030863445790600963,
+              "psnr_db": 25.105555881788334,
+              "passed": true,
+              "threshold_db": 25.0,
+              "sources": 8,
+              "mean_clipped_pixel_fraction": 0.007342445843391943
+            }
+          },
+          "bd_rate": {
+            "valid": true,
+            "percent": 5.753612235254888,
+            "quality_interval": [
+              0.32695565178006436,
+              0.42155977830525126
+            ],
+            "method": "PCHIP log-rate integral",
+            "recomputed": true
+          },
+          "last_task_psnr_db": 22.33059647649212,
+          "proxy_real_rate_ratios": {
+            "30": [
+              0.7780944374417771,
+              1.8568008627340757
+            ],
+            "35": [
+              1.1693096705656378,
+              1.7031779764504413
+            ],
+            "40": [
+              1.6698446988662305,
+              1.933096071097472
+            ],
+            "45": [
+              1.8739670529308547,
+              3.0536017016829735
+            ]
+          }
+        },
+        "foreground": {
+          "state": {
+            "warmup_updates": 7000,
+            "task_updates": 768,
+            "proxy_updates": 256,
+            "stop_reason": "task_schedule_finished",
+            "warmup_calibrated": true,
+            "warmup_converged": true,
+            "warmup_fidelity": {
+              "mse": 0.0030863445208524354,
+              "psnr_db": 25.105555963695146,
+              "passed": true,
+              "threshold_db": 25.0,
+              "sources": 8,
+              "mean_clipped_pixel_fraction": 0.007342445843391943
+            }
+          },
+          "bd_rate": {
+            "valid": true,
+            "percent": 12.674323238173848,
+            "quality_interval": [
+              0.32695565178006436,
+              0.4248446054313148
+            ],
+            "method": "PCHIP log-rate integral",
+            "recomputed": true
+          },
+          "last_task_psnr_db": 23.078803095920897,
+          "proxy_real_rate_ratios": {
+            "30": [
+              0.7780945238055912,
+              1.8568008627340757
+            ],
+            "35": [
+              1.1693096705656378,
+              1.7031779764504413
+            ],
+            "40": [
+              1.6698446988662305,
+              1.933096071097472
+            ],
+            "45": [
+              1.8739672380207477,
+              3.0536017016829735
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "is-h265",
+      "handle": "dngbolm/coco-is-h265-paired-20261101",
+      "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+      "config": {
+        "task": "is",
+        "paper": "image",
+        "qps": [
+          30,
+          35,
+          40,
+          45
+        ],
+        "codecs": [
+          "h265"
+        ],
+        "identity_fallback": false,
+        "seed": 20261101,
+        "mode": "full",
+        "scope": "COCO_independent_single_frame_intra_not_temporal_video",
+        "lr": 3e-05,
+        "beta": 5.0,
+        "alpha": 10.0,
+        "rate_weight": 0.001,
+        "fixed_qp": 35,
+        "proxy_steps": 256,
+        "fixed_steps": 120000,
+        "adaptive_steps": 100000,
+        "npp_size": 512,
+        "frames": 1,
+        "batch_size": 1,
+        "preset": "medium",
+        "fps": 25,
+        "gop": 16,
+        "checkpoint_every": 100,
+        "log_every": 50,
+        "max_session_seconds": 6000,
+        "validation_sources": 64,
+        "full_validation_sources": 5000,
+        "video_width": 16,
+        "temporal_kernel": 3,
+        "block_size": 8,
+        "motion_radius": 4,
+        "prior_steps": 0,
+        "proxy_quality": {
+          "30": 5,
+          "35": 4,
+          "40": 3,
+          "45": 2
+        },
+        "source_pins": {
+          "image_npp": "6a77c4633cd5bb6750c77ea9d213d38ffc88ee7a",
+          "pytracking": "7eb9e74bd3d40e29dbcec444902237da13de247b"
+        },
+        "input_condition": "released_lambda_over_8",
+        "checkpoint_selection": "last_trained",
+        "use_amp": false,
+        "fidelity_notes": [
+          "Four QPs30/35/40/45 explicitly requested by user.",
+          "One representative published backbone family per original task; Torchvision image/AR adapters differ from original OpenMMLab implementations.",
+          "Full mode evaluates all available original validation sources with resumable per-source caches; pilot mode is a declared subset.",
+          "Official released image NPP used; source conditioning uses loss-lambda/8 rather than raw QP.",
+          "Proxy is CompressAI Minnen2018 pretrained implementation, independently calibrated to actual BPG reconstructions.",
+          "400k proxy updates are global across four QP-specific proxies; paper does not disambiguate per-proxy accounting.",
+          "Image proxy/task lambda values at new QPs are log-linearly interpolated/extrapolated from published tables.",
+          "Released image NPP for all tasks; frozen offline per-frame SAM2 masks.",
+          "MSE warm-up and fidelity gates precede short task training; no identity fallback.",
+          "Training-only STE clipping preserves clipped forward values; task coefficient0.1, beta5 are declared trials.",
+          "Tracking uses framewise Minnen proxy recalibrated to H264, not an exact motion-aware codec model.",
+          "Codec-specific proxy refit; exact shared warm-up/proxy/RNG per paired worker.",
+          "Each COCO image is one independent H264/H265 stream; include all stream headers; no inter-frame claim.",
+          "Mask task loss weight3 for both IS arms; improved IS adds TRAIN-GT instance boundary fidelity; bundled intervention."
+        ],
+        "study_profile": "coco_codecs",
+        "sam_arm": "control",
+        "backbone": "maskrcnn_resnet50_fpn",
+        "max_size": 768,
+        "evaluation_frames": 32,
+        "train_sources": 64,
+        "dev_sources": 8,
+        "warmup_steps": 12000,
+        "warmup_min_steps": 2000,
+        "warmup_probe_every": 1000,
+        "task_steps": 768,
+        "proxy_crop": 128,
+        "evaluation_reserve": 1800,
+        "gate_psnr": 25.0,
+        "collapse_psnr": 20.0,
+        "lambda_scale": 0.1,
+        "sam2": {
+          "source_commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69",
+          "model": "sam2.1_hiera_tiny",
+          "model_cfg": "configs/sam2.1/sam2.1_hiera_t.yaml",
+          "points_per_side": 16,
+          "points_per_batch": 32,
+          "pred_iou_thresh": 0.8,
+          "stability_score_thresh": 0.95,
+          "min_area_fraction": 0.005,
+          "max_area_fraction": 0.6,
+          "max_masks": 8,
+          "smoothing": 5,
+          "foreground_extra": 0.0,
+          "gamma": 0.0,
+          "mask_kind": "confidence_weighted_smoothed_binary_AMG_not_probability",
+          "clip_frames": 1,
+          "clip_seed": 20261101
+        },
+        "mask_task_weight": 3.0,
+        "boundary_weight": 0.0
+      },
+      "input_spec": {
+        "kind": "dataset",
+        "ref": "wagur124705/image-paper-proxy-inputs-20261031/1",
+        "member": "od_proxy.pt",
+        "sha256": "ab9fde3e3418be44b532eb9c4492382a4a8204e0d64ab5d2b15dad1b2f535dbf",
+        "visibility": "public"
+      },
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/dngbolm/coco-is-h265-paired-20261101",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "server_verification": {
+        "handle": "dngbolm/coco-is-h265-paired-20261101",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+        "checked": 1793506561.0433507
+      },
+      "launch": {
+        "key": "is-h265",
+        "handle": "dngbolm/coco-is-h265-paired-20261101",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\ndngbolm/coco-is-h265-paired-20261101 has status \"KernelWorkerStatus.ERROR\"",
+        "observed": 1793511074.1698108,
+        "latest": {
+          "stage": "cloud_end",
+          "task": "is",
+          "mode": "full",
+          "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+          "bootstrap_complete": false,
+          "started": 1793506554.2820885,
+          "worker_exit_code": 1,
+          "error": "RuntimeError: paper runner failed; inspect run.json and console.log",
+          "wall_seconds": 2372.265477657318
+        },
+        "ready": true,
+        "warmup_seen": true,
+        "task_gradient_passed": true,
+        "task_training_seen": true,
+        "terminal": [
+          {
+            "stage": "tri_end",
+            "time": 1793507801.1021798,
+            "task": "is",
+            "execution_complete": true,
+            "state": {
+              "warmup_updates": 7000,
+              "task_updates": 100,
+              "proxy_updates": 256,
+              "stop_reason": "task_fidelity_collapse",
+              "warmup_calibrated": true,
+              "warmup_converged": true,
+              "warmup_fidelity": {
+                "mse": 0.002739760013355408,
+                "psnr_db": 25.62287477121248,
+                "passed": true,
+                "threshold_db": 25.0,
+                "sources": 8,
+                "mean_clipped_pixel_fraction": 0.004672756505954112
+              }
+            },
+            "error": null
+          },
+          {
+            "stage": "tri_end",
+            "time": 1793508923.2001474,
+            "task": "is",
+            "execution_complete": true,
+            "state": {
+              "warmup_updates": 7000,
+              "task_updates": 550,
+              "proxy_updates": 256,
+              "stop_reason": "task_fidelity_collapse",
+              "warmup_calibrated": true,
+              "warmup_converged": true,
+              "warmup_fidelity": {
+                "mse": 0.0027397600715630688,
+                "psnr_db": 25.622874678944303,
+                "passed": true,
+                "threshold_db": 25.0,
+                "sources": 8,
+                "mean_clipped_pixel_fraction": 0.004672756505954112
+              }
+            },
+            "error": null
+          },
+          {
+            "stage": "cloud_end",
+            "task": "is",
+            "mode": "full",
+            "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+            "bootstrap_complete": false,
+            "started": 1793506554.2820885,
+            "worker_exit_code": 1,
+            "error": "RuntimeError: paper runner failed; inspect run.json and console.log",
+            "wall_seconds": 2372.265477657318
+          }
+        ]
+      },
+      "status": "ERROR",
+      "matched_schedule_complete": false,
+      "results": {
+        "control": {
+          "state": {
+            "warmup_updates": 7000,
+            "task_updates": 100,
+            "proxy_updates": 256,
+            "stop_reason": "task_fidelity_collapse",
+            "warmup_calibrated": true,
+            "warmup_converged": true,
+            "warmup_fidelity": {
+              "mse": 0.002739760013355408,
+              "psnr_db": 25.62287477121248,
+              "passed": true,
+              "threshold_db": 25.0,
+              "sources": 8,
+              "mean_clipped_pixel_fraction": 0.004672756505954112
+            }
+          },
+          "bd_rate": {
+            "valid": true,
+            "percent": 67.63781699519917,
+            "quality_interval": [
+              0.32897670878267715,
+              0.40281519687714146
+            ],
+            "method": "PCHIP log-rate integral",
+            "recomputed": true
+          },
+          "last_task_psnr_db": 19.345081882181397,
+          "proxy_real_rate_ratios": {
+            "30": [
+              1.888998209573886,
+              7.390303242680402
+            ],
+            "35": [
+              6.772603023321441,
+              7.635093174097728
+            ],
+            "40": [
+              9.502343363558671,
+              10.307022412057742
+            ],
+            "45": [
+              11.32182477421526,
+              14.589411542459501
+            ]
+          }
+        },
+        "foreground": {
+          "state": {
+            "warmup_updates": 7000,
+            "task_updates": 550,
+            "proxy_updates": 256,
+            "stop_reason": "task_fidelity_collapse",
+            "warmup_calibrated": true,
+            "warmup_converged": true,
+            "warmup_fidelity": {
+              "mse": 0.0027397600715630688,
+              "psnr_db": 25.622874678944303,
+              "passed": true,
+              "threshold_db": 25.0,
+              "sources": 8,
+              "mean_clipped_pixel_fraction": 0.004672756505954112
+            }
+          },
+          "bd_rate": {
+            "valid": true,
+            "percent": 53.41852023902963,
+            "quality_interval": [
+              0.32897670878267715,
+              0.383666251790869
+            ],
+            "method": "PCHIP log-rate integral",
+            "recomputed": true
+          },
+          "last_task_psnr_db": 17.079367361653013,
+          "proxy_real_rate_ratios": {
+            "30": [
+              1.888998209573886,
+              7.390303242680402
+            ],
+            "35": [
+              6.772603023321441,
+              7.6350926592306125
+            ],
+            "40": [
+              9.502343363558671,
+              10.307022412057742
+            ],
+            "45": [
+              11.32182477421526,
+              14.589411542459501
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "od-h264",
+      "handle": "hoangminhhuy123/coco-od-h264-paired-20261101",
+      "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+      "config": {
+        "task": "od",
+        "paper": "image",
+        "qps": [
+          30,
+          35,
+          40,
+          45
+        ],
+        "codecs": [
+          "h264"
+        ],
+        "identity_fallback": false,
+        "seed": 20261101,
+        "mode": "full",
+        "scope": "COCO_independent_single_frame_intra_not_temporal_video",
+        "lr": 3e-05,
+        "beta": 5.0,
+        "alpha": 10.0,
+        "rate_weight": 0.001,
+        "fixed_qp": 35,
+        "proxy_steps": 256,
+        "fixed_steps": 120000,
+        "adaptive_steps": 100000,
+        "npp_size": 512,
+        "frames": 1,
+        "batch_size": 1,
+        "preset": "medium",
+        "fps": 25,
+        "gop": 16,
+        "checkpoint_every": 100,
+        "log_every": 50,
+        "max_session_seconds": 6000,
+        "validation_sources": 64,
+        "full_validation_sources": 5000,
+        "video_width": 16,
+        "temporal_kernel": 3,
+        "block_size": 8,
+        "motion_radius": 4,
+        "prior_steps": 0,
+        "proxy_quality": {
+          "30": 5,
+          "35": 4,
+          "40": 3,
+          "45": 2
+        },
+        "source_pins": {
+          "image_npp": "6a77c4633cd5bb6750c77ea9d213d38ffc88ee7a",
+          "pytracking": "7eb9e74bd3d40e29dbcec444902237da13de247b"
+        },
+        "input_condition": "released_lambda_over_8",
+        "checkpoint_selection": "last_trained",
+        "use_amp": false,
+        "fidelity_notes": [
+          "Four QPs30/35/40/45 explicitly requested by user.",
+          "One representative published backbone family per original task; Torchvision image/AR adapters differ from original OpenMMLab implementations.",
+          "Full mode evaluates all available original validation sources with resumable per-source caches; pilot mode is a declared subset.",
+          "Official released image NPP used; source conditioning uses loss-lambda/8 rather than raw QP.",
+          "Proxy is CompressAI Minnen2018 pretrained implementation, independently calibrated to actual BPG reconstructions.",
+          "400k proxy updates are global across four QP-specific proxies; paper does not disambiguate per-proxy accounting.",
+          "Image proxy/task lambda values at new QPs are log-linearly interpolated/extrapolated from published tables.",
+          "Released image NPP for all tasks; frozen offline per-frame SAM2 masks.",
+          "MSE warm-up and fidelity gates precede short task training; no identity fallback.",
+          "Training-only STE clipping preserves clipped forward values; task coefficient0.1, beta5 are declared trials.",
+          "Tracking uses framewise Minnen proxy recalibrated to H264, not an exact motion-aware codec model.",
+          "Codec-specific proxy refit; exact shared warm-up/proxy/RNG per paired worker.",
+          "Each COCO image is one independent H264/H265 stream; include all stream headers; no inter-frame claim.",
+          "Mask task loss weight3 for both IS arms; improved IS adds TRAIN-GT instance boundary fidelity; bundled intervention."
+        ],
+        "study_profile": "coco_codecs",
+        "sam_arm": "control",
+        "backbone": "fcos_resnet50_fpn",
+        "max_size": 768,
+        "evaluation_frames": 32,
+        "train_sources": 64,
+        "dev_sources": 8,
+        "warmup_steps": 12000,
+        "warmup_min_steps": 2000,
+        "warmup_probe_every": 1000,
+        "task_steps": 768,
+        "proxy_crop": 128,
+        "evaluation_reserve": 1800,
+        "gate_psnr": 25.0,
+        "collapse_psnr": 20.0,
+        "lambda_scale": 0.1,
+        "sam2": {
+          "source_commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69",
+          "model": "sam2.1_hiera_tiny",
+          "model_cfg": "configs/sam2.1/sam2.1_hiera_t.yaml",
+          "points_per_side": 16,
+          "points_per_batch": 32,
+          "pred_iou_thresh": 0.8,
+          "stability_score_thresh": 0.95,
+          "min_area_fraction": 0.005,
+          "max_area_fraction": 0.6,
+          "max_masks": 8,
+          "smoothing": 5,
+          "foreground_extra": 0.0,
+          "gamma": 0.0,
+          "mask_kind": "confidence_weighted_smoothed_binary_AMG_not_probability",
+          "clip_frames": 1,
+          "clip_seed": 20261101
+        },
+        "mask_task_weight": 1.0,
+        "boundary_weight": 0.0
+      },
+      "input_spec": {
+        "kind": "dataset",
+        "ref": "wagur124705/image-paper-proxy-inputs-20261031/1",
+        "member": "od_proxy.pt",
+        "sha256": "ab9fde3e3418be44b532eb9c4492382a4a8204e0d64ab5d2b15dad1b2f535dbf",
+        "visibility": "public"
+      },
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/hoangminhhuy123/coco-od-h264-paired-20261101",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "server_verification": {
+        "handle": "hoangminhhuy123/coco-od-h264-paired-20261101",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+        "checked": 1793506566.74587
+      },
+      "launch": {
+        "key": "od-h264",
+        "handle": "hoangminhhuy123/coco-od-h264-paired-20261101",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\nhoangminhhuy123/coco-od-h264-paired-20261101 has status \"KernelWorkerStatus.COMPLETE\"",
+        "observed": 1793511074.1974943,
+        "latest": {
+          "stage": "cloud_end",
+          "task": "od",
+          "mode": "full",
+          "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+          "bootstrap_complete": true,
+          "started": 1793506555.4170291,
+          "worker_exit_code": 0,
+          "wall_seconds": 2525.9618220329285
+        },
+        "ready": true,
+        "warmup_seen": true,
+        "task_gradient_passed": true,
+        "task_training_seen": true,
+        "terminal": [
+          {
+            "stage": "tri_end",
+            "time": 1793508084.8015044,
+            "task": "od",
+            "execution_complete": true,
+            "state": {
+              "warmup_updates": 6000,
+              "task_updates": 768,
+              "proxy_updates": 256,
+              "stop_reason": "task_schedule_finished",
+              "warmup_calibrated": true,
+              "warmup_converged": true,
+              "warmup_fidelity": {
+                "mse": 0.0031402587264892645,
+                "psnr_db": 25.030345688510977,
+                "passed": true,
+                "threshold_db": 25.0,
+                "sources": 8,
+                "mean_clipped_pixel_fraction": 0.023992083524262853
+              }
+            },
+            "error": null
+          },
+          {
+            "stage": "tri_end",
+            "time": 1793509077.8518474,
+            "task": "od",
+            "execution_complete": true,
+            "state": {
+              "warmup_updates": 6000,
+              "task_updates": 768,
+              "proxy_updates": 256,
+              "stop_reason": "task_schedule_finished",
+              "warmup_calibrated": true,
+              "warmup_converged": true,
+              "warmup_fidelity": {
+                "mse": 0.003140258777420968,
+                "psnr_db": 25.030345618072968,
+                "passed": true,
+                "threshold_db": 25.0,
+                "sources": 8,
+                "mean_clipped_pixel_fraction": 0.023992083524262853
+              }
+            },
+            "error": null
+          },
+          {
+            "stage": "cloud_end",
+            "task": "od",
+            "mode": "full",
+            "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+            "bootstrap_complete": true,
+            "started": 1793506555.4170291,
+            "worker_exit_code": 0,
+            "wall_seconds": 2525.9618220329285
+          }
+        ]
+      },
+      "status": "COMPLETE",
+      "matched_schedule_complete": true,
+      "results": {
+        "control": {
+          "state": {
+            "warmup_updates": 6000,
+            "task_updates": 768,
+            "proxy_updates": 256,
+            "stop_reason": "task_schedule_finished",
+            "warmup_calibrated": true,
+            "warmup_converged": true,
+            "warmup_fidelity": {
+              "mse": 0.0031402587264892645,
+              "psnr_db": 25.030345688510977,
+              "passed": true,
+              "threshold_db": 25.0,
+              "sources": 8,
+              "mean_clipped_pixel_fraction": 0.023992083524262853
+            }
+          },
+          "bd_rate": {
+            "valid": true,
+            "percent": 8.028020620429622,
+            "quality_interval": [
+              0.3469982253482868,
+              0.4677564124273497
+            ],
+            "method": "PCHIP log-rate integral",
+            "recomputed": true
+          },
+          "last_task_psnr_db": 21.570304751976845,
+          "proxy_real_rate_ratios": {
+            "30": [
+              0.7780846783307868,
+              1.856694392025965
+            ],
+            "35": [
+              1.169309294521533,
+              1.7031778324113636
+            ],
+            "40": [
+              1.6664567619435284,
+              1.9331840805924394
+            ],
+            "45": [
+              1.8739672380207477,
+              3.0536017016829735
+            ]
+          }
+        },
+        "foreground": {
+          "state": {
+            "warmup_updates": 6000,
+            "task_updates": 768,
+            "proxy_updates": 256,
+            "stop_reason": "task_schedule_finished",
+            "warmup_calibrated": true,
+            "warmup_converged": true,
+            "warmup_fidelity": {
+              "mse": 0.003140258777420968,
+              "psnr_db": 25.030345618072968,
+              "passed": true,
+              "threshold_db": 25.0,
+              "sources": 8,
+              "mean_clipped_pixel_fraction": 0.023992083524262853
+            }
+          },
+          "bd_rate": {
+            "valid": true,
+            "percent": -2.9764672789241664,
+            "quality_interval": [
+              0.3469982253482868,
+              0.44881637000878144
+            ],
+            "method": "PCHIP log-rate integral",
+            "recomputed": true
+          },
+          "last_task_psnr_db": 21.44184987503659,
+          "proxy_real_rate_ratios": {
+            "30": [
+              0.7780846783307868,
+              1.856694392025965
+            ],
+            "35": [
+              1.169309294521533,
+              1.7031778324113636
+            ],
+            "40": [
+              1.6664567619435284,
+              1.933184468869623
+            ],
+            "45": [
+              1.8739672380207477,
+              3.0536017016829735
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "od-h265",
+      "handle": "ngynanhthuw/coco-od-h265-paired-20261101",
+      "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+      "config": {
+        "task": "od",
+        "paper": "image",
+        "qps": [
+          30,
+          35,
+          40,
+          45
+        ],
+        "codecs": [
+          "h265"
+        ],
+        "identity_fallback": false,
+        "seed": 20261101,
+        "mode": "full",
+        "scope": "COCO_independent_single_frame_intra_not_temporal_video",
+        "lr": 3e-05,
+        "beta": 5.0,
+        "alpha": 10.0,
+        "rate_weight": 0.001,
+        "fixed_qp": 35,
+        "proxy_steps": 256,
+        "fixed_steps": 120000,
+        "adaptive_steps": 100000,
+        "npp_size": 512,
+        "frames": 1,
+        "batch_size": 1,
+        "preset": "medium",
+        "fps": 25,
+        "gop": 16,
+        "checkpoint_every": 100,
+        "log_every": 50,
+        "max_session_seconds": 6000,
+        "validation_sources": 64,
+        "full_validation_sources": 5000,
+        "video_width": 16,
+        "temporal_kernel": 3,
+        "block_size": 8,
+        "motion_radius": 4,
+        "prior_steps": 0,
+        "proxy_quality": {
+          "30": 5,
+          "35": 4,
+          "40": 3,
+          "45": 2
+        },
+        "source_pins": {
+          "image_npp": "6a77c4633cd5bb6750c77ea9d213d38ffc88ee7a",
+          "pytracking": "7eb9e74bd3d40e29dbcec444902237da13de247b"
+        },
+        "input_condition": "released_lambda_over_8",
+        "checkpoint_selection": "last_trained",
+        "use_amp": false,
+        "fidelity_notes": [
+          "Four QPs30/35/40/45 explicitly requested by user.",
+          "One representative published backbone family per original task; Torchvision image/AR adapters differ from original OpenMMLab implementations.",
+          "Full mode evaluates all available original validation sources with resumable per-source caches; pilot mode is a declared subset.",
+          "Official released image NPP used; source conditioning uses loss-lambda/8 rather than raw QP.",
+          "Proxy is CompressAI Minnen2018 pretrained implementation, independently calibrated to actual BPG reconstructions.",
+          "400k proxy updates are global across four QP-specific proxies; paper does not disambiguate per-proxy accounting.",
+          "Image proxy/task lambda values at new QPs are log-linearly interpolated/extrapolated from published tables.",
+          "Released image NPP for all tasks; frozen offline per-frame SAM2 masks.",
+          "MSE warm-up and fidelity gates precede short task training; no identity fallback.",
+          "Training-only STE clipping preserves clipped forward values; task coefficient0.1, beta5 are declared trials.",
+          "Tracking uses framewise Minnen proxy recalibrated to H264, not an exact motion-aware codec model.",
+          "Codec-specific proxy refit; exact shared warm-up/proxy/RNG per paired worker.",
+          "Each COCO image is one independent H264/H265 stream; include all stream headers; no inter-frame claim.",
+          "Mask task loss weight3 for both IS arms; improved IS adds TRAIN-GT instance boundary fidelity; bundled intervention."
+        ],
+        "study_profile": "coco_codecs",
+        "sam_arm": "control",
+        "backbone": "fcos_resnet50_fpn",
+        "max_size": 768,
+        "evaluation_frames": 32,
+        "train_sources": 64,
+        "dev_sources": 8,
+        "warmup_steps": 12000,
+        "warmup_min_steps": 2000,
+        "warmup_probe_every": 1000,
+        "task_steps": 768,
+        "proxy_crop": 128,
+        "evaluation_reserve": 1800,
+        "gate_psnr": 25.0,
+        "collapse_psnr": 20.0,
+        "lambda_scale": 0.1,
+        "sam2": {
+          "source_commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69",
+          "model": "sam2.1_hiera_tiny",
+          "model_cfg": "configs/sam2.1/sam2.1_hiera_t.yaml",
+          "points_per_side": 16,
+          "points_per_batch": 32,
+          "pred_iou_thresh": 0.8,
+          "stability_score_thresh": 0.95,
+          "min_area_fraction": 0.005,
+          "max_area_fraction": 0.6,
+          "max_masks": 8,
+          "smoothing": 5,
+          "foreground_extra": 0.0,
+          "gamma": 0.0,
+          "mask_kind": "confidence_weighted_smoothed_binary_AMG_not_probability",
+          "clip_frames": 1,
+          "clip_seed": 20261101
+        },
+        "mask_task_weight": 1.0,
+        "boundary_weight": 0.0
+      },
+      "input_spec": {
+        "kind": "dataset",
+        "ref": "wagur124705/image-paper-proxy-inputs-20261031/1",
+        "member": "od_proxy.pt",
+        "sha256": "ab9fde3e3418be44b532eb9c4492382a4a8204e0d64ab5d2b15dad1b2f535dbf",
+        "visibility": "public"
+      },
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/ngynanhthuw/coco-od-h265-paired-20261101",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "server_verification": {
+        "handle": "ngynanhthuw/coco-od-h265-paired-20261101",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+        "checked": 1793506568.3819726
+      },
+      "launch": {
+        "key": "od-h265",
+        "handle": "ngynanhthuw/coco-od-h265-paired-20261101",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\nngynanhthuw/coco-od-h265-paired-20261101 has status \"KernelWorkerStatus.ERROR\"",
+        "observed": 1793511075.4552467,
+        "latest": {
+          "stage": "cloud_end",
+          "task": "od",
+          "mode": "full",
+          "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+          "bootstrap_complete": false,
+          "started": 1793506553.444477,
+          "worker_exit_code": 1,
+          "error": "RuntimeError: paper runner failed; inspect run.json and console.log",
+          "wall_seconds": 1638.8685166835785
+        },
+        "ready": true,
+        "warmup_seen": true,
+        "task_gradient_passed": true,
+        "task_training_seen": true,
+        "terminal": [
+          {
+            "stage": "tri_end",
+            "time": 1793507659.947435,
+            "task": "od",
+            "execution_complete": true,
+            "state": {
+              "warmup_updates": 7000,
+              "task_updates": 50,
+              "proxy_updates": 256,
+              "stop_reason": "task_fidelity_collapse",
+              "warmup_calibrated": true,
+              "warmup_converged": true,
+              "warmup_fidelity": {
+                "mse": 0.002522957933251746,
+                "psnr_db": 25.98089990667105,
+                "passed": true,
+                "threshold_db": 25.0,
+                "sources": 8,
+                "mean_clipped_pixel_fraction": 0.028460400782932993
+              }
+            },
+            "error": null
+          },
+          {
+            "stage": "tri_end",
+            "time": 1793508189.1680157,
+            "task": "od",
+            "execution_complete": true,
+            "state": {
+              "warmup_updates": 7000,
+              "task_updates": 50,
+              "proxy_updates": 256,
+              "stop_reason": "task_fidelity_collapse",
+              "warmup_calibrated": true,
+              "warmup_converged": true,
+              "warmup_fidelity": {
+                "mse": 0.002522957933251746,
+                "psnr_db": 25.98089990667105,
+                "passed": true,
+                "threshold_db": 25.0,
+                "sources": 8,
+                "mean_clipped_pixel_fraction": 0.028460400782932993
+              }
+            },
+            "error": null
+          },
+          {
+            "stage": "cloud_end",
+            "task": "od",
+            "mode": "full",
+            "source_sha256": "63d0a869616199d980b7ea801799d7f8e8c3cd14885930a1b3dc2710ca1f7f13",
+            "bootstrap_complete": false,
+            "started": 1793506553.444477,
+            "worker_exit_code": 1,
+            "error": "RuntimeError: paper runner failed; inspect run.json and console.log",
+            "wall_seconds": 1638.8685166835785
+          }
+        ]
+      },
+      "status": "ERROR",
+      "matched_schedule_complete": false,
+      "results": {
+        "control": {
+          "state": {
+            "warmup_updates": 7000,
+            "task_updates": 50,
+            "proxy_updates": 256,
+            "stop_reason": "task_fidelity_collapse",
+            "warmup_calibrated": true,
+            "warmup_converged": true,
+            "warmup_fidelity": {
+              "mse": 0.002522957933251746,
+              "psnr_db": 25.98089990667105,
+              "passed": true,
+              "threshold_db": 25.0,
+              "sources": 8,
+              "mean_clipped_pixel_fraction": 0.028460400782932993
+            }
+          },
+          "bd_rate": {
+            "valid": true,
+            "percent": 75.25613212339049,
+            "quality_interval": [
+              0.3933578113398919,
+              0.46913469962625415
+            ],
+            "method": "PCHIP log-rate integral",
+            "recomputed": true
+          },
+          "last_task_psnr_db": 19.442710802284573,
+          "proxy_real_rate_ratios": {
+            "30": [
+              1.888988177606527,
+              7.390884405190261
+            ],
+            "35": [
+              6.772728240300179,
+              7.635072579413104
+            ],
+            "40": [
+              9.51734737276653,
+              10.317873815268246
+            ],
+            "45": [
+              11.321964880218081,
+              14.589811594208326
+            ]
+          }
+        },
+        "foreground": {
+          "state": {
+            "warmup_updates": 7000,
+            "task_updates": 50,
+            "proxy_updates": 256,
+            "stop_reason": "task_fidelity_collapse",
+            "warmup_calibrated": true,
+            "warmup_converged": true,
+            "warmup_fidelity": {
+              "mse": 0.002522957933251746,
+              "psnr_db": 25.98089990667105,
+              "passed": true,
+              "threshold_db": 25.0,
+              "sources": 8,
+              "mean_clipped_pixel_fraction": 0.028460400782932993
+            }
+          },
+          "bd_rate": {
+            "valid": true,
+            "percent": 46.32179905994487,
+            "quality_interval": [
+              0.3933578113398919,
+              0.4732068012419219
+            ],
+            "method": "PCHIP log-rate integral",
+            "recomputed": true
+          },
+          "last_task_psnr_db": 19.897374082759413,
+          "proxy_real_rate_ratios": {
+            "30": [
+              1.888988177606527,
+              7.390884405190261
+            ],
+            "35": [
+              6.772728240300179,
+              7.635079787552722
+            ],
+            "40": [
+              9.51734737276653,
+              10.317873815268246
+            ],
+            "45": [
+              11.321964880218081,
+              14.589811594208326
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "tracking": "DEFERRED",
+  "qps": [
+    30,
+    35,
+    40,
+    45
+  ],
+  "task_steps_per_arm": 768,
+  "validation_images": 64,
+  "shared_warmup_proxy_rng_per_pair": true,
+  "scope": "COCO independent single-frame intra streams, not temporal video coding",
+  "worker_hours_cap": 13.333333333333334,
+  "service_timeout_hours": 14.666666666666666,
+  "scientific_complete": false,
+  "limitations": [
+    "No new BD-rate results until real-codec curves complete.",
+    "64-image pilot, not full COCO or full paper training schedule.",
+    "Improved arm combines loss changes; does not isolate the causal effect of SAM alone.",
+    "Rate-gradient finite probes are local diagnostics on original TRAIN-dev inputs, not certified NPP-distribution gradients."
+  ],
+  "results_file": "paper_reproduction/COCO_CODECS_RESULTS_20261101.json",
+  "completed_matched_pairs": 2,
+  "reports_audited": true
+}

@@ -1,0 +1,2 @@
+{"stage": "phase_start", "time": 1793513127.7289715, "task": "ic", "phase": "adaptive", "completed": 0, "target": 1, "npp_parameters": 9461537, "analyzer": {"task": "ic"}}
+{"stage": "budget_stop", "time": 1793513128.0216146, "task": "ic", "phase": "adaptive", "phase_steps": {"proxy": 0, "fixed": 1, "adaptive": 0}, "trained_npp_steps": 1, "scientific_complete": false}

@@ -1,0 +1,17 @@
+{
+  "id": "owner123/tri-ot-foreground-20261101",
+  "title": "tri-ot-foreground-20261101",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "abhimanyukarshni/got10k/1",
+    "wagur124705/image-paper-proxy-inputs-20261031/1"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}

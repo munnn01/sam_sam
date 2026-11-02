@@ -1,0 +1,16 @@
+{
+  "id": "owner123/image-flickr-proxy-20261031",
+  "title": "image-flickr-proxy-20261031",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "eeshawn/flickr30k/1"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}

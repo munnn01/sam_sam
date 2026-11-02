@@ -1,0 +1,18 @@
+{
+  "id": "owner123/sam2-ic-public-20261031",
+  "title": "sam2-ic-public-20261031",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "thbdh5765/ilsvrc2012/1",
+    "ashish2001/imagenet1kvalidation/1",
+    "sharedowner/image-state/1"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}

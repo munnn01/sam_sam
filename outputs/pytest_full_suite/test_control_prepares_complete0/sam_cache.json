@@ -1,0 +1,47 @@
+{
+  "sources": [
+    {
+      "source": "3",
+      "pixels_sha256": "ecac85817f504de22dbc1901ce3f7a7e002341e92a1b8cbea5fa3fffece6901c",
+      "accepted": 0,
+      "coverage": 0,
+      "empty": true,
+      "control_no_teacher": true
+    },
+    {
+      "source": "2",
+      "pixels_sha256": "362a5388f38582ea147477388cecf69326b336d942016af7cfa8ead86e19614a",
+      "accepted": 0,
+      "coverage": 0,
+      "empty": true,
+      "control_no_teacher": true
+    },
+    {
+      "source": "1",
+      "pixels_sha256": "1c8ba89ad98e9a2b58539c5a61c1d6c6f16fb3f49ce779bc9aca50caf6636947",
+      "accepted": 0,
+      "coverage": 0,
+      "empty": true,
+      "control_no_teacher": true
+    }
+  ],
+  "rendered_cohort_sha256": "12a98e3fa2d8865233b9b34e567ab6cc3fd6b0e63eb97a6b2f6f1a6408814c09",
+  "teacher_settings": {
+    "source_commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+    "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69",
+    "model": "sam2.1_hiera_tiny",
+    "model_cfg": "configs/sam2.1/sam2.1_hiera_t.yaml",
+    "points_per_side": 16,
+    "points_per_batch": 32,
+    "pred_iou_thresh": 0.8,
+    "stability_score_thresh": 0.95,
+    "min_area_fraction": 0.005,
+    "max_area_fraction": 0.6,
+    "max_masks": 8,
+    "smoothing": 5,
+    "mask_kind": "confidence_weighted_smoothed_binary_AMG_not_probability"
+  },
+  "empty_sources": 3,
+  "mean_coverage": 0.0,
+  "wall_seconds": 0.09300000000803266
+}

@@ -1,0 +1,17 @@
+{
+  "arm": "codec_only",
+  "codec": "h264",
+  "qp": 45,
+  "quality": 1.0,
+  "bpp": 5.25,
+  "mean_source_bpp": 5.25,
+  "bytes": 672,
+  "pixels": 1024,
+  "metrics": {
+    "top1": 1.0,
+    "top5": 1.0,
+    "mean_class_accuracy": 1.0
+  },
+  "sources": 1,
+  "scope": "declared_validation_subset"
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "source": "imagenet/heldout1",
+    "codec": "h264",
+    "qp": 35,
+    "arm": "npp",
+    "bytes": 1022,
+    "bpp": 7.984375,
+    "pixels": 1024,
+    "stream_sha256": "88ff655307b28b501ccad4e043321aa96db85870db4a46109f97903be6643846",
+    "source_mse": 0.00992872379720211,
+    "label": 0,
+    "predicted": 5,
+    "correct": 0,
+    "correct5": 1
+  }
+]

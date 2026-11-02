@@ -1,0 +1,22 @@
+[
+  {
+    "key": "is-h264",
+    "handle": "thuha1205/sam-residual-is-h264-20261101",
+    "source_sha256": "d381ae055d2207c11f6928fac5139dfc5c3bc5736d62aef35df173a072338ea2"
+  },
+  {
+    "key": "is-h265",
+    "handle": "htran123456/sam-residual-is-h265-20261101",
+    "source_sha256": "d381ae055d2207c11f6928fac5139dfc5c3bc5736d62aef35df173a072338ea2"
+  },
+  {
+    "key": "od-h264",
+    "handle": "shungg05/sam-residual-od-h264-20261101",
+    "source_sha256": "d381ae055d2207c11f6928fac5139dfc5c3bc5736d62aef35df173a072338ea2"
+  },
+  {
+    "key": "od-h265",
+    "handle": "dieulinhh/sam-residual-od-h265-20261101",
+    "source_sha256": "d381ae055d2207c11f6928fac5139dfc5c3bc5736d62aef35df173a072338ea2"
+  }
+]

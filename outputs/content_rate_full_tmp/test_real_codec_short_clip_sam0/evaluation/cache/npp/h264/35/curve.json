@@ -1,0 +1,17 @@
+{
+  "arm": "npp",
+  "codec": "h264",
+  "qp": 35,
+  "quality": 1.0,
+  "bpp": 0.49609375,
+  "mean_source_bpp": 0.49609375,
+  "bytes": 1016,
+  "pixels": 16384,
+  "metrics": {
+    "top1": 1.0,
+    "top5": 1.0,
+    "mean_class_accuracy": 1.0
+  },
+  "sources": 1,
+  "scope": "declared_validation_subset"
+}

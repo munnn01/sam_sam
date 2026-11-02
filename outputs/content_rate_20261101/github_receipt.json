@@ -1,0 +1,14 @@
+{
+  "branch": "paper-proxy-p05-20261028",
+  "code_commit": "88d26cfdedbc9e388ccfdbad90eafd4eb39e3228",
+  "metadata_commit": "67fd17124c9759ff641e088596408052d89f38cb",
+  "source_sha256": "aa741f13901d513ba4c1615d03580a55ec3be3703d4c6f263f832df95ec29cb2",
+  "source_files": 90,
+  "source_blobs_verified": 10,
+  "metadata_blobs_verified": 1,
+  "private_source_verified_jobs": 4,
+  "running_jobs": 4,
+  "local_root": "D:/STUDY/LAB/SAM",
+  "tests_passed": 173,
+  "new_bd_rate_results": false
+}

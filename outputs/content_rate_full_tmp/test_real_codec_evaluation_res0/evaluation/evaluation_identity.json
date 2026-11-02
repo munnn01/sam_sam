@@ -1,0 +1,10 @@
+{
+  "config_sha256": "fc660a9efaf83bf6535905bd94335fd7be039efa8abc3de49033940fde27479b",
+  "sources": [
+    "imagenet/heldout1"
+  ],
+  "records_sha256": "2c9278d3814205b19c932f2b831c461e3326e449f5b66d767e1dc8cd66437870",
+  "annotation_sha256": null,
+  "npp_sha256": "4ba986760bcc11cbd72cacd7794b692c729afb0e8b8468a1cf50867d641230b8",
+  "analyzer_sha256": "fa1751da4898897a550f07b96dbf496b98e1a54dc83da0fce7a4da610b5c73da"
+}

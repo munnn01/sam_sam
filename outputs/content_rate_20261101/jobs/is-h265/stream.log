@@ -1,0 +1,175 @@
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+{"stage": "payload_verified", "task": "is", "mode": "full", "source_sha256": "aa741f13901d513ba4c1615d03580a55ec3be3703d4c6f263f832df95ec29cb2"}
+{"stage": "dependencies_ready", "task": "is"}
+{"stage": "study_input_verified", "task": "is", "sha256": "ab9fde3e3418be44b532eb9c4492382a4a8204e0d64ab5d2b15dad1b2f535dbf"}
+{"stage": "tri_mask_cache", "time": 1793513685.546254, "sources": 1, "total": 64, "arm": "control"}
+{"stage": "tri_mask_cache", "time": 1793513687.0641422, "sources": 8, "total": 64, "arm": "control"}
+{"stage": "tri_mask_cache", "time": 1793513688.8834844, "sources": 16, "total": 64, "arm": "control"}
+{"stage": "tri_mask_cache", "time": 1793513690.7037277, "sources": 24, "total": 64, "arm": "control"}
+{"stage": "tri_mask_cache", "time": 1793513692.4211984, "sources": 32, "total": 64, "arm": "control"}
+{"stage": "tri_mask_cache", "time": 1793513694.305163, "sources": 40, "total": 64, "arm": "control"}
+{"stage": "tri_mask_cache", "time": 1793513696.1530995, "sources": 48, "total": 64, "arm": "control"}
+{"stage": "tri_mask_cache", "time": 1793513697.8352203, "sources": 56, "total": 64, "arm": "control"}
+{"stage": "tri_mask_cache", "time": 1793513699.3737266, "sources": 64, "total": 64, "arm": "control"}
+{"stage": "content_decoder_fit", "time": 1793513733.3551395, "step": 1, "qp": 30, "source": "coco/96897", "height": 512, "width": 768, "loss": 0.40932297706604004, "real_content_bpp": 0.2871297200520833, "real_overhead_bpp": 0.047383626302083336}
+{"stage": "content_decoder_fit", "time": 1793513733.9694955, "step": 2, "qp": 35, "source": "coco/96897", "height": 512, "width": 768, "loss": 0.21689869463443756, "real_content_bpp": 0.1715087890625, "real_overhead_bpp": 0.047383626302083336}
+{"stage": "content_decoder_fit", "time": 1793513734.5077024, "step": 3, "qp": 40, "source": "coco/96897", "height": 512, "width": 768, "loss": 0.1283262073993683, "real_content_bpp": 0.10093180338541667, "real_overhead_bpp": 0.047383626302083336}
+{"stage": "content_decoder_fit", "time": 1793513735.036766, "step": 4, "qp": 45, "source": "coco/96897", "height": 512, "width": 768, "loss": 0.06753458827733994, "real_content_bpp": 0.05816650390625, "real_overhead_bpp": 0.047383626302083336}
+{"stage": "content_decoder_fit", "time": 1793513762.3770068, "step": 52, "qp": 45, "source": "coco/204863", "height": 512, "width": 682, "loss": 0.35597601532936096, "real_content_bpp": 0.2683971774193548, "real_overhead_bpp": 0.05338159824046921}
+{"stage": "content_decoder_fit", "time": 1793513790.4504309, "step": 103, "qp": 40, "source": "coco/9941", "height": 512, "width": 720, "loss": 0.23762497305870056, "real_content_bpp": 0.18350694444444443, "real_overhead_bpp": 0.05054253472222222}
+{"stage": "content_decoder_fit", "time": 1793513818.603306, "step": 154, "qp": 35, "source": "coco/121959", "height": 682, "width": 512, "loss": 0.5209758877754211, "real_content_bpp": 0.4340175953079179, "real_overhead_bpp": 0.05338159824046921}
+{"stage": "content_decoder_fit", "time": 1793513847.1792784, "step": 205, "qp": 30, "source": "coco/533809", "height": 756, "width": 512, "loss": 0.3123098611831665, "real_content_bpp": 0.26178075396825395, "real_overhead_bpp": 0.048177083333333336}
+{"stage": "content_decoder_fit", "time": 1793513874.767165, "step": 256, "qp": 45, "source": "coco/51198", "height": 768, "width": 512, "loss": 0.1545470654964447, "real_content_bpp": 0.12339274088541667, "real_overhead_bpp": 0.047383626302083336}
+{"stage": "tri_ready", "time": 1793513881.0773883, "task": "is", "arm": "control", "train": 64, "dev": 8, "validation": 64, "source": "aa741f13901d513ba4c1615d03580a55ec3be3703d4c6f263f832df95ec29cb2"}
+{"stage": "tri_warmup", "time": 1793513881.3842626, "step": 1, "mse": 0.18576805293560028, "gradient_norm": 1.9693245887756348, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513885.1245193, "step": 100, "mse": 0.040366124361753464, "gradient_norm": 0.4646928310394287, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513889.0399122, "step": 200, "mse": 0.0355289950966835, "gradient_norm": 0.4542904794216156, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513893.122342, "step": 300, "mse": 0.04002559930086136, "gradient_norm": 0.4579775929450989, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513897.1199222, "step": 400, "mse": 0.02493652142584324, "gradient_norm": 0.25242382287979126, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513901.2418318, "step": 500, "mse": 0.014706711284816265, "gradient_norm": 0.31086453795433044, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513905.3945658, "step": 600, "mse": 0.015539858490228653, "gradient_norm": 0.11894005537033081, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513909.538805, "step": 700, "mse": 0.0391228049993515, "gradient_norm": 0.29782092571258545, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513913.6632137, "step": 800, "mse": 0.02411051280796528, "gradient_norm": 0.19315361976623535, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513917.813793, "step": 900, "mse": 0.018070943653583527, "gradient_norm": 0.190756693482399, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513922.024987, "step": 1000, "mse": 0.01892862282693386, "gradient_norm": 0.14851482212543488, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513926.2022395, "step": 1100, "mse": 0.018056664615869522, "gradient_norm": 0.3031727969646454, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513930.3117602, "step": 1200, "mse": 0.02186998724937439, "gradient_norm": 0.37052640318870544, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513934.526186, "step": 1300, "mse": 0.014186578802764416, "gradient_norm": 0.14550305902957916, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513938.747955, "step": 1400, "mse": 0.01573556289076805, "gradient_norm": 0.30054211616516113, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513943.0365589, "step": 1500, "mse": 0.02992548607289791, "gradient_norm": 0.37113115191459656, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513947.158339, "step": 1600, "mse": 0.015074077993631363, "gradient_norm": 0.25847771763801575, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513951.218038, "step": 1700, "mse": 0.015486882999539375, "gradient_norm": 0.24419237673282623, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513955.3671541, "step": 1800, "mse": 0.011627985164523125, "gradient_norm": 0.08693571388721466, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513959.4396226, "step": 1900, "mse": 0.014373017475008965, "gradient_norm": 0.1980695277452469, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513963.5225484, "step": 2000, "mse": 0.01439142320305109, "gradient_norm": 0.2112552523612976, "lr": 3e-05}
+{"stage": "tri_warmup_dev", "time": 1793513966.3888533, "step": 2000, "mse": 0.012809128442313522, "psnr_db": 18.92480419480214, "passed": false, "threshold_db": 25.0, "sources": 8, "mean_clipped_pixel_fraction": 0.0631900274202053}
+{"stage": "tri_warmup", "time": 1793513970.5073805, "step": 2100, "mse": 0.0189193245023489, "gradient_norm": 0.15018175542354584, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513974.5770013, "step": 2200, "mse": 0.017768926918506622, "gradient_norm": 0.2120998203754425, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513978.6890373, "step": 2300, "mse": 0.028102288022637367, "gradient_norm": 0.2081097811460495, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513982.9086232, "step": 2400, "mse": 0.004543267656117678, "gradient_norm": 0.1954631358385086, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513987.1224663, "step": 2500, "mse": 0.014808801002800465, "gradient_norm": 0.08492589741945267, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513991.3221483, "step": 2600, "mse": 0.00869994331151247, "gradient_norm": 0.11843816190958023, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513995.4321096, "step": 2700, "mse": 0.014061693102121353, "gradient_norm": 0.1309994012117386, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793513999.5812848, "step": 2800, "mse": 0.00881222914904356, "gradient_norm": 0.09476073086261749, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514003.763666, "step": 2900, "mse": 0.00928970705717802, "gradient_norm": 0.08469308167695999, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514007.8791096, "step": 3000, "mse": 0.005464429501444101, "gradient_norm": 0.10711962729692459, "lr": 3e-05}
+{"stage": "tri_warmup_dev", "time": 1793514010.624033, "step": 3000, "mse": 0.009005914471345022, "psnr_db": 20.454721818233725, "passed": false, "threshold_db": 25.0, "sources": 8, "mean_clipped_pixel_fraction": 0.02233377420816396}
+{"stage": "tri_warmup", "time": 1793514014.7343583, "step": 3100, "mse": 0.005644934251904488, "gradient_norm": 0.04143371433019638, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514018.940745, "step": 3200, "mse": 0.004484840668737888, "gradient_norm": 0.05337167903780937, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514023.1073558, "step": 3300, "mse": 0.004801026079803705, "gradient_norm": 0.0969170555472374, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514027.2331867, "step": 3400, "mse": 0.01199543196707964, "gradient_norm": 0.08706361800432205, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514031.4413111, "step": 3500, "mse": 0.011609314940869808, "gradient_norm": 0.07267773896455765, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514035.6612928, "step": 3600, "mse": 0.006715389434248209, "gradient_norm": 0.07302578538656235, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514039.8288689, "step": 3700, "mse": 0.00825324933975935, "gradient_norm": 0.13715249300003052, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514043.9823306, "step": 3800, "mse": 0.006809427868574858, "gradient_norm": 0.09430405497550964, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514048.2541738, "step": 3900, "mse": 0.00750957103446126, "gradient_norm": 0.13502919673919678, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514052.477497, "step": 4000, "mse": 0.004368732217699289, "gradient_norm": 0.07437391579151154, "lr": 3e-05}
+{"stage": "tri_warmup_dev", "time": 1793514055.2848344, "step": 4000, "mse": 0.007006515603279695, "psnr_db": 21.544979064959385, "passed": false, "threshold_db": 25.0, "sources": 8, "mean_clipped_pixel_fraction": 0.06304558709143748}
+{"stage": "tri_warmup", "time": 1793514059.431493, "step": 4100, "mse": 0.005671261809766293, "gradient_norm": 0.09900909662246704, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514063.57721, "step": 4200, "mse": 0.0026962156407535076, "gradient_norm": 0.04155004024505615, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514067.7407498, "step": 4300, "mse": 0.002252061851322651, "gradient_norm": 0.07304812967777252, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514071.9133031, "step": 4400, "mse": 0.006843369919806719, "gradient_norm": 0.09257722645998001, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514076.0909903, "step": 4500, "mse": 0.005145634524524212, "gradient_norm": 0.1620202511548996, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514080.3487206, "step": 4600, "mse": 0.005522709805518389, "gradient_norm": 0.15953001379966736, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514084.494345, "step": 4700, "mse": 0.0049583823420107365, "gradient_norm": 0.07012374699115753, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514088.676522, "step": 4800, "mse": 0.004601743072271347, "gradient_norm": 0.12640191614627838, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514092.7719421, "step": 4900, "mse": 0.004198337439447641, "gradient_norm": 0.0665796771645546, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514096.912121, "step": 5000, "mse": 0.0027114059776067734, "gradient_norm": 0.1692756712436676, "lr": 3e-05}
+{"stage": "tri_warmup_dev", "time": 1793514099.728528, "step": 5000, "mse": 0.005227305111475289, "psnr_db": 22.81722149918925, "passed": false, "threshold_db": 25.0, "sources": 8, "mean_clipped_pixel_fraction": 0.027365790967451176}
+{"stage": "tri_warmup", "time": 1793514103.9390597, "step": 5100, "mse": 0.00492094038054347, "gradient_norm": 0.10470256209373474, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514108.205534, "step": 5200, "mse": 0.005513716489076614, "gradient_norm": 0.11424289643764496, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514112.366731, "step": 5300, "mse": 0.0027016608510166407, "gradient_norm": 0.09221521019935608, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514116.4921477, "step": 5400, "mse": 0.0020423780661076307, "gradient_norm": 0.0675438791513443, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514120.6302707, "step": 5500, "mse": 0.008001252077519894, "gradient_norm": 0.10884644091129303, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514124.790329, "step": 5600, "mse": 0.0058258469216525555, "gradient_norm": 0.08733592182397842, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514128.890132, "step": 5700, "mse": 0.003018277930095792, "gradient_norm": 0.07287846505641937, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514133.0344174, "step": 5800, "mse": 0.004391586873680353, "gradient_norm": 0.0860680490732193, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514137.278472, "step": 5900, "mse": 0.002405372681096196, "gradient_norm": 0.0624527744948864, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514141.4575543, "step": 6000, "mse": 0.0028797308914363384, "gradient_norm": 0.047922514379024506, "lr": 3e-05}
+{"stage": "tri_warmup_dev", "time": 1793514144.2214735, "step": 6000, "mse": 0.004714170179795474, "psnr_db": 23.265947436589457, "passed": false, "threshold_db": 25.0, "sources": 8, "mean_clipped_pixel_fraction": 0.0135897916770773}
+{"stage": "tri_warmup", "time": 1793514149.9393759, "step": 6100, "mse": 0.003264897968620062, "gradient_norm": 0.07093649357557297, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514153.9939036, "step": 6200, "mse": 0.00772631773725152, "gradient_norm": 0.10093103349208832, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514158.083647, "step": 6300, "mse": 0.0035211811773478985, "gradient_norm": 0.08964139223098755, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514162.1077812, "step": 6400, "mse": 0.0025148780550807714, "gradient_norm": 0.05773882567882538, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514166.1500978, "step": 6500, "mse": 0.006750159431248903, "gradient_norm": 0.08108257502317429, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514170.3107636, "step": 6600, "mse": 0.006694728508591652, "gradient_norm": 0.12988361716270447, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514174.3865833, "step": 6700, "mse": 0.005300306249409914, "gradient_norm": 0.06448063254356384, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514178.4622672, "step": 6800, "mse": 0.002702116733416915, "gradient_norm": 0.05160435661673546, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514182.5808356, "step": 6900, "mse": 0.0028130044229328632, "gradient_norm": 0.09985806792974472, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514186.6661458, "step": 7000, "mse": 0.0027185569051653147, "gradient_norm": 0.06205199286341667, "lr": 3e-05}
+{"stage": "tri_warmup_dev", "time": 1793514189.45888, "step": 7000, "mse": 0.00415751663967967, "psnr_db": 23.811660039228506, "passed": false, "threshold_db": 25.0, "sources": 8, "mean_clipped_pixel_fraction": 0.022890042018843815}
+{"stage": "tri_warmup", "time": 1793514193.5041442, "step": 7100, "mse": 0.0019199823727831244, "gradient_norm": 0.05825507640838623, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514197.535454, "step": 7200, "mse": 0.0026224288158118725, "gradient_norm": 0.059298403561115265, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514203.3343139, "step": 7300, "mse": 0.0018674880266189575, "gradient_norm": 0.06894421577453613, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514207.3371685, "step": 7400, "mse": 0.0008868561126291752, "gradient_norm": 0.025341663509607315, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514211.4407523, "step": 7500, "mse": 0.002170879626646638, "gradient_norm": 0.04063054919242859, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514215.486708, "step": 7600, "mse": 0.002372849965468049, "gradient_norm": 0.07456321269273758, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514219.5155644, "step": 7700, "mse": 0.0021693764720112085, "gradient_norm": 0.06315460801124573, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514223.5196598, "step": 7800, "mse": 0.0014876768691465259, "gradient_norm": 0.04032812640070915, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514227.5460124, "step": 7900, "mse": 0.0014509795000776649, "gradient_norm": 0.03243843838572502, "lr": 3e-05}
+{"stage": "tri_warmup", "time": 1793514231.6467717, "step": 8000, "mse": 0.001158491475507617, "gradient_norm": 0.030589187517762184, "lr": 3e-05}
+{"stage": "tri_warmup_dev", "time": 1793514234.4418666, "step": 8000, "mse": 0.002576632730779238, "psnr_db": 25.889474806974707, "passed": true, "threshold_db": 25.0, "sources": 8, "mean_clipped_pixel_fraction": 0.019875453415806987}
+{"stage": "tri_fidelity_gate", "time": 1793514236.384009, "mse": 0.002576632730779238, "psnr_db": 25.889474806974707, "passed": true, "threshold_db": 25.0, "sources": 8, "mean_clipped_pixel_fraction": 0.019875453415806987}
+{"stage": "content_rate_fit_cache", "time": 1793514256.3846707, "sources": 4, "target": 16}
+{"stage": "content_rate_fit_cache", "time": 1793514274.4638379, "sources": 8, "target": 16}
+{"stage": "content_rate_fit_cache", "time": 1793514293.8007343, "sources": 12, "target": 16}
+{"stage": "content_rate_fit_cache", "time": 1793514312.7573464, "sources": 16, "target": 16}
+{"stage": "content_rate_calibrated", "time": 1793514312.7594764, "scales": [1.080588014602351, 1.174928701475339, 1.135974942437345, 1.0161654413700545], "rows": 256}
+{"stage": "content_rate_audit", "time": 1793514363.8328404, "label": "initial", "passed": false, "median_relative_error": 0.2667667789480237, "p90_relative_error": 0.8858803641732301, "content_median_relative_error": 0.3309854667804045, "content_p90_relative_error": 1.3683551114877903, "direction_alignment": 1.0, "direction_untied": 16}
+{"stage": "tri_end", "time": 1793514365.4162729, "task": "is", "execution_complete": false, "state": {"warmup_updates": 8000, "task_updates": 0, "proxy_updates": 256, "stop_reason": null, "warmup_calibrated": true, "warmup_converged": true, "warmup_fidelity": {"mse": 0.002576632730779238, "psnr_db": 25.889474806974707, "passed": true, "threshold_db": 25.0, "sources": 8, "mean_clipped_pixel_fraction": 0.019875453415806987}}, "error": "RuntimeError: content proxy failed held-out screening before task optimization"}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/kaggle/working/paper_reproduction/reproduce/coco_content_rate_study.py", line 157, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/kaggle/working/paper_reproduction/reproduce/coco_content_rate_study.py", line 155, in main
+    paired.main()
+    ~~~~~~~~~~~^^
+  File "/kaggle/working/paper_reproduction/reproduce/coco_codec_study.py", line 107, in main
+    study.main();gc.collect();torch.cuda.empty_cache()
+    ~~~~~~~~~~^^
+  File "/kaggle/working/paper_reproduction/reproduce/tri_task_study.py", line 299, in main
+    if not audit['gate']['passed']:raise RuntimeError('content proxy failed held-out screening before task optimization')
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: content proxy failed held-out screening before task optimization
+{"stage": "cloud_end", "task": "is", "mode": "full", "source_sha256": "aa741f13901d513ba4c1615d03580a55ec3be3703d4c6f263f832df95ec29cb2", "bootstrap_complete": false, "started": 1793513378.0159812, "worker_exit_code": 1, "error": "RuntimeError: paper runner failed; inspect run.json and console.log", "wall_seconds": 993.846843957901}
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys;import papermill as pm;pm.execute_notebook("__notebook__.ipynb","__notebook__.ipynb",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=13200)
+                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [1]":
+---------------------------------------------------------------------------
+RuntimeError                              Traceback (most recent call last)
+/tmp/ipykernel_23/2957426287.py in <cell line: 0>()
+     58         code=p.wait()
+     59     receipt['worker_exit_code']=code
+---> 60     if code:raise RuntimeError('paper runner failed; inspect run.json and console.log')
+     61     receipt['bootstrap_complete']=True
+     62 except BaseException as error:
+
+RuntimeError: paper runner failed; inspect run.json and console.log
+
+/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 228362 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Writing 542136 bytes to __results__.html

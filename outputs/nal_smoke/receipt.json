@@ -1,0 +1,290 @@
+[
+  {
+    "codec": "h264",
+    "size": 128,
+    "qp": 30,
+    "kind": "flat",
+    "bytes": 636,
+    "content_bytes": 36,
+    "non_vcl_bytes": 600
+  },
+  {
+    "codec": "h264",
+    "size": 128,
+    "qp": 30,
+    "kind": "random",
+    "bytes": 11706,
+    "content_bytes": 11106,
+    "non_vcl_bytes": 600
+  },
+  {
+    "codec": "h264",
+    "size": 128,
+    "qp": 35,
+    "kind": "flat",
+    "bytes": 634,
+    "content_bytes": 34,
+    "non_vcl_bytes": 600
+  },
+  {
+    "codec": "h264",
+    "size": 128,
+    "qp": 35,
+    "kind": "random",
+    "bytes": 9083,
+    "content_bytes": 8483,
+    "non_vcl_bytes": 600
+  },
+  {
+    "codec": "h264",
+    "size": 128,
+    "qp": 40,
+    "kind": "flat",
+    "bytes": 623,
+    "content_bytes": 23,
+    "non_vcl_bytes": 600
+  },
+  {
+    "codec": "h264",
+    "size": 128,
+    "qp": 40,
+    "kind": "random",
+    "bytes": 6596,
+    "content_bytes": 5996,
+    "non_vcl_bytes": 600
+  },
+  {
+    "codec": "h264",
+    "size": 128,
+    "qp": 45,
+    "kind": "flat",
+    "bytes": 620,
+    "content_bytes": 20,
+    "non_vcl_bytes": 600
+  },
+  {
+    "codec": "h264",
+    "size": 128,
+    "qp": 45,
+    "kind": "random",
+    "bytes": 3812,
+    "content_bytes": 3212,
+    "non_vcl_bytes": 600
+  },
+  {
+    "codec": "h264",
+    "size": 512,
+    "qp": 30,
+    "kind": "flat",
+    "bytes": 686,
+    "content_bytes": 85,
+    "non_vcl_bytes": 601
+  },
+  {
+    "codec": "h264",
+    "size": 512,
+    "qp": 30,
+    "kind": "random",
+    "bytes": 176699,
+    "content_bytes": 176098,
+    "non_vcl_bytes": 601
+  },
+  {
+    "codec": "h264",
+    "size": 512,
+    "qp": 35,
+    "kind": "flat",
+    "bytes": 684,
+    "content_bytes": 83,
+    "non_vcl_bytes": 601
+  },
+  {
+    "codec": "h264",
+    "size": 512,
+    "qp": 35,
+    "kind": "random",
+    "bytes": 135301,
+    "content_bytes": 134700,
+    "non_vcl_bytes": 601
+  },
+  {
+    "codec": "h264",
+    "size": 512,
+    "qp": 40,
+    "kind": "flat",
+    "bytes": 690,
+    "content_bytes": 89,
+    "non_vcl_bytes": 601
+  },
+  {
+    "codec": "h264",
+    "size": 512,
+    "qp": 40,
+    "kind": "random",
+    "bytes": 95683,
+    "content_bytes": 95082,
+    "non_vcl_bytes": 601
+  },
+  {
+    "codec": "h264",
+    "size": 512,
+    "qp": 45,
+    "kind": "flat",
+    "bytes": 687,
+    "content_bytes": 86,
+    "non_vcl_bytes": 601
+  },
+  {
+    "codec": "h264",
+    "size": 512,
+    "qp": 45,
+    "kind": "random",
+    "bytes": 52490,
+    "content_bytes": 51889,
+    "non_vcl_bytes": 601
+  },
+  {
+    "codec": "h265",
+    "size": 128,
+    "qp": 30,
+    "kind": "flat",
+    "bytes": 2352,
+    "content_bytes": 20,
+    "non_vcl_bytes": 2332
+  },
+  {
+    "codec": "h265",
+    "size": 128,
+    "qp": 30,
+    "kind": "random",
+    "bytes": 12532,
+    "content_bytes": 10200,
+    "non_vcl_bytes": 2332
+  },
+  {
+    "codec": "h265",
+    "size": 128,
+    "qp": 35,
+    "kind": "flat",
+    "bytes": 2352,
+    "content_bytes": 20,
+    "non_vcl_bytes": 2332
+  },
+  {
+    "codec": "h265",
+    "size": 128,
+    "qp": 35,
+    "kind": "random",
+    "bytes": 9867,
+    "content_bytes": 7535,
+    "non_vcl_bytes": 2332
+  },
+  {
+    "codec": "h265",
+    "size": 128,
+    "qp": 40,
+    "kind": "flat",
+    "bytes": 2351,
+    "content_bytes": 19,
+    "non_vcl_bytes": 2332
+  },
+  {
+    "codec": "h265",
+    "size": 128,
+    "qp": 40,
+    "kind": "random",
+    "bytes": 7445,
+    "content_bytes": 5113,
+    "non_vcl_bytes": 2332
+  },
+  {
+    "codec": "h265",
+    "size": 128,
+    "qp": 45,
+    "kind": "flat",
+    "bytes": 2350,
+    "content_bytes": 18,
+    "non_vcl_bytes": 2332
+  },
+  {
+    "codec": "h265",
+    "size": 128,
+    "qp": 45,
+    "kind": "random",
+    "bytes": 5189,
+    "content_bytes": 2857,
+    "non_vcl_bytes": 2332
+  },
+  {
+    "codec": "h265",
+    "size": 512,
+    "qp": 30,
+    "kind": "flat",
+    "bytes": 2434,
+    "content_bytes": 104,
+    "non_vcl_bytes": 2330
+  },
+  {
+    "codec": "h265",
+    "size": 512,
+    "qp": 30,
+    "kind": "random",
+    "bytes": 164425,
+    "content_bytes": 162095,
+    "non_vcl_bytes": 2330
+  },
+  {
+    "codec": "h265",
+    "size": 512,
+    "qp": 35,
+    "kind": "flat",
+    "bytes": 2432,
+    "content_bytes": 102,
+    "non_vcl_bytes": 2330
+  },
+  {
+    "codec": "h265",
+    "size": 512,
+    "qp": 35,
+    "kind": "random",
+    "bytes": 122612,
+    "content_bytes": 120282,
+    "non_vcl_bytes": 2330
+  },
+  {
+    "codec": "h265",
+    "size": 512,
+    "qp": 40,
+    "kind": "flat",
+    "bytes": 2430,
+    "content_bytes": 100,
+    "non_vcl_bytes": 2330
+  },
+  {
+    "codec": "h265",
+    "size": 512,
+    "qp": 40,
+    "kind": "random",
+    "bytes": 83756,
+    "content_bytes": 81426,
+    "non_vcl_bytes": 2330
+  },
+  {
+    "codec": "h265",
+    "size": 512,
+    "qp": 45,
+    "kind": "flat",
+    "bytes": 2426,
+    "content_bytes": 96,
+    "non_vcl_bytes": 2330
+  },
+  {
+    "codec": "h265",
+    "size": 512,
+    "qp": 45,
+    "kind": "random",
+    "bytes": 47002,
+    "content_bytes": 44672,
+    "non_vcl_bytes": 2330
+  }
+]

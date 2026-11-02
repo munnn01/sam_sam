@@ -1,0 +1,511 @@
+{
+  "scope": "Image-paper recipes with declared warmstart/QP/backbone deviations; fair screens are not full schedules",
+  "worker_budget_seconds": 100800,
+  "service_budget_seconds": 133200,
+  "tests_passed": 126,
+  "original_core_files_unchanged": 42,
+  "updated": 1793465156.5069456,
+  "jobs": [
+    {
+      "key": "full-od",
+      "handle": "linhowi05/image-paper-full-od-20261031",
+      "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+      "worker_seconds": 21600,
+      "task": "od",
+      "profile": "full",
+      "lambda_scale": 1.0,
+      "qps": [
+        30,
+        35,
+        40,
+        45
+      ],
+      "fixed_target": 120000,
+      "adaptive_target": 100000,
+      "proxy_target": 0,
+      "validation_sources": 512,
+      "source_commit": "674931582594c70a8f69fd4e662ba5166d91ba24",
+      "input_spec": {
+        "kind": "kernel",
+        "ref": "linhowi05/paper-od-proxy-p05-20261028/1",
+        "member": "paper_results/legacy_results/last.pt",
+        "sha256": "3f34df5e2a064f030a07e67b7464afd19a6eb60cdb4e26046a390e8d70e94b83"
+      },
+      "status": "RUNNING",
+      "scientific_complete": false,
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/linhowi05/image-paper-full-od-20261031",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "launch": {
+        "key": "full-od",
+        "handle": "linhowi05/image-paper-full-od-20261031",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\nlinhowi05/image-paper-full-od-20261031 has status \"KernelWorkerStatus.RUNNING\"",
+        "observed": 1793465062.376427,
+        "latest": {
+          "stage": "study_input_verified",
+          "task": "od",
+          "sha256": "3f34df5e2a064f030a07e67b7464afd19a6eb60cdb4e26046a390e8d70e94b83"
+        },
+        "study_ready": false,
+        "training_seen": false,
+        "terminal": []
+      },
+      "server_verification": {
+        "key": "full-od",
+        "handle": "linhowi05/image-paper-full-od-20261031",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+        "checked": 1793464152.155755
+      }
+    },
+    {
+      "key": "screen-od-l050",
+      "handle": "hieusunday0412/image-paper-screen-od-l050-20261031",
+      "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+      "worker_seconds": 7200,
+      "task": "od",
+      "profile": "screen",
+      "lambda_scale": 0.5,
+      "qps": [
+        30,
+        35,
+        40,
+        45
+      ],
+      "fixed_target": 1000,
+      "adaptive_target": 1000,
+      "proxy_target": 0,
+      "validation_sources": 128,
+      "source_commit": "674931582594c70a8f69fd4e662ba5166d91ba24",
+      "input_spec": {
+        "kind": "dataset",
+        "ref": "hieusunday0412/image-paper-proxy-inputs-20261031/1",
+        "member": "od_proxy.pt",
+        "sha256": "ab9fde3e3418be44b532eb9c4492382a4a8204e0d64ab5d2b15dad1b2f535dbf"
+      },
+      "status": "RUNNING",
+      "scientific_complete": false,
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/hieusunday0412/image-paper-screen-od-l050-20261031",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "launch": {
+        "key": "screen-od-l050",
+        "handle": "hieusunday0412/image-paper-screen-od-l050-20261031",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\nhieusunday0412/image-paper-screen-od-l050-20261031 has status \"KernelWorkerStatus.RUNNING\"",
+        "observed": 1793464796.6335733,
+        "latest": {
+          "stage": "payload_verified",
+          "task": "od",
+          "mode": "full",
+          "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d"
+        },
+        "study_ready": false,
+        "training_seen": false,
+        "terminal": []
+      },
+      "server_verification": {
+        "key": "screen-od-l050",
+        "handle": "hieusunday0412/image-paper-screen-od-l050-20261031",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+        "checked": 1793464718.1741955
+      }
+    },
+    {
+      "key": "screen-od-l100",
+      "handle": "baooo25r/image-paper-screen-od-l100-20261031",
+      "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+      "worker_seconds": 7200,
+      "task": "od",
+      "profile": "screen",
+      "lambda_scale": 1.0,
+      "qps": [
+        30,
+        35,
+        40,
+        45
+      ],
+      "fixed_target": 1000,
+      "adaptive_target": 1000,
+      "proxy_target": 0,
+      "validation_sources": 128,
+      "source_commit": "674931582594c70a8f69fd4e662ba5166d91ba24",
+      "input_spec": {
+        "kind": "dataset",
+        "ref": "baooo25r/image-paper-proxy-inputs-20261031/1",
+        "member": "od_proxy.pt",
+        "sha256": "ab9fde3e3418be44b532eb9c4492382a4a8204e0d64ab5d2b15dad1b2f535dbf"
+      },
+      "status": "QUEUED",
+      "scientific_complete": false,
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/baooo25r/image-paper-screen-od-l100-20261031",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "launch": {
+        "key": "screen-od-l100",
+        "handle": "baooo25r/image-paper-screen-od-l100-20261031",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\nbaooo25r/image-paper-screen-od-l100-20261031 has status \"KernelWorkerStatus.QUEUED\"",
+        "observed": 1793464847.0177453,
+        "latest": null,
+        "study_ready": false,
+        "training_seen": false,
+        "terminal": []
+      },
+      "server_verification": {
+        "key": "screen-od-l100",
+        "handle": "baooo25r/image-paper-screen-od-l100-20261031",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+        "checked": 1793464148.7292778
+      }
+    },
+    {
+      "key": "screen-od-l200",
+      "handle": "nguyenhoanglan1232/image-paper-screen-od-l200-20261031",
+      "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+      "worker_seconds": 7200,
+      "task": "od",
+      "profile": "screen",
+      "lambda_scale": 2.0,
+      "qps": [
+        30,
+        35,
+        40,
+        45
+      ],
+      "fixed_target": 1000,
+      "adaptive_target": 1000,
+      "proxy_target": 0,
+      "validation_sources": 128,
+      "source_commit": "674931582594c70a8f69fd4e662ba5166d91ba24",
+      "input_spec": {
+        "kind": "dataset",
+        "ref": "nguyenhoanglan1232/image-paper-proxy-inputs-20261031/1",
+        "member": "od_proxy.pt",
+        "sha256": "ab9fde3e3418be44b532eb9c4492382a4a8204e0d64ab5d2b15dad1b2f535dbf"
+      },
+      "status": "QUEUED",
+      "scientific_complete": false,
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/nguyenhoanglan1232/image-paper-screen-od-l200-20261031",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "launch": {
+        "key": "screen-od-l200",
+        "handle": "nguyenhoanglan1232/image-paper-screen-od-l200-20261031",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\nnguyenhoanglan1232/image-paper-screen-od-l200-20261031 has status \"KernelWorkerStatus.QUEUED\"",
+        "observed": 1793464799.0457766,
+        "latest": null,
+        "study_ready": false,
+        "training_seen": false,
+        "terminal": []
+      },
+      "server_verification": {
+        "key": "screen-od-l200",
+        "handle": "nguyenhoanglan1232/image-paper-screen-od-l200-20261031",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+        "checked": 1793464721.4813626
+      }
+    },
+    {
+      "key": "full-ic",
+      "handle": "linhowi05/image-paper-full-ic-20261031",
+      "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+      "worker_seconds": 21600,
+      "task": "ic",
+      "profile": "full",
+      "lambda_scale": 1.0,
+      "qps": [
+        30,
+        35,
+        40,
+        45
+      ],
+      "fixed_target": 120000,
+      "adaptive_target": 100000,
+      "proxy_target": 0,
+      "validation_sources": 2048,
+      "source_commit": "674931582594c70a8f69fd4e662ba5166d91ba24",
+      "input_spec": {
+        "kind": "kernel",
+        "ref": "linhowi05/paper-ic-proxy-p05-20261028/1",
+        "member": "paper_results/legacy_results/last.pt",
+        "sha256": "f9aac51a1e947667bbae55f54d0b85a2d23efbef13e0d7a21d18e8a16f83542f"
+      },
+      "status": "RUNNING",
+      "scientific_complete": false,
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/linhowi05/image-paper-full-ic-20261031",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "launch": {
+        "key": "full-ic",
+        "handle": "linhowi05/image-paper-full-ic-20261031",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\nlinhowi05/image-paper-full-ic-20261031 has status \"KernelWorkerStatus.RUNNING\"",
+        "observed": 1793464798.881886,
+        "latest": {
+          "stage": "payload_verified",
+          "task": "ic",
+          "mode": "full",
+          "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d"
+        },
+        "study_ready": false,
+        "training_seen": false,
+        "terminal": []
+      },
+      "server_verification": {
+        "key": "full-ic",
+        "handle": "linhowi05/image-paper-full-ic-20261031",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+        "checked": 1793464719.8460033
+      }
+    },
+    {
+      "key": "screen-ic-l050",
+      "handle": "hieusunday0412/image-paper-screen-ic-l050-20261031",
+      "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+      "worker_seconds": 7200,
+      "task": "ic",
+      "profile": "screen",
+      "lambda_scale": 0.5,
+      "qps": [
+        30,
+        35,
+        40,
+        45
+      ],
+      "fixed_target": 1000,
+      "adaptive_target": 1000,
+      "proxy_target": 0,
+      "validation_sources": 1024,
+      "source_commit": "674931582594c70a8f69fd4e662ba5166d91ba24",
+      "input_spec": {
+        "kind": "dataset",
+        "ref": "hieusunday0412/image-paper-proxy-inputs-20261031/1",
+        "member": "ic_proxy.pt",
+        "sha256": "c95598b9a0aad477bca146d1751e10dd14ed8749ec5efdea44ff41541e4213e4"
+      },
+      "status": "RUNNING",
+      "scientific_complete": false,
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/hieusunday0412/image-paper-screen-ic-l050-20261031",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "launch": {
+        "key": "screen-ic-l050",
+        "handle": "hieusunday0412/image-paper-screen-ic-l050-20261031",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\nhieusunday0412/image-paper-screen-ic-l050-20261031 has status \"KernelWorkerStatus.RUNNING\"",
+        "observed": 1793464797.7099497,
+        "latest": {
+          "stage": "payload_verified",
+          "task": "ic",
+          "mode": "full",
+          "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d"
+        },
+        "study_ready": false,
+        "training_seen": false,
+        "terminal": []
+      },
+      "server_verification": {
+        "key": "screen-ic-l050",
+        "handle": "hieusunday0412/image-paper-screen-ic-l050-20261031",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+        "checked": 1793464719.5803254
+      }
+    },
+    {
+      "key": "screen-ic-l100",
+      "handle": "baooo25r/image-paper-screen-ic-l100-20261031",
+      "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+      "worker_seconds": 7200,
+      "task": "ic",
+      "profile": "screen",
+      "lambda_scale": 1.0,
+      "qps": [
+        30,
+        35,
+        40,
+        45
+      ],
+      "fixed_target": 1000,
+      "adaptive_target": 1000,
+      "proxy_target": 0,
+      "validation_sources": 1024,
+      "source_commit": "674931582594c70a8f69fd4e662ba5166d91ba24",
+      "input_spec": {
+        "kind": "dataset",
+        "ref": "baooo25r/image-paper-proxy-inputs-20261031/1",
+        "member": "ic_proxy.pt",
+        "sha256": "c95598b9a0aad477bca146d1751e10dd14ed8749ec5efdea44ff41541e4213e4"
+      },
+      "status": "QUEUED",
+      "scientific_complete": false,
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/baooo25r/image-paper-screen-ic-l100-20261031",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "launch": {
+        "key": "screen-ic-l100",
+        "handle": "baooo25r/image-paper-screen-ic-l100-20261031",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\nbaooo25r/image-paper-screen-ic-l100-20261031 has status \"KernelWorkerStatus.QUEUED\"",
+        "observed": 1793464845.2236352,
+        "latest": null,
+        "study_ready": false,
+        "training_seen": false,
+        "terminal": []
+      },
+      "server_verification": {
+        "key": "screen-ic-l100",
+        "handle": "baooo25r/image-paper-screen-ic-l100-20261031",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+        "checked": 1793464151.3127205
+      }
+    },
+    {
+      "key": "screen-ic-l200",
+      "handle": "nguyenhoanglan1232/image-paper-screen-ic-l200-20261031",
+      "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+      "worker_seconds": 7200,
+      "task": "ic",
+      "profile": "screen",
+      "lambda_scale": 2.0,
+      "qps": [
+        30,
+        35,
+        40,
+        45
+      ],
+      "fixed_target": 1000,
+      "adaptive_target": 1000,
+      "proxy_target": 0,
+      "validation_sources": 1024,
+      "source_commit": "674931582594c70a8f69fd4e662ba5166d91ba24",
+      "input_spec": {
+        "kind": "dataset",
+        "ref": "nguyenhoanglan1232/image-paper-proxy-inputs-20261031/1",
+        "member": "ic_proxy.pt",
+        "sha256": "c95598b9a0aad477bca146d1751e10dd14ed8749ec5efdea44ff41541e4213e4"
+      },
+      "status": "QUEUED",
+      "scientific_complete": false,
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/nguyenhoanglan1232/image-paper-screen-ic-l200-20261031",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "launch": {
+        "key": "screen-ic-l200",
+        "handle": "nguyenhoanglan1232/image-paper-screen-ic-l200-20261031",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\nnguyenhoanglan1232/image-paper-screen-ic-l200-20261031 has status \"KernelWorkerStatus.QUEUED\"",
+        "observed": 1793464798.1320376,
+        "latest": null,
+        "study_ready": false,
+        "training_seen": false,
+        "terminal": []
+      },
+      "server_verification": {
+        "key": "screen-ic-l200",
+        "handle": "nguyenhoanglan1232/image-paper-screen-ic-l200-20261031",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+        "checked": 1793464719.8785236
+      }
+    },
+    {
+      "key": "proxy-flickr",
+      "handle": "vtk269/image-paper-proxy-flickr-20261031",
+      "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+      "worker_seconds": 14400,
+      "task": "proxy",
+      "profile": "proxy",
+      "lambda_scale": 1.0,
+      "qps": [
+        30,
+        35,
+        40,
+        45
+      ],
+      "fixed_target": 0,
+      "adaptive_target": 0,
+      "proxy_target": 400000,
+      "validation_sources": 16,
+      "source_commit": "674931582594c70a8f69fd4e662ba5166d91ba24",
+      "input_spec": null,
+      "status": "RUNNING",
+      "scientific_complete": false,
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/vtk269/image-paper-proxy-flickr-20261031",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "launch": {
+        "key": "proxy-flickr",
+        "handle": "vtk269/image-paper-proxy-flickr-20261031",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\nvtk269/image-paper-proxy-flickr-20261031 has status \"KernelWorkerStatus.RUNNING\"",
+        "observed": 1793465062.8986204,
+        "latest": {
+          "stage": "study_optimizer",
+          "time": 1793465007.56324,
+          "optimizer_updates": 505,
+          "phase": "proxy",
+          "lr": [
+            0.0001
+          ]
+        },
+        "study_ready": true,
+        "training_seen": true,
+        "terminal": []
+      },
+      "server_verification": {
+        "key": "proxy-flickr",
+        "handle": "vtk269/image-paper-proxy-flickr-20261031",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "070a2139e1ca31e094166a32f98dbf6d4aaab5acc47afc1e359aa8478801ad9d",
+        "checked": 1793464152.5119107
+      }
+    }
+  ],
+  "references": [
+    "https://doi.org/10.1109/TCSVT.2024.3441049",
+    "https://github.com/XingtongGe/PreprocessingICM/tree/6a77c4633cd5bb6750c77ea9d213d38ffc88ee7a"
+  ],
+  "fidelity_limits": [
+    "QP30/35/40/45 is user adaptation; fixedQP35 substitutes34.",
+    "Frozen existing task-proxy warmstarts for NPP; Flickr branch is separate and not yet substituted into these NPP runs.",
+    "Torchvision FCOS/ResNet50 weights differ from original OpenMMLab checkpoints.",
+    "400k proxy accounting is global bank updates; exact per-proxy interpretation remains unresolved.",
+    "All current evaluations are declared validation subsets, not full5k/50k benchmark results."
+  ]
+}

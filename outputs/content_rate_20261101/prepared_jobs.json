@@ -1,0 +1,22 @@
+[
+  {
+    "key": "is-h264",
+    "handle": "tranthihongdieu/sam-content-is-h264-20261101",
+    "source_sha256": "aa741f13901d513ba4c1615d03580a55ec3be3703d4c6f263f832df95ec29cb2"
+  },
+  {
+    "key": "is-h265",
+    "handle": "dngbolm/sam-content-is-h265-20261101",
+    "source_sha256": "aa741f13901d513ba4c1615d03580a55ec3be3703d4c6f263f832df95ec29cb2"
+  },
+  {
+    "key": "od-h264",
+    "handle": "hoangminhhuy123/sam-content-od-h264-20261101",
+    "source_sha256": "aa741f13901d513ba4c1615d03580a55ec3be3703d4c6f263f832df95ec29cb2"
+  },
+  {
+    "key": "od-h265",
+    "handle": "ngynanhthuw/sam-content-od-h265-20261101",
+    "source_sha256": "aa741f13901d513ba4c1615d03580a55ec3be3703d4c6f263f832df95ec29cb2"
+  }
+]

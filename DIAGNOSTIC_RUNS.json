@@ -1,0 +1,3341 @@
+{
+  "runs": [
+    {
+      "task": "ot",
+      "stage": "diagnose",
+      "handle": "hieusunday0412/paper-ot-proxy-p05-20261028",
+      "url": "https://www.kaggle.com/code/hieusunday0412/paper-ot-proxy-p05-20261028",
+      "source_sha256": "76deaed3cd39abb64a3f23420be8ca375ad1fb29b90743cbaf65e33a8989386f",
+      "checkpoint_sha256": "c1f0de67d71a7ff0c89ec6ac31578dcde5c7e929f03c9af5ec1754482af65b4d",
+      "training_source_sha256": "3d03d131bebd669d3ba802f2bef65b45d7bfd317a4b238177209a1ea6d5d32d3",
+      "private_dataset": "hieusunday0412/paper-ot-state-r5-20261027/1",
+      "max_worker_seconds": 7200,
+      "status": "error",
+      "scientific_complete": false,
+      "version": 1,
+      "diagnostic_ready": true,
+      "paired_measurements_seen": false,
+      "latest": {
+        "stage": "diagnostic_ready",
+        "time": 1793126356.4237237,
+        "task": "ot",
+        "train_sources": 32,
+        "dev_sources": 16,
+        "npp": "6e3f6e1efcbd4a4bb5bb4a1cdf6f33a8b0a1269f75e45f67a6876573e7762b22",
+        "checkpoint_steps": {
+          "prior": 512,
+          "adaptive": 100000
+        }
+      },
+      "source_commit": "36212154f1d018f98d2d161837f6a9e71feeed4d",
+      "tests_passed": 98,
+      "legacy_files_unchanged": 42,
+      "observed_unix": 1793126363.0991778,
+      "npp_updates": 0,
+      "scope": "P0.5 diagnostics; no new task RD result",
+      "error": "duplicate lr in prior-screen report; fixed in subsequent source"
+    },
+    {
+      "task": "ar",
+      "stage": "diagnose",
+      "handle": "hieusunday0412/paper-ar-proxy-p05-20261028",
+      "url": "https://www.kaggle.com/code/hieusunday0412/paper-ar-proxy-p05-20261028",
+      "version": 1,
+      "source_sha256": "66a99baa57e996e6b75ecd4d010dafc2d85af918c5f66c42f086d2e683aaf15a",
+      "checkpoint_sha256": "600865ee2cb2e0364fc95d2023f4425a97d26d1d59078083c0f6dfdcb8a086bb",
+      "training_source_sha256": "5e2779d0af69924a64ba34a5f6a5fbffd246a76b157badb79c34b9c13a7b23e4",
+      "max_worker_seconds": 7200,
+      "source_commit": "bebaf7f5b273a33da278794c41973a5ce19608d4",
+      "scientific_complete": false,
+      "latest": {
+        "stage": "cloud_end",
+        "task": "ar",
+        "mode": "full",
+        "source_sha256": "66a99baa57e996e6b75ecd4d010dafc2d85af918c5f66c42f086d2e683aaf15a",
+        "bootstrap_complete": true,
+        "started": 1793129293.361673,
+        "worker_exit_code": 0,
+        "wall_seconds": 342.22459053993225
+      },
+      "observed": 1793162122.6670804,
+      "status": "diagnostic_complete",
+      "private": true,
+      "private_dataset": "hieusunday0412/paper-ar-state-r5-20261027/1",
+      "diagnostic_complete": true,
+      "npp_updates": 0,
+      "selected_prior": "per_qp",
+      "prior_converged": true,
+      "next_action": "eligible_for_bounded_recovery"
+    },
+    {
+      "task": "ot",
+      "stage": "diagnose",
+      "handle": "hieusunday0412/paper-ot-proxy-p05-20261028",
+      "url": "https://www.kaggle.com/code/hieusunday0412/paper-ot-proxy-p05-20261028",
+      "version": 2,
+      "source_sha256": "66a99baa57e996e6b75ecd4d010dafc2d85af918c5f66c42f086d2e683aaf15a",
+      "checkpoint_sha256": "c1f0de67d71a7ff0c89ec6ac31578dcde5c7e929f03c9af5ec1754482af65b4d",
+      "training_source_sha256": "3d03d131bebd669d3ba802f2bef65b45d7bfd317a4b238177209a1ea6d5d32d3",
+      "max_worker_seconds": 7200,
+      "source_commit": "bebaf7f5b273a33da278794c41973a5ce19608d4",
+      "scientific_complete": false,
+      "latest": {
+        "stage": "cloud_end",
+        "task": "ot",
+        "mode": "full",
+        "source_sha256": "66a99baa57e996e6b75ecd4d010dafc2d85af918c5f66c42f086d2e683aaf15a",
+        "bootstrap_complete": true,
+        "started": 1793127582.5209444,
+        "worker_exit_code": 0,
+        "wall_seconds": 524.6355531215668
+      },
+      "observed": 1793162180.0381434,
+      "status": "diagnostic_complete",
+      "private": true,
+      "private_dataset": "hieusunday0412/paper-ot-state-r5-20261027/1",
+      "diagnostic_complete": true,
+      "npp_updates": 0,
+      "selected_prior": "per_qp",
+      "prior_converged": true,
+      "next_action": "eligible_for_bounded_recovery"
+    },
+    {
+      "task": "od",
+      "stage": "image",
+      "handle": "linhowi05/paper-od-proxy-p05-20261028",
+      "url": "https://www.kaggle.com/code/linhowi05/paper-od-proxy-p05-20261028",
+      "version": 1,
+      "source_sha256": "fe75e410959a6dc6fc611430dc5a8f0a9f91f47871d9a91a1677cbea470e7e97",
+      "checkpoint_sha256": "0aa934aee0c9de678850a847d7e539445a203cc085928e40ade3e790ccffff48",
+      "training_source_sha256": "5e2779d0af69924a64ba34a5f6a5fbffd246a76b157badb79c34b9c13a7b23e4",
+      "max_worker_seconds": 18000,
+      "source_commit": "83282088aca119d4cb3e79aab2e9c42f856e8778",
+      "scientific_complete": false,
+      "latest": {
+        "stage": "cloud_end",
+        "task": "od",
+        "mode": "full",
+        "source_sha256": "fe75e410959a6dc6fc611430dc5a8f0a9f91f47871d9a91a1677cbea470e7e97",
+        "bootstrap_complete": true,
+        "started": 1793162701.8004231,
+        "worker_exit_code": 0,
+        "wall_seconds": 14945.096481084824
+      },
+      "observed": 1793461404.0043042,
+      "status": "complete",
+      "private": true,
+      "kernel_source": "linhowi05/paper-image-od-qp4-full-r6-20261027/1",
+      "running_verified": true,
+      "server_verification": {
+        "handle": "linhowi05/paper-od-proxy-p05-20261028",
+        "private_verified": true,
+        "notebook_source_verified": true,
+        "source_sha256": "fe75e410959a6dc6fc611430dc5a8f0a9f91f47871d9a91a1677cbea470e7e97",
+        "checked": 1793162966.2676208
+      },
+      "diagnostic_ready": true,
+      "measurements_seen": true,
+      "result_summary": {
+        "status": "COMPLETE",
+        "audit_complete": true,
+        "error": null,
+        "phase_before": {
+          "proxy": 295236,
+          "fixed": 0,
+          "adaptive": 0
+        },
+        "phase_after": {
+          "proxy": 315254,
+          "fixed": 0,
+          "adaptive": 0
+        },
+        "stop_reason": "session_budget",
+        "npp_updates": 0,
+        "rate_gate": {
+          "passed": true,
+          "groups": [
+            {
+              "qp": 30,
+              "pairs": 48,
+              "resolved": 40,
+              "resolved_sources": 16,
+              "coverage": 0.8333333333333334,
+              "sign_agreement": 0.875,
+              "passed": true
+            },
+            {
+              "qp": 35,
+              "pairs": 48,
+              "resolved": 43,
+              "resolved_sources": 16,
+              "coverage": 0.8958333333333334,
+              "sign_agreement": 0.8604651162790697,
+              "passed": true
+            },
+            {
+              "qp": 40,
+              "pairs": 48,
+              "resolved": 45,
+              "resolved_sources": 16,
+              "coverage": 0.9375,
+              "sign_agreement": 0.8222222222222222,
+              "passed": true
+            },
+            {
+              "qp": 45,
+              "pairs": 48,
+              "resolved": 43,
+              "resolved_sources": 16,
+              "coverage": 0.8958333333333334,
+              "sign_agreement": 0.813953488372093,
+              "passed": true
+            }
+          ],
+          "scope": "BPG controlled-input directions; no downstream accuracy/NPP claim"
+        },
+        "audit_checkpoint_sha256": "0aa934aee0c9de678850a847d7e539445a203cc085928e40ade3e790ccffff48",
+        "audit_precedes_continuation": true,
+        "descent_rate_reduced": 16,
+        "descent_rate_total": 16,
+        "wall_hours": 4.079491922656695,
+        "rate_and_quality": [
+          {
+            "qp": 30,
+            "real_bpp_mean": 0.6001604726623866,
+            "proxy_bpp_mean": 0.5805891901254654,
+            "median_proxy_real_ratio": 0.9643082271893313,
+            "proxy_vs_bpg_psnr_mean_db": 35.65216218553844
+          },
+          {
+            "qp": 35,
+            "real_bpp_mean": 0.3391147789008055,
+            "proxy_bpp_mean": 0.2987427329644561,
+            "median_proxy_real_ratio": 0.8876666846962161,
+            "proxy_vs_bpg_psnr_mean_db": 32.68848477942757
+          },
+          {
+            "qp": 40,
+            "real_bpp_mean": 0.18314814298873536,
+            "proxy_bpp_mean": 0.16106938291341066,
+            "median_proxy_real_ratio": 0.8846866417437202,
+            "proxy_vs_bpg_psnr_mean_db": 30.905881963810277
+          },
+          {
+            "qp": 45,
+            "real_bpp_mean": 0.09492706440665613,
+            "proxy_bpp_mean": 0.08066477789543569,
+            "median_proxy_real_ratio": 0.8376563090031737,
+            "proxy_vs_bpg_psnr_mean_db": 28.86242703228403
+          }
+        ]
+      }
+    },
+    {
+      "task": "ic",
+      "stage": "image",
+      "handle": "linhowi05/paper-ic-proxy-p05-20261028",
+      "url": "https://www.kaggle.com/code/linhowi05/paper-ic-proxy-p05-20261028",
+      "version": 1,
+      "source_sha256": "fe75e410959a6dc6fc611430dc5a8f0a9f91f47871d9a91a1677cbea470e7e97",
+      "checkpoint_sha256": "33b8e848ebab45b39c413102ca5545300225a582fef2ce36aa2d963e34569bdc",
+      "training_source_sha256": "5e2779d0af69924a64ba34a5f6a5fbffd246a76b157badb79c34b9c13a7b23e4",
+      "max_worker_seconds": 18000,
+      "source_commit": "83282088aca119d4cb3e79aab2e9c42f856e8778",
+      "scientific_complete": false,
+      "latest": {
+        "stage": "cloud_end",
+        "task": "ic",
+        "mode": "full",
+        "source_sha256": "fe75e410959a6dc6fc611430dc5a8f0a9f91f47871d9a91a1677cbea470e7e97",
+        "bootstrap_complete": true,
+        "started": 1793162702.998962,
+        "worker_exit_code": 0,
+        "wall_seconds": 15123.59984946251
+      },
+      "observed": 1793461403.1912587,
+      "status": "complete",
+      "private": true,
+      "kernel_source": "linhowi05/paper-image-ic-qp4-full-r6-20261027/1",
+      "running_verified": true,
+      "server_verification": {
+        "handle": "linhowi05/paper-ic-proxy-p05-20261028",
+        "private_verified": true,
+        "notebook_source_verified": true,
+        "source_sha256": "fe75e410959a6dc6fc611430dc5a8f0a9f91f47871d9a91a1677cbea470e7e97",
+        "checked": 1793162966.502578
+      },
+      "diagnostic_ready": false,
+      "measurements_seen": false,
+      "result_summary": {
+        "status": "COMPLETE",
+        "audit_complete": true,
+        "error": null,
+        "phase_before": {
+          "proxy": 266044,
+          "fixed": 0,
+          "adaptive": 0
+        },
+        "phase_after": {
+          "proxy": 283760,
+          "fixed": 0,
+          "adaptive": 0
+        },
+        "stop_reason": "session_budget",
+        "npp_updates": 0,
+        "rate_gate": {
+          "passed": true,
+          "groups": [
+            {
+              "qp": 30,
+              "pairs": 48,
+              "resolved": 40,
+              "resolved_sources": 16,
+              "coverage": 0.8333333333333334,
+              "sign_agreement": 0.9,
+              "passed": true
+            },
+            {
+              "qp": 35,
+              "pairs": 48,
+              "resolved": 40,
+              "resolved_sources": 16,
+              "coverage": 0.8333333333333334,
+              "sign_agreement": 0.925,
+              "passed": true
+            },
+            {
+              "qp": 40,
+              "pairs": 48,
+              "resolved": 41,
+              "resolved_sources": 16,
+              "coverage": 0.8541666666666666,
+              "sign_agreement": 0.9024390243902439,
+              "passed": true
+            },
+            {
+              "qp": 45,
+              "pairs": 48,
+              "resolved": 45,
+              "resolved_sources": 16,
+              "coverage": 0.9375,
+              "sign_agreement": 0.8,
+              "passed": true
+            }
+          ],
+          "scope": "BPG controlled-input directions; no downstream accuracy/NPP claim"
+        },
+        "audit_checkpoint_sha256": "33b8e848ebab45b39c413102ca5545300225a582fef2ce36aa2d963e34569bdc",
+        "audit_precedes_continuation": true,
+        "descent_rate_reduced": 15,
+        "descent_rate_total": 16,
+        "wall_hours": 4.135336142513487,
+        "rate_and_quality": [
+          {
+            "qp": 30,
+            "real_bpp_mean": 0.756103515625,
+            "proxy_bpp_mean": 0.7004978288896382,
+            "median_proxy_real_ratio": 0.9218176688604022,
+            "proxy_vs_bpg_psnr_mean_db": 34.81336434434347
+          },
+          {
+            "qp": 35,
+            "real_bpp_mean": 0.42132568359375,
+            "proxy_bpp_mean": 0.3610292933881283,
+            "median_proxy_real_ratio": 0.8505788779788575,
+            "proxy_vs_bpg_psnr_mean_db": 32.04377606732062
+          },
+          {
+            "qp": 40,
+            "real_bpp_mean": 0.22429656982421875,
+            "proxy_bpp_mean": 0.18961667595431209,
+            "median_proxy_real_ratio": 0.8470826757034607,
+            "proxy_vs_bpg_psnr_mean_db": 29.97336716078839
+          },
+          {
+            "qp": 45,
+            "real_bpp_mean": 0.11359405517578125,
+            "proxy_bpp_mean": 0.09421275288332254,
+            "median_proxy_real_ratio": 0.8214443392058832,
+            "proxy_vs_bpg_psnr_mean_db": 28.171269552030807
+          }
+        ]
+      }
+    },
+    {
+      "task": "ar",
+      "stage": "recover",
+      "handle": "hieusunday0412/paper-ar-recovery-p05-20261028",
+      "url": "https://www.kaggle.com/code/hieusunday0412/paper-ar-recovery-p05-20261028",
+      "version": 1,
+      "source_sha256": "fe75e410959a6dc6fc611430dc5a8f0a9f91f47871d9a91a1677cbea470e7e97",
+      "checkpoint_sha256": "600865ee2cb2e0364fc95d2023f4425a97d26d1d59078083c0f6dfdcb8a086bb",
+      "training_source_sha256": "5e2779d0af69924a64ba34a5f6a5fbffd246a76b157badb79c34b9c13a7b23e4",
+      "max_worker_seconds": 18000,
+      "source_commit": "83282088aca119d4cb3e79aab2e9c42f856e8778",
+      "scientific_complete": false,
+      "latest": {
+        "stage": "cloud_end",
+        "task": "ar",
+        "mode": "full",
+        "source_sha256": "fe75e410959a6dc6fc611430dc5a8f0a9f91f47871d9a91a1677cbea470e7e97",
+        "bootstrap_complete": true,
+        "started": 1793162776.9190416,
+        "worker_exit_code": 0,
+        "wall_seconds": 7866.221868753433
+      },
+      "observed": 1793461403.6857514,
+      "status": "complete",
+      "private": true,
+      "private_dataset": "hieusunday0412/paper-ar-state-r5-20261027/1",
+      "running_verified": true,
+      "server_verification": {
+        "handle": "hieusunday0412/paper-ar-recovery-p05-20261028",
+        "private_verified": true,
+        "notebook_source_verified": true,
+        "source_sha256": "fe75e410959a6dc6fc611430dc5a8f0a9f91f47871d9a91a1677cbea470e7e97",
+        "checked": 1793162965.9492862
+      },
+      "diagnostic_ready": true,
+      "measurements_seen": true,
+      "result_summary": {
+        "status": "COMPLETE",
+        "source_sha256": "fe75e410959a6dc6fc611430dc5a8f0a9f91f47871d9a91a1677cbea470e7e97",
+        "npp_updates": 4000,
+        "error": null,
+        "wall_hours": 2.1805533467398748,
+        "base_npp_unchanged": true,
+        "baseline": [
+          {
+            "codec": "h264",
+            "sources": 16,
+            "bd_rate": {
+              "valid": false,
+              "percent": null,
+              "reason": "nonmonotone or tied four-QP operating curve"
+            },
+            "points": [
+              {
+                "qp": 30,
+                "baseline_bpp": 0.19530128946109693,
+                "npp_bpp": 0.3456486293247768,
+                "baseline_quality": 0.9375,
+                "npp_quality": 0.9375,
+                "same_qp_rate_change_percent": 76.98225663462827,
+                "quality_change_pp": 0.0
+              },
+              {
+                "qp": 35,
+                "baseline_bpp": 0.11134042545240752,
+                "npp_bpp": 0.19356894979671557,
+                "baseline_quality": 0.875,
+                "npp_quality": 0.9375,
+                "same_qp_rate_change_percent": 73.8532514225542,
+                "quality_change_pp": 6.25
+              },
+              {
+                "qp": 40,
+                "baseline_bpp": 0.06535448346819196,
+                "npp_bpp": 0.1094970703125,
+                "baseline_quality": 0.875,
+                "npp_quality": 0.9375,
+                "same_qp_rate_change_percent": 67.54331837966747,
+                "quality_change_pp": 6.25
+              },
+              {
+                "qp": 45,
+                "baseline_bpp": 0.039258528728874365,
+                "npp_bpp": 0.06307173748405612,
+                "baseline_quality": 0.8125,
+                "npp_quality": 0.875,
+                "same_qp_rate_change_percent": 60.65741515592589,
+                "quality_change_pp": 6.25
+              }
+            ]
+          },
+          {
+            "codec": "h265",
+            "sources": 16,
+            "bd_rate": {
+              "valid": false,
+              "percent": null,
+              "reason": "nonmonotone or tied four-QP operating curve"
+            },
+            "points": [
+              {
+                "qp": 30,
+                "baseline_bpp": 0.19821244843152105,
+                "npp_bpp": 0.34134206966478,
+                "baseline_quality": 0.9375,
+                "npp_quality": 0.9375,
+                "same_qp_rate_change_percent": 72.2102079692072,
+                "quality_change_pp": 0.0
+              },
+              {
+                "qp": 35,
+                "baseline_bpp": 0.11902571697624362,
+                "npp_bpp": 0.19900465984733737,
+                "baseline_quality": 0.9375,
+                "npp_quality": 0.9375,
+                "same_qp_rate_change_percent": 67.19467431316272,
+                "quality_change_pp": 0.0
+              },
+              {
+                "qp": 40,
+                "baseline_bpp": 0.07556417037029656,
+                "npp_bpp": 0.11819426867426658,
+                "baseline_quality": 0.875,
+                "npp_quality": 0.9375,
+                "same_qp_rate_change_percent": 56.4157564293559,
+                "quality_change_pp": 6.25
+              },
+              {
+                "qp": 45,
+                "baseline_bpp": 0.050245635363520405,
+                "npp_bpp": 0.07108338025151467,
+                "baseline_quality": 0.75,
+                "npp_quality": 0.8125,
+                "same_qp_rate_change_percent": 41.471751202340236,
+                "quality_change_pp": 6.25
+              }
+            ]
+          }
+        ],
+        "filters": {
+          "gaussian_0.5": [
+            {
+              "codec": "h264",
+              "sources": 16,
+              "bd_rate": {
+                "valid": false,
+                "percent": null,
+                "reason": "nonmonotone or tied four-QP operating curve"
+              },
+              "points": [
+                {
+                  "qp": 30,
+                  "baseline_bpp": 0.19530128946109693,
+                  "npp_bpp": 0.17374030911192603,
+                  "baseline_quality": 0.9375,
+                  "npp_quality": 0.9375,
+                  "same_qp_rate_change_percent": -11.03985560395685,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 35,
+                  "baseline_bpp": 0.11134042545240752,
+                  "npp_bpp": 0.10148387052574936,
+                  "baseline_quality": 0.875,
+                  "npp_quality": 0.875,
+                  "same_qp_rate_change_percent": -8.852629120652445,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 40,
+                  "baseline_bpp": 0.06535448346819196,
+                  "npp_bpp": 0.06088708371532207,
+                  "baseline_quality": 0.875,
+                  "npp_quality": 0.875,
+                  "same_qp_rate_change_percent": -6.835643885157749,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 45,
+                  "baseline_bpp": 0.039258528728874365,
+                  "npp_bpp": 0.037514200015943876,
+                  "baseline_quality": 0.8125,
+                  "npp_quality": 0.6875,
+                  "same_qp_rate_change_percent": -4.443184116697541,
+                  "quality_change_pp": -12.5
+                }
+              ]
+            },
+            {
+              "codec": "h265",
+              "sources": 16,
+              "bd_rate": {
+                "valid": false,
+                "percent": null,
+                "reason": "nonmonotone or tied four-QP operating curve"
+              },
+              "points": [
+                {
+                  "qp": 30,
+                  "baseline_bpp": 0.19821244843152105,
+                  "npp_bpp": 0.17565668845663265,
+                  "baseline_quality": 0.9375,
+                  "npp_quality": 0.9375,
+                  "same_qp_rate_change_percent": -11.379587989238239,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 35,
+                  "baseline_bpp": 0.11902571697624362,
+                  "npp_bpp": 0.10834487603635204,
+                  "baseline_quality": 0.9375,
+                  "npp_quality": 0.9375,
+                  "same_qp_rate_change_percent": -8.973557321249636,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 40,
+                  "baseline_bpp": 0.07556417037029656,
+                  "npp_bpp": 0.07092721121651786,
+                  "baseline_quality": 0.875,
+                  "npp_quality": 0.875,
+                  "same_qp_rate_change_percent": -6.136452145316518,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 45,
+                  "baseline_bpp": 0.050245635363520405,
+                  "npp_bpp": 0.04863645592514349,
+                  "baseline_quality": 0.75,
+                  "npp_quality": 0.75,
+                  "same_qp_rate_change_percent": -3.202625316079133,
+                  "quality_change_pp": 0.0
+                }
+              ]
+            }
+          ],
+          "gaussian_1.0": [
+            {
+              "codec": "h264",
+              "sources": 16,
+              "bd_rate": {
+                "valid": false,
+                "percent": null,
+                "reason": "nonmonotone or tied four-QP operating curve"
+              },
+              "points": [
+                {
+                  "qp": 30,
+                  "baseline_bpp": 0.19530128946109693,
+                  "npp_bpp": 0.13806619449537627,
+                  "baseline_quality": 0.9375,
+                  "npp_quality": 0.9375,
+                  "same_qp_rate_change_percent": -29.306050729952617,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 35,
+                  "baseline_bpp": 0.11134042545240752,
+                  "npp_bpp": 0.08447904002909758,
+                  "baseline_quality": 0.875,
+                  "npp_quality": 0.875,
+                  "same_qp_rate_change_percent": -24.125456063388086,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 40,
+                  "baseline_bpp": 0.06535448346819196,
+                  "npp_bpp": 0.052937098911830356,
+                  "baseline_quality": 0.875,
+                  "npp_quality": 0.875,
+                  "same_qp_rate_change_percent": -19.000050030852357,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 45,
+                  "baseline_bpp": 0.039258528728874365,
+                  "npp_bpp": 0.0339423977598852,
+                  "baseline_quality": 0.8125,
+                  "npp_quality": 0.6875,
+                  "same_qp_rate_change_percent": -13.541340292457738,
+                  "quality_change_pp": -12.5
+                }
+              ]
+            },
+            {
+              "codec": "h265",
+              "sources": 16,
+              "bd_rate": {
+                "valid": false,
+                "percent": null,
+                "reason": "nonmonotone or tied four-QP operating curve"
+              },
+              "points": [
+                {
+                  "qp": 30,
+                  "baseline_bpp": 0.19821244843152105,
+                  "npp_bpp": 0.13778452970543686,
+                  "baseline_quality": 0.9375,
+                  "npp_quality": 0.9375,
+                  "same_qp_rate_change_percent": -30.48643977926593,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 35,
+                  "baseline_bpp": 0.11902571697624362,
+                  "npp_bpp": 0.0903539852220185,
+                  "baseline_quality": 0.9375,
+                  "npp_quality": 0.9375,
+                  "same_qp_rate_change_percent": -24.088686447440367,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 40,
+                  "baseline_bpp": 0.07556417037029656,
+                  "npp_bpp": 0.06261179398517219,
+                  "baseline_quality": 0.875,
+                  "npp_quality": 0.8125,
+                  "same_qp_rate_change_percent": -17.140896699655695,
+                  "quality_change_pp": -6.25
+                },
+                {
+                  "qp": 45,
+                  "baseline_bpp": 0.050245635363520405,
+                  "npp_bpp": 0.04560540646922832,
+                  "baseline_quality": 0.75,
+                  "npp_quality": 0.75,
+                  "same_qp_rate_change_percent": -9.235088502156763,
+                  "quality_change_pp": 0.0
+                }
+              ]
+            }
+          ],
+          "bilateral": [
+            {
+              "codec": "h264",
+              "sources": 16,
+              "bd_rate": {
+                "valid": false,
+                "percent": null,
+                "reason": "nonmonotone or tied four-QP operating curve"
+              },
+              "points": [
+                {
+                  "qp": 30,
+                  "baseline_bpp": 0.19530128946109693,
+                  "npp_bpp": 0.18626684072066327,
+                  "baseline_quality": 0.9375,
+                  "npp_quality": 0.9375,
+                  "same_qp_rate_change_percent": -4.625903272509257,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 35,
+                  "baseline_bpp": 0.11134042545240752,
+                  "npp_bpp": 0.10709022989078444,
+                  "baseline_quality": 0.875,
+                  "npp_quality": 0.875,
+                  "same_qp_rate_change_percent": -3.817297755378013,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 40,
+                  "baseline_bpp": 0.06535448346819196,
+                  "npp_bpp": 0.06337426633250956,
+                  "baseline_quality": 0.875,
+                  "npp_quality": 0.875,
+                  "same_qp_rate_change_percent": -3.029963715719941,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 45,
+                  "baseline_bpp": 0.039258528728874365,
+                  "npp_bpp": 0.03849590067960778,
+                  "baseline_quality": 0.8125,
+                  "npp_quality": 0.75,
+                  "same_qp_rate_change_percent": -1.9425792915812368,
+                  "quality_change_pp": -6.25
+                }
+              ]
+            },
+            {
+              "codec": "h265",
+              "sources": 16,
+              "bd_rate": {
+                "valid": false,
+                "percent": null,
+                "reason": "nonmonotone or tied four-QP operating curve"
+              },
+              "points": [
+                {
+                  "qp": 30,
+                  "baseline_bpp": 0.19821244843152105,
+                  "npp_bpp": 0.1891597825653699,
+                  "baseline_quality": 0.9375,
+                  "npp_quality": 0.9375,
+                  "same_qp_rate_change_percent": -4.567153040985062,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 35,
+                  "baseline_bpp": 0.11902571697624362,
+                  "npp_bpp": 0.11428365902024873,
+                  "baseline_quality": 0.9375,
+                  "npp_quality": 0.9375,
+                  "same_qp_rate_change_percent": -3.984061660339633,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 40,
+                  "baseline_bpp": 0.07556417037029656,
+                  "npp_bpp": 0.07346577547034439,
+                  "baseline_quality": 0.875,
+                  "npp_quality": 0.875,
+                  "same_qp_rate_change_percent": -2.7769707384718734,
+                  "quality_change_pp": 0.0
+                },
+                {
+                  "qp": 45,
+                  "baseline_bpp": 0.050245635363520405,
+                  "npp_bpp": 0.049530496402662626,
+                  "baseline_quality": 0.75,
+                  "npp_quality": 0.75,
+                  "same_qp_rate_change_percent": -1.4232857355347295,
+                  "quality_change_pp": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        "e0": {
+          "available": true,
+          "delta_pp": 0.5,
+          "spreads_pp": {
+            "h264/35": 0.0,
+            "h265/40": 0.0,
+            "h264/40": 0.0,
+            "h265/45": 0.0,
+            "h264/45": 0.0
+          },
+          "seeds": 3,
+          "scope": "observed repeated-seed range with0.5pp minimum; not a formal stochastic CI",
+          "seeds_measured": 3,
+          "invocation_id": "5a7084c12dfaccac35cbd9303b690a27c60dc26b19bbd4041098b51129d2f394",
+          "base_npp": "27804a2ccba0cc33c7b734c337d9ed600bc7cae07e8ad3518029aa336959bd04"
+        },
+        "branches": [
+          {
+            "additional_steps": 1000,
+            "global_steps": 101000,
+            "lr": 0.0001,
+            "rate_lambda": 0.001,
+            "stop_reason": "step_budget",
+            "seconds": 1040.232435889,
+            "theta_delta_norm": 0.42914095520973206,
+            "theta_relative_delta": 0.06147940366385554,
+            "rd_quality_stop_available": true,
+            "expanded": [
+              {
+                "sources": 32,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 32,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17216009023238202,
+                        "npp_bpp": 0.30712462444694677,
+                        "baseline_quality": 0.90625,
+                        "npp_quality": 0.90625,
+                        "same_qp_rate_change_percent": 78.39478594161362,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.09946667418187978,
+                        "npp_bpp": 0.17292879065688777,
+                        "baseline_quality": 0.90625,
+                        "npp_quality": 0.90625,
+                        "same_qp_rate_change_percent": 73.85600964266568,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.05959865025111607,
+                        "npp_bpp": 0.09940890876614318,
+                        "baseline_quality": 0.90625,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 66.7972485069519,
+                        "quality_change_pp": 3.125
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.036788706876793684,
+                        "npp_bpp": 0.058781215122767856,
+                        "baseline_quality": 0.75,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": 59.78059603896284,
+                        "quality_change_pp": 12.5
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 32,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17460889232401944,
+                        "npp_bpp": 0.30365527406030773,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.90625,
+                        "same_qp_rate_change_percent": 73.90596207254933,
+                        "quality_change_pp": -3.125
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.10655002204739318,
+                        "npp_bpp": 0.1775137453663106,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.90625,
+                        "same_qp_rate_change_percent": 66.60132204135343,
+                        "quality_change_pp": -3.125
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.06960942793865593,
+                        "npp_bpp": 0.10726477175342794,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.90625,
+                        "same_qp_rate_change_percent": 54.09517780832245,
+                        "quality_change_pp": 3.125
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.048036069286112884,
+                        "npp_bpp": 0.06647296827666614,
+                        "baseline_quality": 0.71875,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": 38.381364804724605,
+                        "quality_change_pp": 15.625
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sources": 48,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 48,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.16099319977014243,
+                        "npp_bpp": 0.28891312994924534,
+                        "baseline_quality": 0.8541666666666666,
+                        "npp_quality": 0.8541666666666666,
+                        "same_qp_rate_change_percent": 79.45672883186386,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.09311676025390625,
+                        "npp_bpp": 0.16194386384925064,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.8541666666666666,
+                        "same_qp_rate_change_percent": 73.91483918434231,
+                        "quality_change_pp": -2.083333333333337
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.056134593730070154,
+                        "npp_bpp": 0.09327568002298575,
+                        "baseline_quality": 0.8541666666666666,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": 66.16434505879371,
+                        "quality_change_pp": 2.083333333333337
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.03492269710618622,
+                        "npp_bpp": 0.05552247754570578,
+                        "baseline_quality": 0.7708333333333334,
+                        "npp_quality": 0.8333333333333334,
+                        "same_qp_rate_change_percent": 58.98679697299354,
+                        "quality_change_pp": 6.25
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 48,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.16550850381656568,
+                        "npp_bpp": 0.28806823938071324,
+                        "baseline_quality": 0.9166666666666666,
+                        "npp_quality": 0.8541666666666666,
+                        "same_qp_rate_change_percent": 74.05041598344786,
+                        "quality_change_pp": -6.25
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.10146996115340667,
+                        "npp_bpp": 0.16800009798841412,
+                        "baseline_quality": 0.8958333333333334,
+                        "npp_quality": 0.8541666666666666,
+                        "same_qp_rate_change_percent": 65.56633714920252,
+                        "quality_change_pp": -4.166666666666674
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.06692380321269133,
+                        "npp_bpp": 0.10199862110371492,
+                        "baseline_quality": 0.8541666666666666,
+                        "npp_quality": 0.8541666666666666,
+                        "same_qp_rate_change_percent": 52.410078637569214,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.04679875795533057,
+                        "npp_bpp": 0.06394979256350979,
+                        "baseline_quality": 0.6875,
+                        "npp_quality": 0.8333333333333334,
+                        "same_qp_rate_change_percent": 36.64848247585948,
+                        "quality_change_pp": 14.583333333333337
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "measured_snapshots": [
+              {
+                "step": 500,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.19530128946109693,
+                        "npp_bpp": 0.3336435434769611,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 70.83529985777248,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.11134042545240752,
+                        "npp_bpp": 0.1869284182178731,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 67.88908202778126,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.06535448346819196,
+                        "npp_bpp": 0.10626142852160396,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 62.59240817551777,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.039258528728874365,
+                        "npp_bpp": 0.061632584552375635,
+                        "baseline_quality": 0.8125,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 56.99158004116776,
+                        "quality_change_pp": 12.5
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.19821244843152105,
+                        "npp_bpp": 0.33084698112643496,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 66.91533944737927,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.11902571697624362,
+                        "npp_bpp": 0.1924134857800542,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 61.65706930247528,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.07556417037029656,
+                        "npp_bpp": 0.11484574298469388,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 51.984389455876936,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.050245635363520405,
+                        "npp_bpp": 0.06949413066007654,
+                        "baseline_quality": 0.75,
+                        "npp_quality": 0.8125,
+                        "same_qp_rate_change_percent": 38.3087907184293,
+                        "quality_change_pp": 6.25
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "step": 1000,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.19530128946109693,
+                        "npp_bpp": 0.35487957389987246,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 81.70877154938742,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.11134042545240752,
+                        "npp_bpp": 0.1990068396743463,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 78.73727252767846,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.06535448346819196,
+                        "npp_bpp": 0.11287331094547194,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 72.70936124896068,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.039258528728874365,
+                        "npp_bpp": 0.0652313232421875,
+                        "baseline_quality": 0.8125,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 66.15834916454813,
+                        "quality_change_pp": 12.5
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.19821244843152105,
+                        "npp_bpp": 0.35027967180524555,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 76.7193103041967,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.11902571697624362,
+                        "npp_bpp": 0.20407711729711417,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 71.45632261794819,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.07556417037029656,
+                        "npp_bpp": 0.12141636439732142,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 60.679808700776604,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.050245635363520405,
+                        "npp_bpp": 0.07280809052136479,
+                        "baseline_quality": 0.75,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 44.90430859239427,
+                        "quality_change_pp": 18.75
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "additional_steps": 1000,
+            "global_steps": 101000,
+            "lr": 0.0001,
+            "rate_lambda": 0.01,
+            "stop_reason": "step_budget",
+            "seconds": 1034.501704186,
+            "theta_delta_norm": 0.4243078827857971,
+            "theta_relative_delta": 0.060787010157990956,
+            "rd_quality_stop_available": true,
+            "expanded": [
+              {
+                "sources": 32,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 32,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17216009023238202,
+                        "npp_bpp": 0.30233476599868464,
+                        "baseline_quality": 0.90625,
+                        "npp_quality": 0.90625,
+                        "same_qp_rate_change_percent": 75.61257408182848,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.09946667418187978,
+                        "npp_bpp": 0.1708576435945472,
+                        "baseline_quality": 0.90625,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 71.7737573914711,
+                        "quality_change_pp": 3.125
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.05959865025111607,
+                        "npp_bpp": 0.09853635515485491,
+                        "baseline_quality": 0.90625,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 65.33319922460774,
+                        "quality_change_pp": 3.125
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.036788706876793684,
+                        "npp_bpp": 0.05838503156389509,
+                        "baseline_quality": 0.75,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": 58.70367979887972,
+                        "quality_change_pp": 12.5
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 32,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17460889232401944,
+                        "npp_bpp": 0.2990181592045998,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 71.25024689447987,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.10655002204739318,
+                        "npp_bpp": 0.17500383026745855,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.90625,
+                        "same_qp_rate_change_percent": 64.24570066218973,
+                        "quality_change_pp": -3.125
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.06960942793865593,
+                        "npp_bpp": 0.10603737344547194,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.90625,
+                        "same_qp_rate_change_percent": 52.33191334213885,
+                        "quality_change_pp": 3.125
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.048036069286112884,
+                        "npp_bpp": 0.06606152592873087,
+                        "baseline_quality": 0.71875,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": 37.52483687883492,
+                        "quality_change_pp": 15.625
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sources": 48,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 48,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.16099319977014243,
+                        "npp_bpp": 0.28346086359348427,
+                        "baseline_quality": 0.8541666666666666,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": 76.07008494656588,
+                        "quality_change_pp": 2.083333333333337
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.09311676025390625,
+                        "npp_bpp": 0.15958555052880527,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": 71.38219810660848,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.056134593730070154,
+                        "npp_bpp": 0.09221078262848108,
+                        "baseline_quality": 0.8541666666666666,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": 64.26730203461979,
+                        "quality_change_pp": 2.083333333333337
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.03492269710618622,
+                        "npp_bpp": 0.055002796406648596,
+                        "baseline_quality": 0.7708333333333334,
+                        "npp_quality": 0.8333333333333334,
+                        "same_qp_rate_change_percent": 57.498707042605176,
+                        "quality_change_pp": 6.25
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 48,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.16550850381656568,
+                        "npp_bpp": 0.28264207904841626,
+                        "baseline_quality": 0.9166666666666666,
+                        "npp_quality": 0.8958333333333334,
+                        "same_qp_rate_change_percent": 70.771937713648,
+                        "quality_change_pp": -2.083333333333326
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.10146996115340667,
+                        "npp_bpp": 0.16521095742984693,
+                        "baseline_quality": 0.8958333333333334,
+                        "npp_quality": 0.8541666666666666,
+                        "same_qp_rate_change_percent": 62.817601930559384,
+                        "quality_change_pp": -4.166666666666674
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.06692380321269133,
+                        "npp_bpp": 0.10061443095304529,
+                        "baseline_quality": 0.8541666666666666,
+                        "npp_quality": 0.8541666666666666,
+                        "same_qp_rate_change_percent": 50.34177097389605,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.04679875795533057,
+                        "npp_bpp": 0.06339165304793792,
+                        "baseline_quality": 0.6875,
+                        "npp_quality": 0.8541666666666666,
+                        "same_qp_rate_change_percent": 35.45584502145394,
+                        "quality_change_pp": 16.666666666666664
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "measured_snapshots": [
+              {
+                "step": 500,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.19530128946109693,
+                        "npp_bpp": 0.33607373918805805,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 72.07963148394998,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.11134042545240752,
+                        "npp_bpp": 0.18844339798907844,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 69.24975562414085,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.06535448346819196,
+                        "npp_bpp": 0.10684655637157206,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 63.487722190588954,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.039258528728874365,
+                        "npp_bpp": 0.06181973827128508,
+                        "baseline_quality": 0.8125,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": 57.468301214806104,
+                        "quality_change_pp": 6.25
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.19821244843152105,
+                        "npp_bpp": 0.33287235182158803,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 67.9371575577856,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.11902571697624362,
+                        "npp_bpp": 0.19382445666254783,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 62.842502936767275,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.07556417037029656,
+                        "npp_bpp": 0.11539287956393494,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 52.70845825271524,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.050245635363520405,
+                        "npp_bpp": 0.06980288758569834,
+                        "baseline_quality": 0.75,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": 38.92328573553474,
+                        "quality_change_pp": 12.5
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "step": 1000,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.19530128946109693,
+                        "npp_bpp": 0.35012210145288586,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 79.27280583706975,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.11134042545240752,
+                        "npp_bpp": 0.1970384558852838,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 76.96937575427884,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.06535448346819196,
+                        "npp_bpp": 0.11211052719427615,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 71.5422129360725,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.039258528728874365,
+                        "npp_bpp": 0.06493408825932717,
+                        "baseline_quality": 0.8125,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 65.40122710092449,
+                        "quality_change_pp": 12.5
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.19821244843152105,
+                        "npp_bpp": 0.345692692970743,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 74.40513736965104,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.11902571697624362,
+                        "npp_bpp": 0.2015215815330038,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 69.30927756833051,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.07556417037029656,
+                        "npp_bpp": 0.1200475887376435,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 58.868400393148335,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.050245635363520405,
+                        "npp_bpp": 0.07244904187260842,
+                        "baseline_quality": 0.75,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": 44.18972185036443,
+                        "quality_change_pp": 12.5
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "additional_steps": 1000,
+            "global_steps": 101000,
+            "lr": 0.0001,
+            "rate_lambda": 0.1,
+            "stop_reason": "step_budget",
+            "seconds": 1025.950146229,
+            "theta_delta_norm": 0.5398435592651367,
+            "theta_relative_delta": 0.07733883166469961,
+            "rd_quality_stop_available": true,
+            "measured_snapshots": [
+              {
+                "step": 500,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.19530128946109693,
+                        "npp_bpp": 0.2944055674027424,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 50.744302925550585,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.11134042545240752,
+                        "npp_bpp": 0.16490733866788904,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 48.1109291596687,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.06535448346819196,
+                        "npp_bpp": 0.0945333364058514,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 44.647056160822984,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.039258528728874365,
+                        "npp_bpp": 0.055523463657924106,
+                        "baseline_quality": 0.8125,
+                        "npp_quality": 0.75,
+                        "same_qp_rate_change_percent": 41.4303221635685,
+                        "quality_change_pp": -6.25
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.19821244843152105,
+                        "npp_bpp": 0.292995530731824,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 47.81893521336973,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.11902571697624362,
+                        "npp_bpp": 0.17026161660953443,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 43.046075196939995,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.07556417037029656,
+                        "npp_bpp": 0.10305988545320471,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 36.38723875107404,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.050245635363520405,
+                        "npp_bpp": 0.06359909991828763,
+                        "baseline_quality": 0.75,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": 26.576367197183814,
+                        "quality_change_pp": 12.5
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "step": 1000,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.19530128946109693,
+                        "npp_bpp": 0.27984899404097574,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 43.290909554757604,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.11134042545240752,
+                        "npp_bpp": 0.15710184525470344,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 41.10045351125109,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.06535448346819196,
+                        "npp_bpp": 0.09030867596061862,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 38.18283179389195,
+                        "quality_change_pp": 6.25
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.039258528728874365,
+                        "npp_bpp": 0.05327154665577168,
+                        "baseline_quality": 0.8125,
+                        "npp_quality": 0.8125,
+                        "same_qp_rate_change_percent": 35.69420042119624,
+                        "quality_change_pp": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.19821244843152105,
+                        "npp_bpp": 0.27847710434271367,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 40.494255808016334,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.11902571697624362,
+                        "npp_bpp": 0.1622537106883769,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.9375,
+                        "same_qp_rate_change_percent": 36.31819644553049,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.07556417037029656,
+                        "npp_bpp": 0.09846994828204719,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": 30.31301448755752,
+                        "quality_change_pp": 0.0
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.050245635363520405,
+                        "npp_bpp": 0.06166294642857143,
+                        "baseline_quality": 0.75,
+                        "npp_quality": 0.8125,
+                        "same_qp_rate_change_percent": 22.722990728345493,
+                        "quality_change_pp": 6.25
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "expanded": []
+          },
+          {
+            "additional_steps": 1000,
+            "global_steps": 101000,
+            "lr": 0.0001,
+            "rate_lambda": 1.0,
+            "stop_reason": "step_budget",
+            "seconds": 1007.5468537299994,
+            "theta_delta_norm": 1.0490280389785767,
+            "theta_relative_delta": 0.1502853956960296,
+            "rd_quality_stop_available": true,
+            "measured_snapshots": [
+              {
+                "step": 500,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.19530128946109693,
+                        "npp_bpp": 0.1911786137794962,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": -2.110931112117387,
+                        "quality_change_pp": -6.25
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.11134042545240752,
+                        "npp_bpp": 0.10502546660754146,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.8125,
+                        "same_qp_rate_change_percent": -5.671757422523404,
+                        "quality_change_pp": -6.25
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.06535448346819196,
+                        "npp_bpp": 0.059971400669642856,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.75,
+                        "same_qp_rate_change_percent": -8.236745993362572,
+                        "quality_change_pp": -12.5
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.039258528728874365,
+                        "npp_bpp": 0.035861424037388394,
+                        "baseline_quality": 0.8125,
+                        "npp_quality": 0.75,
+                        "same_qp_rate_change_percent": -8.653163532813258,
+                        "quality_change_pp": -6.25
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.19821244843152105,
+                        "npp_bpp": 0.19536123470384248,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": -1.4384635022878567,
+                        "quality_change_pp": -6.25
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.11902571697624362,
+                        "npp_bpp": 0.11317257005341198,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.8125,
+                        "same_qp_rate_change_percent": -4.917548132896243,
+                        "quality_change_pp": -12.5
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.07556417037029656,
+                        "npp_bpp": 0.06987715740593112,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.75,
+                        "same_qp_rate_change_percent": -7.526070803790552,
+                        "quality_change_pp": -12.5
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.050245635363520405,
+                        "npp_bpp": 0.046450245137117346,
+                        "baseline_quality": 0.75,
+                        "npp_quality": 0.6875,
+                        "same_qp_rate_change_percent": -7.5536714760275565,
+                        "quality_change_pp": -6.25
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "step": 1000,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.19530128946109693,
+                        "npp_bpp": 0.1730773302973533,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": -11.379320241595503,
+                        "quality_change_pp": -6.25
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.11134042545240752,
+                        "npp_bpp": 0.09458284961933992,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.75,
+                        "same_qp_rate_change_percent": -15.050756061849812,
+                        "quality_change_pp": -12.5
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.06535448346819196,
+                        "npp_bpp": 0.05405815280213648,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.75,
+                        "same_qp_rate_change_percent": -17.284706521402484,
+                        "quality_change_pp": -12.5
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.039258528728874365,
+                        "npp_bpp": 0.033052872638313135,
+                        "baseline_quality": 0.8125,
+                        "npp_quality": 0.5625,
+                        "same_qp_rate_change_percent": -15.807153990457657,
+                        "quality_change_pp": -25.0
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.19821244843152105,
+                        "npp_bpp": 0.17613687320631377,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.875,
+                        "same_qp_rate_change_percent": -11.137330374501687,
+                        "quality_change_pp": -6.25
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.11902571697624362,
+                        "npp_bpp": 0.10216070681202169,
+                        "baseline_quality": 0.9375,
+                        "npp_quality": 0.8125,
+                        "same_qp_rate_change_percent": -14.169215353340848,
+                        "quality_change_pp": -12.5
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.07556417037029656,
+                        "npp_bpp": 0.06414436807437819,
+                        "baseline_quality": 0.875,
+                        "npp_quality": 0.75,
+                        "same_qp_rate_change_percent": -15.112721068671142,
+                        "quality_change_pp": -12.5
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.050245635363520405,
+                        "npp_bpp": 0.04402814592633929,
+                        "baseline_quality": 0.75,
+                        "npp_quality": 0.75,
+                        "same_qp_rate_change_percent": -12.374188110466545,
+                        "quality_change_pp": 0.0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "expanded": []
+          }
+        ]
+      }
+    },
+    {
+      "task": "ot",
+      "stage": "recover",
+      "handle": "hieusunday0412/paper-ot-recovery-p05-20261028",
+      "url": "https://www.kaggle.com/code/hieusunday0412/paper-ot-recovery-p05-20261028",
+      "version": 1,
+      "source_sha256": "fe75e410959a6dc6fc611430dc5a8f0a9f91f47871d9a91a1677cbea470e7e97",
+      "checkpoint_sha256": "c1f0de67d71a7ff0c89ec6ac31578dcde5c7e929f03c9af5ec1754482af65b4d",
+      "training_source_sha256": "3d03d131bebd669d3ba802f2bef65b45d7bfd317a4b238177209a1ea6d5d32d3",
+      "max_worker_seconds": 18000,
+      "source_commit": "83282088aca119d4cb3e79aab2e9c42f856e8778",
+      "scientific_complete": false,
+      "latest": {
+        "stage": "cloud_end",
+        "task": "ot",
+        "mode": "full",
+        "source_sha256": "fe75e410959a6dc6fc611430dc5a8f0a9f91f47871d9a91a1677cbea470e7e97",
+        "bootstrap_complete": true,
+        "started": 1793162777.7992318,
+        "worker_exit_code": 0,
+        "wall_seconds": 11393.175478458405
+      },
+      "observed": 1793461405.0594091,
+      "status": "complete",
+      "private": true,
+      "private_dataset": "hieusunday0412/paper-ot-state-r5-20261027/1",
+      "running_verified": true,
+      "server_verification": {
+        "handle": "hieusunday0412/paper-ot-recovery-p05-20261028",
+        "private_verified": true,
+        "notebook_source_verified": true,
+        "source_sha256": "fe75e410959a6dc6fc611430dc5a8f0a9f91f47871d9a91a1677cbea470e7e97",
+        "checked": 1793162966.5208893
+      },
+      "diagnostic_ready": true,
+      "measurements_seen": true,
+      "result_summary": {
+        "status": "COMPLETE",
+        "source_sha256": "fe75e410959a6dc6fc611430dc5a8f0a9f91f47871d9a91a1677cbea470e7e97",
+        "npp_updates": 3738,
+        "error": null,
+        "wall_hours": 3.1579015619224973,
+        "base_npp_unchanged": true,
+        "baseline": [
+          {
+            "codec": "h264",
+            "sources": 16,
+            "bd_rate": {
+              "valid": true,
+              "percent": -2.908660583522765,
+              "quality_interval": [
+                0.7254301532994527,
+                0.7702735029792406
+              ],
+              "method": "PCHIP log-rate integral"
+            },
+            "points": [
+              {
+                "qp": 30,
+                "baseline_bpp": 0.17564269642771027,
+                "npp_bpp": 0.2641967961817612,
+                "baseline_quality": 0.7702735029792406,
+                "npp_quality": 0.7712134225183794,
+                "same_qp_rate_change_percent": 50.41718303982958,
+                "quality_change_pp": 0.0939919539138856
+              },
+              {
+                "qp": 35,
+                "baseline_bpp": 0.0919162138008777,
+                "npp_bpp": 0.12261341236255786,
+                "baseline_quality": 0.7665978337048384,
+                "npp_quality": 0.7665196904860992,
+                "same_qp_rate_change_percent": 33.3969354179241,
+                "quality_change_pp": -0.00781432187391129
+              },
+              {
+                "qp": 40,
+                "baseline_bpp": 0.05097509313512732,
+                "npp_bpp": 0.0605414119767554,
+                "baseline_quality": 0.742223319770898,
+                "npp_quality": 0.7533073463912873,
+                "same_qp_rate_change_percent": 18.76665299319651,
+                "quality_change_pp": 1.108402662038932
+              },
+              {
+                "qp": 45,
+                "baseline_bpp": 0.028421849380304783,
+                "npp_bpp": 0.031542836883921684,
+                "baseline_quality": 0.7196420575309431,
+                "npp_quality": 0.7254301532994527,
+                "same_qp_rate_change_percent": 10.980944490472243,
+                "quality_change_pp": 0.5788095768509582
+              }
+            ]
+          },
+          {
+            "codec": "h265",
+            "sources": 16,
+            "bd_rate": {
+              "valid": true,
+              "percent": 7.965613919841248,
+              "quality_interval": [
+                0.6938368188959009,
+                0.7644206581894735
+              ],
+              "method": "PCHIP log-rate integral"
+            },
+            "points": [
+              {
+                "qp": 30,
+                "baseline_bpp": 0.17859583725163966,
+                "npp_bpp": 0.2692328559027778,
+                "baseline_quality": 0.7644206581894735,
+                "npp_quality": 0.7733348050144938,
+                "same_qp_rate_change_percent": 50.74979352594402,
+                "quality_change_pp": 0.8914146825020342
+              },
+              {
+                "qp": 35,
+                "baseline_bpp": 0.09622069935739776,
+                "npp_bpp": 0.1293649555724344,
+                "baseline_quality": 0.7493659033095396,
+                "npp_quality": 0.7628653230248461,
+                "same_qp_rate_change_percent": 34.4460770254092,
+                "quality_change_pp": 1.3499419715306549
+              },
+              {
+                "qp": 40,
+                "baseline_bpp": 0.055761360827787425,
+                "npp_bpp": 0.06613291045765818,
+                "baseline_quality": 0.7440235369582586,
+                "npp_quality": 0.7377044703489671,
+                "same_qp_rate_change_percent": 18.59988615037946,
+                "quality_change_pp": -0.631906660929149
+              },
+              {
+                "qp": 45,
+                "baseline_bpp": 0.034026157708815584,
+                "npp_bpp": 0.03677631896219136,
+                "baseline_quality": 0.6796074794253483,
+                "npp_quality": 0.6938368188959009,
+                "same_qp_rate_change_percent": 8.08249134948098,
+                "quality_change_pp": 1.4229339470552604
+              }
+            ]
+          }
+        ],
+        "filters": {
+          "gaussian_0.5": [
+            {
+              "codec": "h264",
+              "sources": 16,
+              "bd_rate": {
+                "valid": true,
+                "percent": 2.1869927852421602,
+                "quality_interval": [
+                  0.7196420575309431,
+                  0.7650679072655311
+                ],
+                "method": "PCHIP log-rate integral"
+              },
+              "points": [
+                {
+                  "qp": 30,
+                  "baseline_bpp": 0.17564269642771027,
+                  "npp_bpp": 0.1478417478961709,
+                  "baseline_quality": 0.7702735029792406,
+                  "npp_quality": 0.7650679072655311,
+                  "same_qp_rate_change_percent": -15.828126700947953,
+                  "quality_change_pp": -0.5205595713709488
+                },
+                {
+                  "qp": 35,
+                  "baseline_bpp": 0.0919162138008777,
+                  "npp_bpp": 0.08141515284408758,
+                  "baseline_quality": 0.7665978337048384,
+                  "npp_quality": 0.7551194441311244,
+                  "same_qp_rate_change_percent": -11.424601299982873,
+                  "quality_change_pp": -1.1478389573713943
+                },
+                {
+                  "qp": 40,
+                  "baseline_bpp": 0.05097509313512732,
+                  "npp_bpp": 0.046715253665123455,
+                  "baseline_quality": 0.742223319770898,
+                  "npp_quality": 0.7444249760621902,
+                  "same_qp_rate_change_percent": -8.35670757621113,
+                  "quality_change_pp": 0.22016562912922089
+                },
+                {
+                  "qp": 45,
+                  "baseline_bpp": 0.028421849380304783,
+                  "npp_bpp": 0.02688457347728588,
+                  "baseline_quality": 0.7196420575309431,
+                  "npp_quality": 0.7149796638351127,
+                  "same_qp_rate_change_percent": -5.408782104391053,
+                  "quality_change_pp": -0.4662393695830436
+                }
+              ]
+            },
+            {
+              "codec": "h265",
+              "sources": 16,
+              "bd_rate": {
+                "valid": true,
+                "percent": -11.551690124366523,
+                "quality_interval": [
+                  0.6849761187953435,
+                  0.7644206581894735
+                ],
+                "method": "PCHIP log-rate integral"
+              },
+              "points": [
+                {
+                  "qp": 30,
+                  "baseline_bpp": 0.17859583725163966,
+                  "npp_bpp": 0.1492384922357253,
+                  "baseline_quality": 0.7644206581894735,
+                  "npp_quality": 0.7664184761772946,
+                  "same_qp_rate_change_percent": -16.437866339824126,
+                  "quality_change_pp": 0.1997817987821171
+                },
+                {
+                  "qp": 35,
+                  "baseline_bpp": 0.09622069935739776,
+                  "npp_bpp": 0.08463654694733797,
+                  "baseline_quality": 0.7493659033095396,
+                  "npp_quality": 0.7583301276854018,
+                  "same_qp_rate_change_percent": -12.039148008093504,
+                  "quality_change_pp": 0.8964224375862195
+                },
+                {
+                  "qp": 40,
+                  "baseline_bpp": 0.055761360827787425,
+                  "npp_bpp": 0.05134403558424962,
+                  "baseline_quality": 0.7440235369582586,
+                  "npp_quality": 0.7391807886072479,
+                  "same_qp_rate_change_percent": -7.921839026095889,
+                  "quality_change_pp": -0.48427483510107283
+                },
+                {
+                  "qp": 45,
+                  "baseline_bpp": 0.034026157708815584,
+                  "npp_bpp": 0.03262545738691165,
+                  "baseline_quality": 0.6796074794253483,
+                  "npp_quality": 0.6849761187953435,
+                  "same_qp_rate_change_percent": -4.11653979238753,
+                  "quality_change_pp": 0.536863936999521
+                }
+              ]
+            }
+          ],
+          "gaussian_1.0": [
+            {
+              "codec": "h264",
+              "sources": 16,
+              "bd_rate": {
+                "valid": true,
+                "percent": 4.3425946251936685,
+                "quality_interval": [
+                  0.7196420575309431,
+                  0.7573590853231804
+                ],
+                "method": "PCHIP log-rate integral"
+              },
+              "points": [
+                {
+                  "qp": 30,
+                  "baseline_bpp": 0.17564269642771027,
+                  "npp_bpp": 0.11041118480541089,
+                  "baseline_quality": 0.7702735029792406,
+                  "npp_quality": 0.7573590853231804,
+                  "same_qp_rate_change_percent": -37.13875552414267,
+                  "quality_change_pp": -1.2914417656060162
+                },
+                {
+                  "qp": 35,
+                  "baseline_bpp": 0.0919162138008777,
+                  "npp_bpp": 0.06523047553168403,
+                  "baseline_quality": 0.7665978337048384,
+                  "npp_quality": 0.7467770691573614,
+                  "same_qp_rate_change_percent": -29.032677876619474,
+                  "quality_change_pp": -1.9820764547476943
+                },
+                {
+                  "qp": 40,
+                  "baseline_bpp": 0.05097509313512732,
+                  "npp_bpp": 0.039755644621672456,
+                  "baseline_quality": 0.742223319770898,
+                  "npp_quality": 0.7368500529627181,
+                  "same_qp_rate_change_percent": -22.009667512943597,
+                  "quality_change_pp": -0.5373266808179844
+                },
+                {
+                  "qp": 45,
+                  "baseline_bpp": 0.028421849380304783,
+                  "npp_bpp": 0.024005842797550154,
+                  "baseline_quality": 0.7196420575309431,
+                  "npp_quality": 0.7079944863267345,
+                  "same_qp_rate_change_percent": -15.537365368682687,
+                  "quality_change_pp": -1.1647571204208673
+                }
+              ]
+            },
+            {
+              "codec": "h265",
+              "sources": 16,
+              "bd_rate": {
+                "valid": true,
+                "percent": 7.511683794161687,
+                "quality_interval": [
+                  0.6796074794253483,
+                  0.7544357566765595
+                ],
+                "method": "PCHIP log-rate integral"
+              },
+              "points": [
+                {
+                  "qp": 30,
+                  "baseline_bpp": 0.17859583725163966,
+                  "npp_bpp": 0.10879460087528935,
+                  "baseline_quality": 0.7644206581894735,
+                  "npp_quality": 0.7544357566765595,
+                  "same_qp_rate_change_percent": -39.08335012198583,
+                  "quality_change_pp": -0.998490151291398
+                },
+                {
+                  "qp": 35,
+                  "baseline_bpp": 0.09622069935739776,
+                  "npp_bpp": 0.06723154327015818,
+                  "baseline_quality": 0.7493659033095396,
+                  "npp_quality": 0.7506628902574587,
+                  "same_qp_rate_change_percent": -30.12777529246964,
+                  "quality_change_pp": 0.1296986947919132
+                },
+                {
+                  "qp": 40,
+                  "baseline_bpp": 0.055761360827787425,
+                  "npp_bpp": 0.04401774465301891,
+                  "baseline_quality": 0.7440235369582586,
+                  "npp_quality": 0.7075819733777768,
+                  "same_qp_rate_change_percent": -21.060490634432917,
+                  "quality_change_pp": -3.6441563580481784
+                },
+                {
+                  "qp": 45,
+                  "baseline_bpp": 0.034026157708815584,
+                  "npp_bpp": 0.030094664773823304,
+                  "baseline_quality": 0.6796074794253483,
+                  "npp_quality": 0.6660090451888742,
+                  "same_qp_rate_change_percent": -11.554325259515563,
+                  "quality_change_pp": -1.359843423647411
+                }
+              ]
+            }
+          ],
+          "bilateral": [
+            {
+              "codec": "h264",
+              "sources": 16,
+              "bd_rate": {
+                "valid": true,
+                "percent": -4.07430755772848,
+                "quality_interval": [
+                  0.7196420575309431,
+                  0.7688305579500049
+                ],
+                "method": "PCHIP log-rate integral"
+              },
+              "points": [
+                {
+                  "qp": 30,
+                  "baseline_bpp": 0.17564269642771027,
+                  "npp_bpp": 0.16079740171079282,
+                  "baseline_quality": 0.7702735029792406,
+                  "npp_quality": 0.7688305579500049,
+                  "same_qp_rate_change_percent": -8.451985205674273,
+                  "quality_change_pp": -0.14429450292356982
+                },
+                {
+                  "qp": 35,
+                  "baseline_bpp": 0.0919162138008777,
+                  "npp_bpp": 0.08678982581621335,
+                  "baseline_quality": 0.7665978337048384,
+                  "npp_quality": 0.7575610086481733,
+                  "same_qp_rate_change_percent": -5.577240154571506,
+                  "quality_change_pp": -0.9036825056665032
+                },
+                {
+                  "qp": 40,
+                  "baseline_bpp": 0.05097509313512732,
+                  "npp_bpp": 0.049065766511140044,
+                  "baseline_quality": 0.742223319770898,
+                  "npp_quality": 0.7514724776506068,
+                  "same_qp_rate_change_percent": -3.7456069357753474,
+                  "quality_change_pp": 0.9249157879708814
+                },
+                {
+                  "qp": 45,
+                  "baseline_bpp": 0.028421849380304783,
+                  "npp_bpp": 0.02784446433738426,
+                  "baseline_quality": 0.7196420575309431,
+                  "npp_quality": 0.7144086329469167,
+                  "same_qp_rate_change_percent": -2.0314830157415087,
+                  "quality_change_pp": -0.5233424584026425
+                }
+              ]
+            },
+            {
+              "codec": "h265",
+              "sources": 16,
+              "bd_rate": {
+                "valid": true,
+                "percent": -7.850046694712811,
+                "quality_interval": [
+                  0.682992576246984,
+                  0.7644206581894735
+                ],
+                "method": "PCHIP log-rate integral"
+              },
+              "points": [
+                {
+                  "qp": 30,
+                  "baseline_bpp": 0.17859583725163966,
+                  "npp_bpp": 0.16196149661217207,
+                  "baseline_quality": 0.7644206581894735,
+                  "npp_quality": 0.7661880277484958,
+                  "same_qp_rate_change_percent": -9.313957646185212,
+                  "quality_change_pp": 0.1767369559022347
+                },
+                {
+                  "qp": 35,
+                  "baseline_bpp": 0.09622069935739776,
+                  "npp_bpp": 0.08994255536868248,
+                  "baseline_quality": 0.7493659033095396,
+                  "npp_quality": 0.7623211754145524,
+                  "same_qp_rate_change_percent": -6.524733275317429,
+                  "quality_change_pp": 1.2955272105012794
+                },
+                {
+                  "qp": 40,
+                  "baseline_bpp": 0.055761360827787425,
+                  "npp_bpp": 0.05333851001880787,
+                  "baseline_quality": 0.7440235369582586,
+                  "npp_quality": 0.7357466490044218,
+                  "same_qp_rate_change_percent": -4.345035295071531,
+                  "quality_change_pp": -0.8276887953836853
+                },
+                {
+                  "qp": 45,
+                  "baseline_bpp": 0.034026157708815584,
+                  "npp_bpp": 0.0334718492296007,
+                  "baseline_quality": 0.6796074794253483,
+                  "npp_quality": 0.682992576246984,
+                  "same_qp_rate_change_percent": -1.6290657439446243,
+                  "quality_change_pp": 0.338509682163568
+                }
+              ]
+            }
+          ]
+        },
+        "e0": {
+          "available": false,
+          "reason": "E0 time budget; quality early stop disabled",
+          "seeds_measured": 1,
+          "invocation_id": "998ec0c9abee971a20588bc15c8c70883e7a12567c969e6f06736df682cf3096",
+          "base_npp": "6e3f6e1efcbd4a4bb5bb4a1cdf6f33a8b0a1269f75e45f67a6876573e7762b22"
+        },
+        "branches": [
+          {
+            "additional_steps": 1000,
+            "global_steps": 101000,
+            "lr": 0.0001,
+            "rate_lambda": 0.001,
+            "stop_reason": "step_budget",
+            "seconds": 2192.487346355,
+            "theta_delta_norm": 0.4210239052772522,
+            "theta_relative_delta": 0.05390086691188137,
+            "rd_quality_stop_available": false,
+            "measured_snapshots": [
+              {
+                "step": 500,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": true,
+                      "percent": 0.20316886799053335,
+                      "quality_interval": [
+                        0.7196420575309431,
+                        0.7702735029792406
+                      ],
+                      "method": "PCHIP log-rate integral"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17564269642771027,
+                        "npp_bpp": 0.2621445832429109,
+                        "baseline_quality": 0.7702735029792406,
+                        "npp_quality": 0.776484544863903,
+                        "same_qp_rate_change_percent": 49.24878094820324,
+                        "quality_change_pp": 0.6211041884662372
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.0919162138008777,
+                        "npp_bpp": 0.12283692536530672,
+                        "baseline_quality": 0.7665978337048384,
+                        "npp_quality": 0.770029234812877,
+                        "same_qp_rate_change_percent": 33.640105793972296,
+                        "quality_change_pp": 0.3431401108038634
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.05097509313512732,
+                        "npp_bpp": 0.06167018560715663,
+                        "baseline_quality": 0.742223319770898,
+                        "npp_quality": 0.752752934902087,
+                        "same_qp_rate_change_percent": 20.98101604969751,
+                        "quality_change_pp": 1.0529615131188996
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.028421849380304783,
+                        "npp_bpp": 0.032389322916666664,
+                        "baseline_quality": 0.7196420575309431,
+                        "npp_quality": 0.7166280864426733,
+                        "same_qp_rate_change_percent": 13.959237779618894,
+                        "quality_change_pp": -0.301397108826984
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": true,
+                      "percent": -17.523270603845194,
+                      "quality_interval": [
+                        0.7102726245873454,
+                        0.7644206581894735
+                      ],
+                      "method": "PCHIP log-rate integral"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17859583725163966,
+                        "npp_bpp": 0.2665659586588542,
+                        "baseline_quality": 0.7644206581894735,
+                        "npp_quality": 0.7717165814831797,
+                        "same_qp_rate_change_percent": 49.25653518075315,
+                        "quality_change_pp": 0.7295923293706208
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.09622069935739776,
+                        "npp_bpp": 0.12872898431471835,
+                        "baseline_quality": 0.7493659033095396,
+                        "npp_quality": 0.7663745691316508,
+                        "same_qp_rate_change_percent": 33.785126458677375,
+                        "quality_change_pp": 1.7008665822111246
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.055761360827787425,
+                        "npp_bpp": 0.06677104808666089,
+                        "baseline_quality": 0.7440235369582586,
+                        "npp_quality": 0.7520545968133702,
+                        "same_qp_rate_change_percent": 19.744294427956333,
+                        "quality_change_pp": 0.8031059855111544
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.034026157708815584,
+                        "npp_bpp": 0.03733053325135031,
+                        "baseline_quality": 0.6796074794253483,
+                        "npp_quality": 0.7102726245873454,
+                        "same_qp_rate_change_percent": 9.711280276816625,
+                        "quality_change_pp": 3.0665145161997143
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "step": 1000,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": true,
+                      "percent": 1.0222696873791643,
+                      "quality_interval": [
+                        0.7253447055032943,
+                        0.7702735029792406
+                      ],
+                      "method": "PCHIP log-rate integral"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17564269642771027,
+                        "npp_bpp": 0.24557956648461612,
+                        "baseline_quality": 0.7702735029792406,
+                        "npp_quality": 0.7716325530141632,
+                        "same_qp_rate_change_percent": 39.81769323707118,
+                        "quality_change_pp": 0.13590500349226486
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.0919162138008777,
+                        "npp_bpp": 0.11615093843436536,
+                        "baseline_quality": 0.7665978337048384,
+                        "npp_quality": 0.7633705703608643,
+                        "same_qp_rate_change_percent": 26.366104119550073,
+                        "quality_change_pp": -0.32272633439740517
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.05097509313512732,
+                        "npp_bpp": 0.058999049810715666,
+                        "baseline_quality": 0.742223319770898,
+                        "npp_quality": 0.7524455634151624,
+                        "same_qp_rate_change_percent": 15.740935782732258,
+                        "quality_change_pp": 1.0222243644264495
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.028421849380304783,
+                        "npp_bpp": 0.03150167582947531,
+                        "baseline_quality": 0.7196420575309431,
+                        "npp_quality": 0.7253447055032943,
+                        "same_qp_rate_change_percent": 10.836122618061307,
+                        "quality_change_pp": 0.5702647972351205
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": true,
+                      "percent": -7.463237132975041,
+                      "quality_interval": [
+                        0.6913018757243015,
+                        0.7644206581894735
+                      ],
+                      "method": "PCHIP log-rate integral"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17859583725163966,
+                        "npp_bpp": 0.2505341518072434,
+                        "baseline_quality": 0.7644206581894735,
+                        "npp_quality": 0.7743140791365616,
+                        "same_qp_rate_change_percent": 40.279950340748094,
+                        "quality_change_pp": 0.9893420947088116
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.09622069935739776,
+                        "npp_bpp": 0.12193919994212964,
+                        "baseline_quality": 0.7493659033095396,
+                        "npp_quality": 0.7596470248997222,
+                        "same_qp_rate_change_percent": 26.728656886190638,
+                        "quality_change_pp": 1.0281121590182685
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.055761360827787425,
+                        "npp_bpp": 0.06418675552179784,
+                        "baseline_quality": 0.7440235369582586,
+                        "npp_quality": 0.7516617365084263,
+                        "same_qp_rate_change_percent": 15.109736507384163,
+                        "quality_change_pp": 0.7638199550167646
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.034026157708815584,
+                        "npp_bpp": 0.03657173816068673,
+                        "baseline_quality": 0.6796074794253483,
+                        "npp_quality": 0.6913018757243015,
+                        "same_qp_rate_change_percent": 7.481245674740489,
+                        "quality_change_pp": 1.1694396298953191
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "expanded": []
+          },
+          {
+            "additional_steps": 1000,
+            "global_steps": 101000,
+            "lr": 0.0001,
+            "rate_lambda": 0.01,
+            "stop_reason": "step_budget",
+            "seconds": 1978.6986043960005,
+            "theta_delta_norm": 0.5619764924049377,
+            "theta_relative_delta": 0.07194608131521,
+            "rd_quality_stop_available": false,
+            "measured_snapshots": [
+              {
+                "step": 500,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": true,
+                      "percent": 13.658497096980316,
+                      "quality_interval": [
+                        0.7196420575309431,
+                        0.7632833839976646
+                      ],
+                      "method": "PCHIP log-rate integral"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17564269642771027,
+                        "npp_bpp": 0.18654538378303434,
+                        "baseline_quality": 0.7702735029792406,
+                        "npp_quality": 0.7632833839976646,
+                        "same_qp_rate_change_percent": 6.207310396086596,
+                        "quality_change_pp": -0.6990118981575977
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.0919162138008777,
+                        "npp_bpp": 0.09159568504050926,
+                        "baseline_quality": 0.7665978337048384,
+                        "npp_quality": 0.7532846185891285,
+                        "same_qp_rate_change_percent": -0.34871841116390634,
+                        "quality_change_pp": -1.331321511570982
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.05097509313512732,
+                        "npp_bpp": 0.048749947253568675,
+                        "baseline_quality": 0.742223319770898,
+                        "npp_quality": 0.7443265722446071,
+                        "same_qp_rate_change_percent": -4.365162954504298,
+                        "quality_change_pp": 0.21032524737091274
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.028421849380304783,
+                        "npp_bpp": 0.02714905915436921,
+                        "baseline_quality": 0.7196420575309431,
+                        "npp_quality": 0.706982110835177,
+                        "same_qp_rate_change_percent": -4.478210439105224,
+                        "quality_change_pp": -1.2659946695766089
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "nonmonotone or tied four-QP operating curve"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17859583725163966,
+                        "npp_bpp": 0.18861285551094714,
+                        "baseline_quality": 0.7644206581894735,
+                        "npp_quality": 0.7625482532278258,
+                        "same_qp_rate_change_percent": 5.608763571120412,
+                        "quality_change_pp": -0.18724049616476446
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.09622069935739776,
+                        "npp_bpp": 0.09496495753158758,
+                        "baseline_quality": 0.7493659033095396,
+                        "npp_quality": 0.7634947855537709,
+                        "same_qp_rate_change_percent": -1.3050641225812565,
+                        "quality_change_pp": 1.4128882244231367
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.055761360827787425,
+                        "npp_bpp": 0.052944701394917054,
+                        "baseline_quality": 0.7440235369582586,
+                        "npp_quality": 0.7291138480297069,
+                        "same_qp_rate_change_percent": -5.051274558325969,
+                        "quality_change_pp": -1.4909688928551712
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.034026157708815584,
+                        "npp_bpp": 0.03247936861014661,
+                        "baseline_quality": 0.6796074794253483,
+                        "npp_quality": 0.6678812681827112,
+                        "same_qp_rate_change_percent": -4.545882352941155,
+                        "quality_change_pp": -1.1726211242637063
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "step": 1000,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": true,
+                      "percent": -12.253594119924829,
+                      "quality_interval": [
+                        0.7196420575309431,
+                        0.7702735029792406
+                      ],
+                      "method": "PCHIP log-rate integral"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17564269642771027,
+                        "npp_bpp": 0.17159732771508487,
+                        "baseline_quality": 0.7702735029792406,
+                        "npp_quality": 0.7724598501877946,
+                        "same_qp_rate_change_percent": -2.3031807156811412,
+                        "quality_change_pp": 0.21863472085540403
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.0919162138008777,
+                        "npp_bpp": 0.08668960759669174,
+                        "baseline_quality": 0.7665978337048384,
+                        "npp_quality": 0.7614278995177243,
+                        "same_qp_rate_change_percent": -5.68627229958426,
+                        "quality_change_pp": -0.5169934187114089
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.05097509313512732,
+                        "npp_bpp": 0.04722632890866126,
+                        "baseline_quality": 0.742223319770898,
+                        "npp_quality": 0.7513193838027195,
+                        "same_qp_rate_change_percent": -7.3541096168841635,
+                        "quality_change_pp": 0.9096064031821505
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.028421849380304783,
+                        "npp_bpp": 0.026935530297550154,
+                        "baseline_quality": 0.7196420575309431,
+                        "npp_quality": 0.716035100270549,
+                        "same_qp_rate_change_percent": -5.22949461474731,
+                        "quality_change_pp": -0.36069572603941724
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": true,
+                      "percent": -6.334608434399004,
+                      "quality_interval": [
+                        0.6807531307041825,
+                        0.7644206581894735
+                      ],
+                      "method": "PCHIP log-rate integral"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17859583725163966,
+                        "npp_bpp": 0.1735295425226659,
+                        "baseline_quality": 0.7644206581894735,
+                        "npp_quality": 0.767173422179827,
+                        "same_qp_rate_change_percent": -2.836737298549352,
+                        "quality_change_pp": 0.2752763990353513
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.09622069935739776,
+                        "npp_bpp": 0.08983894630714699,
+                        "baseline_quality": 0.7493659033095396,
+                        "npp_quality": 0.7539781432940892,
+                        "same_qp_rate_change_percent": -6.632411833286178,
+                        "quality_change_pp": 0.46122399845496265
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.055761360827787425,
+                        "npp_bpp": 0.05165137773678626,
+                        "baseline_quality": 0.7440235369582586,
+                        "npp_quality": 0.7383679103567227,
+                        "same_qp_rate_change_percent": -7.37066497299873,
+                        "quality_change_pp": -0.5655626601535957
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.034026157708815584,
+                        "npp_bpp": 0.03237566535855517,
+                        "baseline_quality": 0.6796074794253483,
+                        "npp_quality": 0.6807531307041825,
+                        "same_qp_rate_change_percent": -4.85065743944636,
+                        "quality_change_pp": 0.11456512788342588
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "expanded": []
+          },
+          {
+            "additional_steps": 1000,
+            "global_steps": 101000,
+            "lr": 0.0001,
+            "rate_lambda": 0.1,
+            "stop_reason": "step_budget",
+            "seconds": 1914.8431514170006,
+            "theta_delta_norm": 1.1878620386123657,
+            "theta_relative_delta": 0.1520740101699412,
+            "rd_quality_stop_available": false,
+            "measured_snapshots": [
+              {
+                "step": 500,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": true,
+                      "percent": 77.32189286840239,
+                      "quality_interval": [
+                        0.7196420575309431,
+                        0.7506338425170896
+                      ],
+                      "method": "PCHIP log-rate integral"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17564269642771027,
+                        "npp_bpp": 0.11809228967737269,
+                        "baseline_quality": 0.7702735029792406,
+                        "npp_quality": 0.7506338425170896,
+                        "same_qp_rate_change_percent": -32.765613327977896,
+                        "quality_change_pp": -1.9639660462150932
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.0919162138008777,
+                        "npp_bpp": 0.06003212634428048,
+                        "baseline_quality": 0.7665978337048384,
+                        "npp_quality": 0.7268254033151642,
+                        "same_qp_rate_change_percent": -34.68820803005352,
+                        "quality_change_pp": -3.977243038967415
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.05097509313512732,
+                        "npp_bpp": 0.034226311577690974,
+                        "baseline_quality": 0.742223319770898,
+                        "npp_quality": 0.6775445858983375,
+                        "same_qp_rate_change_percent": -32.85679442122418,
+                        "quality_change_pp": -6.46787338725604
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.028421849380304783,
+                        "npp_bpp": 0.02103150921103395,
+                        "baseline_quality": 0.7196420575309431,
+                        "npp_quality": 0.6643655606364599,
+                        "same_qp_rate_change_percent": -26.0023198011599,
+                        "quality_change_pp": -5.527649689448322
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": true,
+                      "percent": 18.69078875356559,
+                      "quality_interval": [
+                        0.6796074794253483,
+                        0.7462316427416167
+                      ],
+                      "method": "PCHIP log-rate integral"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17859583725163966,
+                        "npp_bpp": 0.11714483190465856,
+                        "baseline_quality": 0.7644206581894735,
+                        "npp_quality": 0.7462316427416167,
+                        "same_qp_rate_change_percent": -34.407859831804075,
+                        "quality_change_pp": -1.8189015447856782
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.09622069935739776,
+                        "npp_bpp": 0.061852725935570986,
+                        "baseline_quality": 0.7493659033095396,
+                        "npp_quality": 0.7367711264895304,
+                        "same_qp_rate_change_percent": -35.71785868461831,
+                        "quality_change_pp": -1.2594776820009201
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.055761360827787425,
+                        "npp_bpp": 0.038601722246334874,
+                        "baseline_quality": 0.7440235369582586,
+                        "npp_quality": 0.6954905827940576,
+                        "same_qp_rate_change_percent": -30.773349729480472,
+                        "quality_change_pp": -4.8532954164201
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.034026157708815584,
+                        "npp_bpp": 0.027014555754484953,
+                        "baseline_quality": 0.6796074794253483,
+                        "npp_quality": 0.6006808498733113,
+                        "same_qp_rate_change_percent": -20.60650519031142,
+                        "quality_change_pp": -7.8926629552037
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "step": 1000,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": true,
+                      "percent": 88.87551330633012,
+                      "quality_interval": [
+                        0.7196420575309431,
+                        0.7389762186144778
+                      ],
+                      "method": "PCHIP log-rate integral"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17564269642771027,
+                        "npp_bpp": 0.10052471396363812,
+                        "baseline_quality": 0.7702735029792406,
+                        "npp_quality": 0.7389762186144778,
+                        "same_qp_rate_change_percent": -42.76749559865056,
+                        "quality_change_pp": -3.1297284364762756
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.0919162138008777,
+                        "npp_bpp": 0.0537202623155382,
+                        "baseline_quality": 0.7665978337048384,
+                        "npp_quality": 0.7219598192147318,
+                        "same_qp_rate_change_percent": -41.55518368944693,
+                        "quality_change_pp": -4.463801449010651
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.05097509313512732,
+                        "npp_bpp": 0.031547358006606865,
+                        "baseline_quality": 0.742223319770898,
+                        "npp_quality": 0.6973997984772248,
+                        "same_qp_rate_change_percent": -38.11221114794326,
+                        "quality_change_pp": -4.482352129367317
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.028421849380304783,
+                        "npp_bpp": 0.019811559606481483,
+                        "baseline_quality": 0.7196420575309431,
+                        "npp_quality": 0.6454862745273057,
+                        "same_qp_rate_change_percent": -30.29461474730737,
+                        "quality_change_pp": -7.415578300363745
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": true,
+                      "percent": 29.9575508505046,
+                      "quality_interval": [
+                        0.6796074794253483,
+                        0.7411791632149751
+                      ],
+                      "method": "PCHIP log-rate integral"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17859583725163966,
+                        "npp_bpp": 0.09914812629605517,
+                        "baseline_quality": 0.7644206581894735,
+                        "npp_quality": 0.7411791632149751,
+                        "same_qp_rate_change_percent": -44.48463759188491,
+                        "quality_change_pp": -2.3241494974498345
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.09622069935739776,
+                        "npp_bpp": 0.05534230926890432,
+                        "baseline_quality": 0.7493659033095396,
+                        "npp_quality": 0.7187034186925152,
+                        "same_qp_rate_change_percent": -42.48398770898205,
+                        "quality_change_pp": -3.0662484617024366
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.055761360827787425,
+                        "npp_bpp": 0.03624904302903163,
+                        "baseline_quality": 0.7440235369582586,
+                        "npp_quality": 0.6906237418288801,
+                        "same_qp_rate_change_percent": -34.99254234310628,
+                        "quality_change_pp": -5.339979512937854
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.034026157708815584,
+                        "npp_bpp": 0.026132183310426313,
+                        "baseline_quality": 0.6796074794253483,
+                        "npp_quality": 0.6182612363510841,
+                        "same_qp_rate_change_percent": -23.199723183390997,
+                        "quality_change_pp": -6.134624307426417
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "expanded": []
+          },
+          {
+            "additional_steps": 738,
+            "global_steps": 100738,
+            "lr": 0.0001,
+            "rate_lambda": 1.0,
+            "stop_reason": "time_budget",
+            "seconds": 1111.0171372090008,
+            "theta_delta_norm": 1.5925816297531128,
+            "theta_relative_delta": 0.20388754509105936,
+            "rd_quality_stop_available": false,
+            "measured_snapshots": [
+              {
+                "step": 500,
+                "comparison": [
+                  {
+                    "codec": "h264",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "no overlapping quality interval"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17564269642771027,
+                        "npp_bpp": 0.07005526695722415,
+                        "baseline_quality": 0.7702735029792406,
+                        "npp_quality": 0.6719160949742828,
+                        "same_qp_rate_change_percent": -60.114898949950366,
+                        "quality_change_pp": -9.835740800495774
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.0919162138008777,
+                        "npp_bpp": 0.03551078137056327,
+                        "baseline_quality": 0.7665978337048384,
+                        "npp_quality": 0.6534690971226116,
+                        "same_qp_rate_change_percent": -61.36613998538722,
+                        "quality_change_pp": -11.312873658222678
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.05097509313512732,
+                        "npp_bpp": 0.020479084532937886,
+                        "baseline_quality": 0.742223319770898,
+                        "npp_quality": 0.6331911871579503,
+                        "same_qp_rate_change_percent": -59.82531218010547,
+                        "quality_change_pp": -10.903213261294765
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.028421849380304783,
+                        "npp_bpp": 0.01288538803288966,
+                        "baseline_quality": 0.7196420575309431,
+                        "npp_quality": 0.5746094989585587,
+                        "same_qp_rate_change_percent": -54.66379453189727,
+                        "quality_change_pp": -14.50325585723844
+                      }
+                    ]
+                  },
+                  {
+                    "codec": "h265",
+                    "sources": 16,
+                    "bd_rate": {
+                      "valid": false,
+                      "percent": null,
+                      "reason": "no overlapping quality interval"
+                    },
+                    "points": [
+                      {
+                        "qp": 30,
+                        "baseline_bpp": 0.17859583725163966,
+                        "npp_bpp": 0.07144259229118441,
+                        "baseline_quality": 0.7644206581894735,
+                        "npp_quality": 0.6618825630649838,
+                        "same_qp_rate_change_percent": -59.997616187144075,
+                        "quality_change_pp": -10.253809512448964
+                      },
+                      {
+                        "qp": 35,
+                        "baseline_bpp": 0.09622069935739776,
+                        "npp_bpp": 0.040009015872154705,
+                        "baseline_quality": 0.7493659033095396,
+                        "npp_quality": 0.6490497329633296,
+                        "same_qp_rate_change_percent": -58.419533281973926,
+                        "quality_change_pp": -10.031617034620998
+                      },
+                      {
+                        "qp": 40,
+                        "baseline_bpp": 0.055761360827787425,
+                        "npp_bpp": 0.027217817895206404,
+                        "baseline_quality": 0.7440235369582586,
+                        "npp_quality": 0.5682305215814593,
+                        "same_qp_rate_change_percent": -51.188748819697,
+                        "quality_change_pp": -17.579301537679935
+                      },
+                      {
+                        "qp": 45,
+                        "baseline_bpp": 0.034026157708815584,
+                        "npp_bpp": 0.02145319809148341,
+                        "baseline_quality": 0.6796074794253483,
+                        "npp_quality": 0.5134860212377621,
+                        "same_qp_rate_change_percent": -36.9508650519031,
+                        "quality_change_pp": -16.612145818758616
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "expanded": []
+          }
+        ]
+      }
+    }
+  ],
+  "updated": 1793461885.4368544,
+  "tests": {
+    "passed": 110,
+    "command": "python -m pytest -q --basetemp=outputs/test_parallel_final_1028"
+  },
+  "original_source_files_unchanged": 42,
+  "scope": "diagnostic/dev measurements and bounded recovery, no full benchmark claim",
+  "review": {
+    "independent": true,
+    "critical": 0,
+    "important_fixed": 2,
+    "regressions": "RED to GREEN",
+    "full_suite_passed": 110,
+    "deferred_minor": "Verifier does not separately revalidate TASK/MODE literals and budgets; preparation and notebook payload hashes bind the generated values."
+  },
+  "results_checked_date": "2026-10-31"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "5e00c2fdee9f381df81d8528a8428608805c4fa9",
+  "verified_blobs": {
+    "paper_reproduction/CONTENT_RATE_RUNS_20261101.json": "4823c49e34ec7ed6d276bdd0cc7c4b3053b0686f",
+    "paper_reproduction/CONTENT_RATE_RESULTS_20261101.json": "e6bf9f3d290aba64eb38bb6b29a4b17d38b9a3a7",
+    "reports/CONTENT_RATE_RESULTS_20261101.md": "12cccaa2a1ea7741da7d24f97a26fe3fd066eb75"
+  },
+  "all_jobs_screening_blocked": true,
+  "task_updates": 0,
+  "new_bd_rate_available": false,
+  "offline_cached_candidate_only": true,
+  "new_gpu_jobs_launched": false
+}

@@ -1,0 +1,1018 @@
+{
+  "study": "image_paper_plus_offline_frozen_SAM2_1_Tiny",
+  "updated": 1793478427.6452303,
+  "scientific_complete": false,
+  "source": {
+    "commit": "830950d028c46ec87a82769b4f14922c1245fd27",
+    "tree": "53523029774549677f5c600a7f0fd54e79d85d3c",
+    "branch": "paper-proxy-p05-20261028",
+    "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+    "files_verified": 11
+  },
+  "public_input": {
+    "dataset": "wagur124705/image-paper-proxy-inputs-20261031/1",
+    "public_verified": true,
+    "version": 1,
+    "status": "ready",
+    "observed": 1793465959.896266
+  },
+  "verification": {
+    "tests_passed": 139,
+    "original_core_files_unchanged": 42,
+    "independent_review": "two Important findings fixed with RED-to-GREEN regressions"
+  },
+  "worker_hours": 12,
+  "service_timeout_hours": 18,
+  "states": {
+    "COMPLETE": 6
+  },
+  "jobs": [
+    {
+      "key": "od-control",
+      "handle": "wagur124705/sam2-image-od-control-20261101",
+      "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+      "worker_seconds": 7200,
+      "config": {
+        "task": "od",
+        "paper": "image",
+        "qps": [
+          30,
+          35,
+          40,
+          45
+        ],
+        "codecs": [
+          "bpg"
+        ],
+        "identity_fallback": false,
+        "seed": 20261023,
+        "mode": "full",
+        "scope": "sam2_offline_train_subset_screen_not_paper_schedule",
+        "lr": 0.0001,
+        "beta": 0.5,
+        "alpha": 10.0,
+        "rate_weight": 0.001,
+        "fixed_qp": 35,
+        "proxy_steps": 0,
+        "fixed_steps": 256,
+        "adaptive_steps": 256,
+        "npp_size": 800,
+        "frames": 1,
+        "batch_size": 1,
+        "preset": "medium",
+        "fps": 25,
+        "gop": 16,
+        "checkpoint_every": 250,
+        "log_every": 101,
+        "max_session_seconds": 7200,
+        "validation_sources": 64,
+        "full_validation_sources": 5000,
+        "video_width": 16,
+        "temporal_kernel": 3,
+        "block_size": 8,
+        "motion_radius": 4,
+        "prior_steps": 0,
+        "proxy_quality": {
+          "30": 5,
+          "35": 4,
+          "40": 3,
+          "45": 2
+        },
+        "source_pins": {
+          "image_npp": "6a77c4633cd5bb6750c77ea9d213d38ffc88ee7a",
+          "pytracking": "7eb9e74bd3d40e29dbcec444902237da13de247b"
+        },
+        "input_condition": "released_lambda_over_8",
+        "checkpoint_selection": "last_trained",
+        "use_amp": false,
+        "fidelity_notes": [
+          "Four QPs30/35/40/45 explicitly requested by user.",
+          "One representative published backbone family per original task; Torchvision image/AR adapters differ from original OpenMMLab implementations.",
+          "Full mode evaluates all available original validation sources with resumable per-source caches; pilot mode is a declared subset.",
+          "Official released image NPP used; source conditioning uses loss-lambda/8 rather than raw QP.",
+          "Proxy is CompressAI Minnen2018 pretrained implementation, independently calibrated to actual BPG reconstructions.",
+          "400k proxy updates are global across four QP-specific proxies; paper does not disambiguate per-proxy accounting.",
+          "Image proxy/task lambda values at new QPs are log-linearly interpolated/extrapolated from published tables.",
+          "Separate study: frozen proxy-only warmstart; original NPP/Adam/counters not migrated.",
+          "FCOS family replaces FasterRCNN for OD; Torchvision checkpoint differs from original OpenMMLab.",
+          "QP35 substitutes paper fixedQP34; lambda multiplier is an explicit experiment.",
+          "OD800/1333 geometry; adaptive QPs randomly sampled; short screens are not full schedules.",
+          "SAM 2 extension, not original paper; TRAIN-only automatic prompts.",
+          "Matched 256-source fixed rendered crops, 256 fixed +256 adaptive updates; validation subset."
+        ],
+        "study_task": "od",
+        "study_profile": "sam2",
+        "lambda_scale": 1.0,
+        "backbone": "fcos_resnet50_fpn",
+        "evaluation_reserve": 1800,
+        "random_adaptive_qp": true,
+        "sam_arm": "control",
+        "train_sources": 256,
+        "mask_prepare_seconds": 1800,
+        "sam2": {
+          "source_commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69",
+          "model": "sam2.1_hiera_tiny",
+          "model_cfg": "configs/sam2.1/sam2.1_hiera_t.yaml",
+          "points_per_side": 16,
+          "points_per_batch": 32,
+          "pred_iou_thresh": 0.8,
+          "stability_score_thresh": 0.95,
+          "min_area_fraction": 0.005,
+          "max_area_fraction": 0.6,
+          "max_masks": 8,
+          "smoothing": 5,
+          "foreground_extra": 0,
+          "gamma": 0,
+          "mask_kind": "confidence_weighted_smoothed_binary_AMG_not_probability"
+        }
+      },
+      "input_spec": {
+        "kind": "dataset",
+        "ref": "wagur124705/image-paper-proxy-inputs-20261031/1",
+        "member": "od_proxy.pt",
+        "sha256": "ab9fde3e3418be44b532eb9c4492382a4a8204e0d64ab5d2b15dad1b2f535dbf",
+        "visibility": "public"
+      },
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/wagur124705/sam2-image-od-control-20261101",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "server_verification": {
+        "key": "od-control",
+        "handle": "wagur124705/sam2-image-od-control-20261101",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+        "checked": 1793466693.8312254
+      },
+      "launch": {
+        "key": "od-control",
+        "handle": "wagur124705/sam2-image-od-control-20261101",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\nwagur124705/sam2-image-od-control-20261101 has status \"KernelWorkerStatus.COMPLETE\"",
+        "observed": 1793477935.927503,
+        "latest": {
+          "stage": "cloud_end",
+          "task": "od",
+          "mode": "full",
+          "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+          "bootstrap_complete": true,
+          "started": 1793466640.7863972,
+          "worker_exit_code": 0,
+          "wall_seconds": 7468.43239402771
+        },
+        "mask_cache_ready": true,
+        "study_ready": true,
+        "training_seen": true,
+        "terminal": [
+          {
+            "stage": "study_end",
+            "time": 1793474100.806874,
+            "task": "od",
+            "execution_complete": true,
+            "npp_updates": 512,
+            "error": null
+          },
+          {
+            "stage": "cloud_end",
+            "task": "od",
+            "mode": "full",
+            "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+            "bootstrap_complete": true,
+            "started": 1793466640.7863972,
+            "worker_exit_code": 0,
+            "wall_seconds": 7468.43239402771
+          }
+        ]
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "key": "ic-control",
+      "handle": "wagur124705/sam2-image-ic-control-20261101",
+      "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+      "worker_seconds": 7200,
+      "config": {
+        "task": "ic",
+        "paper": "image",
+        "qps": [
+          30,
+          35,
+          40,
+          45
+        ],
+        "codecs": [
+          "bpg"
+        ],
+        "identity_fallback": false,
+        "seed": 20261023,
+        "mode": "full",
+        "scope": "sam2_offline_train_subset_screen_not_paper_schedule",
+        "lr": 0.0001,
+        "beta": 0.5,
+        "alpha": 10.0,
+        "rate_weight": 0.001,
+        "fixed_qp": 35,
+        "proxy_steps": 0,
+        "fixed_steps": 256,
+        "adaptive_steps": 256,
+        "npp_size": 224,
+        "frames": 1,
+        "batch_size": 1,
+        "preset": "medium",
+        "fps": 25,
+        "gop": 16,
+        "checkpoint_every": 250,
+        "log_every": 101,
+        "max_session_seconds": 7200,
+        "validation_sources": 512,
+        "full_validation_sources": 50000,
+        "video_width": 16,
+        "temporal_kernel": 3,
+        "block_size": 8,
+        "motion_radius": 4,
+        "prior_steps": 0,
+        "proxy_quality": {
+          "30": 5,
+          "35": 4,
+          "40": 3,
+          "45": 2
+        },
+        "source_pins": {
+          "image_npp": "6a77c4633cd5bb6750c77ea9d213d38ffc88ee7a",
+          "pytracking": "7eb9e74bd3d40e29dbcec444902237da13de247b"
+        },
+        "input_condition": "released_lambda_over_8",
+        "checkpoint_selection": "last_trained",
+        "use_amp": false,
+        "fidelity_notes": [
+          "Four QPs30/35/40/45 explicitly requested by user.",
+          "One representative published backbone family per original task; Torchvision image/AR adapters differ from original OpenMMLab implementations.",
+          "Full mode evaluates all available original validation sources with resumable per-source caches; pilot mode is a declared subset.",
+          "Official released image NPP used; source conditioning uses loss-lambda/8 rather than raw QP.",
+          "Proxy is CompressAI Minnen2018 pretrained implementation, independently calibrated to actual BPG reconstructions.",
+          "400k proxy updates are global across four QP-specific proxies; paper does not disambiguate per-proxy accounting.",
+          "Image proxy/task lambda values at new QPs are log-linearly interpolated/extrapolated from published tables.",
+          "Separate study: frozen proxy-only warmstart; original NPP/Adam/counters not migrated.",
+          "FCOS family replaces FasterRCNN for OD; Torchvision checkpoint differs from original OpenMMLab.",
+          "QP35 substitutes paper fixedQP34; lambda multiplier is an explicit experiment.",
+          "OD800/1333 geometry; adaptive QPs randomly sampled; short screens are not full schedules.",
+          "SAM 2 extension, not original paper; TRAIN-only automatic prompts.",
+          "Matched 256-source fixed rendered crops, 256 fixed +256 adaptive updates; validation subset."
+        ],
+        "study_task": "ic",
+        "study_profile": "sam2",
+        "lambda_scale": 1.0,
+        "backbone": "resnet50",
+        "evaluation_reserve": 1800,
+        "random_adaptive_qp": true,
+        "sam_arm": "control",
+        "train_sources": 256,
+        "mask_prepare_seconds": 1800,
+        "sam2": {
+          "source_commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69",
+          "model": "sam2.1_hiera_tiny",
+          "model_cfg": "configs/sam2.1/sam2.1_hiera_t.yaml",
+          "points_per_side": 16,
+          "points_per_batch": 32,
+          "pred_iou_thresh": 0.8,
+          "stability_score_thresh": 0.95,
+          "min_area_fraction": 0.005,
+          "max_area_fraction": 0.6,
+          "max_masks": 8,
+          "smoothing": 5,
+          "foreground_extra": 0,
+          "gamma": 0,
+          "mask_kind": "confidence_weighted_smoothed_binary_AMG_not_probability"
+        }
+      },
+      "input_spec": {
+        "kind": "dataset",
+        "ref": "wagur124705/image-paper-proxy-inputs-20261031/1",
+        "member": "ic_proxy.pt",
+        "sha256": "c95598b9a0aad477bca146d1751e10dd14ed8749ec5efdea44ff41541e4213e4",
+        "visibility": "public"
+      },
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/wagur124705/sam2-image-ic-control-20261101",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "server_verification": {
+        "key": "ic-control",
+        "handle": "wagur124705/sam2-image-ic-control-20261101",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+        "checked": 1793466754.7722454
+      },
+      "launch": {
+        "key": "ic-control",
+        "handle": "wagur124705/sam2-image-ic-control-20261101",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\nwagur124705/sam2-image-ic-control-20261101 has status \"KernelWorkerStatus.COMPLETE\"",
+        "observed": 1793477936.5666845,
+        "latest": {
+          "stage": "cloud_end",
+          "task": "ic",
+          "mode": "full",
+          "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+          "bootstrap_complete": true,
+          "started": 1793468337.5222456,
+          "worker_exit_code": 0,
+          "wall_seconds": 4876.48352098465
+        },
+        "mask_cache_ready": true,
+        "study_ready": true,
+        "training_seen": true,
+        "terminal": [
+          {
+            "stage": "study_end",
+            "time": 1793473209.084792,
+            "task": "ic",
+            "execution_complete": true,
+            "npp_updates": 512,
+            "error": null
+          },
+          {
+            "stage": "cloud_end",
+            "task": "ic",
+            "mode": "full",
+            "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+            "bootstrap_complete": true,
+            "started": 1793468337.5222456,
+            "worker_exit_code": 0,
+            "wall_seconds": 4876.48352098465
+          }
+        ]
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "key": "od-foreground",
+      "handle": "dngbolm/sam2-image-od-foreground-20261101",
+      "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+      "worker_seconds": 7200,
+      "config": {
+        "task": "od",
+        "paper": "image",
+        "qps": [
+          30,
+          35,
+          40,
+          45
+        ],
+        "codecs": [
+          "bpg"
+        ],
+        "identity_fallback": false,
+        "seed": 20261023,
+        "mode": "full",
+        "scope": "sam2_offline_train_subset_screen_not_paper_schedule",
+        "lr": 0.0001,
+        "beta": 0.5,
+        "alpha": 10.0,
+        "rate_weight": 0.001,
+        "fixed_qp": 35,
+        "proxy_steps": 0,
+        "fixed_steps": 256,
+        "adaptive_steps": 256,
+        "npp_size": 800,
+        "frames": 1,
+        "batch_size": 1,
+        "preset": "medium",
+        "fps": 25,
+        "gop": 16,
+        "checkpoint_every": 250,
+        "log_every": 101,
+        "max_session_seconds": 7200,
+        "validation_sources": 64,
+        "full_validation_sources": 5000,
+        "video_width": 16,
+        "temporal_kernel": 3,
+        "block_size": 8,
+        "motion_radius": 4,
+        "prior_steps": 0,
+        "proxy_quality": {
+          "30": 5,
+          "35": 4,
+          "40": 3,
+          "45": 2
+        },
+        "source_pins": {
+          "image_npp": "6a77c4633cd5bb6750c77ea9d213d38ffc88ee7a",
+          "pytracking": "7eb9e74bd3d40e29dbcec444902237da13de247b"
+        },
+        "input_condition": "released_lambda_over_8",
+        "checkpoint_selection": "last_trained",
+        "use_amp": false,
+        "fidelity_notes": [
+          "Four QPs30/35/40/45 explicitly requested by user.",
+          "One representative published backbone family per original task; Torchvision image/AR adapters differ from original OpenMMLab implementations.",
+          "Full mode evaluates all available original validation sources with resumable per-source caches; pilot mode is a declared subset.",
+          "Official released image NPP used; source conditioning uses loss-lambda/8 rather than raw QP.",
+          "Proxy is CompressAI Minnen2018 pretrained implementation, independently calibrated to actual BPG reconstructions.",
+          "400k proxy updates are global across four QP-specific proxies; paper does not disambiguate per-proxy accounting.",
+          "Image proxy/task lambda values at new QPs are log-linearly interpolated/extrapolated from published tables.",
+          "Separate study: frozen proxy-only warmstart; original NPP/Adam/counters not migrated.",
+          "FCOS family replaces FasterRCNN for OD; Torchvision checkpoint differs from original OpenMMLab.",
+          "QP35 substitutes paper fixedQP34; lambda multiplier is an explicit experiment.",
+          "OD800/1333 geometry; adaptive QPs randomly sampled; short screens are not full schedules.",
+          "SAM 2 extension, not original paper; TRAIN-only automatic prompts.",
+          "Matched 256-source fixed rendered crops, 256 fixed +256 adaptive updates; validation subset."
+        ],
+        "study_task": "od",
+        "study_profile": "sam2",
+        "lambda_scale": 1.0,
+        "backbone": "fcos_resnet50_fpn",
+        "evaluation_reserve": 1800,
+        "random_adaptive_qp": true,
+        "sam_arm": "foreground",
+        "train_sources": 256,
+        "mask_prepare_seconds": 1800,
+        "sam2": {
+          "source_commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69",
+          "model": "sam2.1_hiera_tiny",
+          "model_cfg": "configs/sam2.1/sam2.1_hiera_t.yaml",
+          "points_per_side": 16,
+          "points_per_batch": 32,
+          "pred_iou_thresh": 0.8,
+          "stability_score_thresh": 0.95,
+          "min_area_fraction": 0.005,
+          "max_area_fraction": 0.6,
+          "max_masks": 8,
+          "smoothing": 5,
+          "foreground_extra": 3,
+          "gamma": 0,
+          "mask_kind": "confidence_weighted_smoothed_binary_AMG_not_probability"
+        }
+      },
+      "input_spec": {
+        "kind": "dataset",
+        "ref": "wagur124705/image-paper-proxy-inputs-20261031/1",
+        "member": "od_proxy.pt",
+        "sha256": "ab9fde3e3418be44b532eb9c4492382a4a8204e0d64ab5d2b15dad1b2f535dbf",
+        "visibility": "public"
+      },
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/dngbolm/sam2-image-od-foreground-20261101",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "server_verification": {
+        "key": "od-foreground",
+        "handle": "dngbolm/sam2-image-od-foreground-20261101",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+        "checked": 1793466693.8510687
+      },
+      "launch": {
+        "key": "od-foreground",
+        "handle": "dngbolm/sam2-image-od-foreground-20261101",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\ndngbolm/sam2-image-od-foreground-20261101 has status \"KernelWorkerStatus.COMPLETE\"",
+        "observed": 1793477936.111671,
+        "latest": {
+          "stage": "cloud_end",
+          "task": "od",
+          "mode": "full",
+          "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+          "bootstrap_complete": true,
+          "started": 1793468333.4225175,
+          "worker_exit_code": 0,
+          "wall_seconds": 7445.312452316284
+        },
+        "mask_cache_ready": true,
+        "study_ready": true,
+        "training_seen": true,
+        "terminal": [
+          {
+            "stage": "study_end",
+            "time": 1793475776.1164334,
+            "task": "od",
+            "execution_complete": true,
+            "npp_updates": 512,
+            "error": null
+          },
+          {
+            "stage": "cloud_end",
+            "task": "od",
+            "mode": "full",
+            "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+            "bootstrap_complete": true,
+            "started": 1793468333.4225175,
+            "worker_exit_code": 0,
+            "wall_seconds": 7445.312452316284
+          }
+        ]
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "key": "ic-foreground",
+      "handle": "dngbolm/sam2-image-ic-foreground-20261101",
+      "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+      "worker_seconds": 7200,
+      "config": {
+        "task": "ic",
+        "paper": "image",
+        "qps": [
+          30,
+          35,
+          40,
+          45
+        ],
+        "codecs": [
+          "bpg"
+        ],
+        "identity_fallback": false,
+        "seed": 20261023,
+        "mode": "full",
+        "scope": "sam2_offline_train_subset_screen_not_paper_schedule",
+        "lr": 0.0001,
+        "beta": 0.5,
+        "alpha": 10.0,
+        "rate_weight": 0.001,
+        "fixed_qp": 35,
+        "proxy_steps": 0,
+        "fixed_steps": 256,
+        "adaptive_steps": 256,
+        "npp_size": 224,
+        "frames": 1,
+        "batch_size": 1,
+        "preset": "medium",
+        "fps": 25,
+        "gop": 16,
+        "checkpoint_every": 250,
+        "log_every": 101,
+        "max_session_seconds": 7200,
+        "validation_sources": 512,
+        "full_validation_sources": 50000,
+        "video_width": 16,
+        "temporal_kernel": 3,
+        "block_size": 8,
+        "motion_radius": 4,
+        "prior_steps": 0,
+        "proxy_quality": {
+          "30": 5,
+          "35": 4,
+          "40": 3,
+          "45": 2
+        },
+        "source_pins": {
+          "image_npp": "6a77c4633cd5bb6750c77ea9d213d38ffc88ee7a",
+          "pytracking": "7eb9e74bd3d40e29dbcec444902237da13de247b"
+        },
+        "input_condition": "released_lambda_over_8",
+        "checkpoint_selection": "last_trained",
+        "use_amp": false,
+        "fidelity_notes": [
+          "Four QPs30/35/40/45 explicitly requested by user.",
+          "One representative published backbone family per original task; Torchvision image/AR adapters differ from original OpenMMLab implementations.",
+          "Full mode evaluates all available original validation sources with resumable per-source caches; pilot mode is a declared subset.",
+          "Official released image NPP used; source conditioning uses loss-lambda/8 rather than raw QP.",
+          "Proxy is CompressAI Minnen2018 pretrained implementation, independently calibrated to actual BPG reconstructions.",
+          "400k proxy updates are global across four QP-specific proxies; paper does not disambiguate per-proxy accounting.",
+          "Image proxy/task lambda values at new QPs are log-linearly interpolated/extrapolated from published tables.",
+          "Separate study: frozen proxy-only warmstart; original NPP/Adam/counters not migrated.",
+          "FCOS family replaces FasterRCNN for OD; Torchvision checkpoint differs from original OpenMMLab.",
+          "QP35 substitutes paper fixedQP34; lambda multiplier is an explicit experiment.",
+          "OD800/1333 geometry; adaptive QPs randomly sampled; short screens are not full schedules.",
+          "SAM 2 extension, not original paper; TRAIN-only automatic prompts.",
+          "Matched 256-source fixed rendered crops, 256 fixed +256 adaptive updates; validation subset."
+        ],
+        "study_task": "ic",
+        "study_profile": "sam2",
+        "lambda_scale": 1.0,
+        "backbone": "resnet50",
+        "evaluation_reserve": 1800,
+        "random_adaptive_qp": true,
+        "sam_arm": "foreground",
+        "train_sources": 256,
+        "mask_prepare_seconds": 1800,
+        "sam2": {
+          "source_commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69",
+          "model": "sam2.1_hiera_tiny",
+          "model_cfg": "configs/sam2.1/sam2.1_hiera_t.yaml",
+          "points_per_side": 16,
+          "points_per_batch": 32,
+          "pred_iou_thresh": 0.8,
+          "stability_score_thresh": 0.95,
+          "min_area_fraction": 0.005,
+          "max_area_fraction": 0.6,
+          "max_masks": 8,
+          "smoothing": 5,
+          "foreground_extra": 3,
+          "gamma": 0,
+          "mask_kind": "confidence_weighted_smoothed_binary_AMG_not_probability"
+        }
+      },
+      "input_spec": {
+        "kind": "dataset",
+        "ref": "wagur124705/image-paper-proxy-inputs-20261031/1",
+        "member": "ic_proxy.pt",
+        "sha256": "c95598b9a0aad477bca146d1751e10dd14ed8749ec5efdea44ff41541e4213e4",
+        "visibility": "public"
+      },
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/dngbolm/sam2-image-ic-foreground-20261101",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "server_verification": {
+        "key": "ic-foreground",
+        "handle": "dngbolm/sam2-image-ic-foreground-20261101",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+        "checked": 1793466755.5926578
+      },
+      "launch": {
+        "key": "ic-foreground",
+        "handle": "dngbolm/sam2-image-ic-foreground-20261101",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\ndngbolm/sam2-image-ic-foreground-20261101 has status \"KernelWorkerStatus.COMPLETE\"",
+        "observed": 1793477936.00971,
+        "latest": {
+          "stage": "cloud_end",
+          "task": "ic",
+          "mode": "full",
+          "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+          "bootstrap_complete": true,
+          "started": 1793468339.617586,
+          "worker_exit_code": 0,
+          "wall_seconds": 4777.561244010925
+        },
+        "mask_cache_ready": true,
+        "study_ready": true,
+        "training_seen": true,
+        "terminal": [
+          {
+            "stage": "study_end",
+            "time": 1793473114.706864,
+            "task": "ic",
+            "execution_complete": true,
+            "npp_updates": 512,
+            "error": null
+          },
+          {
+            "stage": "cloud_end",
+            "task": "ic",
+            "mode": "full",
+            "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+            "bootstrap_complete": true,
+            "started": 1793468339.617586,
+            "worker_exit_code": 0,
+            "wall_seconds": 4777.561244010925
+          }
+        ]
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "key": "od-foreground-bg",
+      "handle": "ngynanhthuw/sam2-image-od-foreground-bg-20261101",
+      "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+      "worker_seconds": 7200,
+      "config": {
+        "task": "od",
+        "paper": "image",
+        "qps": [
+          30,
+          35,
+          40,
+          45
+        ],
+        "codecs": [
+          "bpg"
+        ],
+        "identity_fallback": false,
+        "seed": 20261023,
+        "mode": "full",
+        "scope": "sam2_offline_train_subset_screen_not_paper_schedule",
+        "lr": 0.0001,
+        "beta": 0.5,
+        "alpha": 10.0,
+        "rate_weight": 0.001,
+        "fixed_qp": 35,
+        "proxy_steps": 0,
+        "fixed_steps": 256,
+        "adaptive_steps": 256,
+        "npp_size": 800,
+        "frames": 1,
+        "batch_size": 1,
+        "preset": "medium",
+        "fps": 25,
+        "gop": 16,
+        "checkpoint_every": 250,
+        "log_every": 101,
+        "max_session_seconds": 7200,
+        "validation_sources": 64,
+        "full_validation_sources": 5000,
+        "video_width": 16,
+        "temporal_kernel": 3,
+        "block_size": 8,
+        "motion_radius": 4,
+        "prior_steps": 0,
+        "proxy_quality": {
+          "30": 5,
+          "35": 4,
+          "40": 3,
+          "45": 2
+        },
+        "source_pins": {
+          "image_npp": "6a77c4633cd5bb6750c77ea9d213d38ffc88ee7a",
+          "pytracking": "7eb9e74bd3d40e29dbcec444902237da13de247b"
+        },
+        "input_condition": "released_lambda_over_8",
+        "checkpoint_selection": "last_trained",
+        "use_amp": false,
+        "fidelity_notes": [
+          "Four QPs30/35/40/45 explicitly requested by user.",
+          "One representative published backbone family per original task; Torchvision image/AR adapters differ from original OpenMMLab implementations.",
+          "Full mode evaluates all available original validation sources with resumable per-source caches; pilot mode is a declared subset.",
+          "Official released image NPP used; source conditioning uses loss-lambda/8 rather than raw QP.",
+          "Proxy is CompressAI Minnen2018 pretrained implementation, independently calibrated to actual BPG reconstructions.",
+          "400k proxy updates are global across four QP-specific proxies; paper does not disambiguate per-proxy accounting.",
+          "Image proxy/task lambda values at new QPs are log-linearly interpolated/extrapolated from published tables.",
+          "Separate study: frozen proxy-only warmstart; original NPP/Adam/counters not migrated.",
+          "FCOS family replaces FasterRCNN for OD; Torchvision checkpoint differs from original OpenMMLab.",
+          "QP35 substitutes paper fixedQP34; lambda multiplier is an explicit experiment.",
+          "OD800/1333 geometry; adaptive QPs randomly sampled; short screens are not full schedules.",
+          "SAM 2 extension, not original paper; TRAIN-only automatic prompts.",
+          "Matched 256-source fixed rendered crops, 256 fixed +256 adaptive updates; validation subset."
+        ],
+        "study_task": "od",
+        "study_profile": "sam2",
+        "lambda_scale": 1.0,
+        "backbone": "fcos_resnet50_fpn",
+        "evaluation_reserve": 1800,
+        "random_adaptive_qp": true,
+        "sam_arm": "foreground_bg",
+        "train_sources": 256,
+        "mask_prepare_seconds": 1800,
+        "sam2": {
+          "source_commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69",
+          "model": "sam2.1_hiera_tiny",
+          "model_cfg": "configs/sam2.1/sam2.1_hiera_t.yaml",
+          "points_per_side": 16,
+          "points_per_batch": 32,
+          "pred_iou_thresh": 0.8,
+          "stability_score_thresh": 0.95,
+          "min_area_fraction": 0.005,
+          "max_area_fraction": 0.6,
+          "max_masks": 8,
+          "smoothing": 5,
+          "foreground_extra": 3,
+          "gamma": 1,
+          "mask_kind": "confidence_weighted_smoothed_binary_AMG_not_probability"
+        }
+      },
+      "input_spec": {
+        "kind": "dataset",
+        "ref": "wagur124705/image-paper-proxy-inputs-20261031/1",
+        "member": "od_proxy.pt",
+        "sha256": "ab9fde3e3418be44b532eb9c4492382a4a8204e0d64ab5d2b15dad1b2f535dbf",
+        "visibility": "public"
+      },
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/ngynanhthuw/sam2-image-od-foreground-bg-20261101",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "server_verification": {
+        "key": "od-foreground-bg",
+        "handle": "ngynanhthuw/sam2-image-od-foreground-bg-20261101",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+        "checked": 1793466693.7732115
+      },
+      "launch": {
+        "key": "od-foreground-bg",
+        "handle": "ngynanhthuw/sam2-image-od-foreground-bg-20261101",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\nngynanhthuw/sam2-image-od-foreground-bg-20261101 has status \"KernelWorkerStatus.COMPLETE\"",
+        "observed": 1793477936.6406026,
+        "latest": {
+          "stage": "cloud_end",
+          "task": "od",
+          "mode": "full",
+          "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+          "bootstrap_complete": true,
+          "started": 1793466635.7556248,
+          "worker_exit_code": 0,
+          "wall_seconds": 7455.761251449585
+        },
+        "mask_cache_ready": true,
+        "study_ready": true,
+        "training_seen": true,
+        "terminal": [
+          {
+            "stage": "study_end",
+            "time": 1793474089.2052698,
+            "task": "od",
+            "execution_complete": true,
+            "npp_updates": 512,
+            "error": null
+          },
+          {
+            "stage": "cloud_end",
+            "task": "od",
+            "mode": "full",
+            "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+            "bootstrap_complete": true,
+            "started": 1793466635.7556248,
+            "worker_exit_code": 0,
+            "wall_seconds": 7455.761251449585
+          }
+        ]
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "key": "ic-foreground-bg",
+      "handle": "ngynanhthuw/sam2-image-ic-foreground-bg-20261101",
+      "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+      "worker_seconds": 7200,
+      "config": {
+        "task": "ic",
+        "paper": "image",
+        "qps": [
+          30,
+          35,
+          40,
+          45
+        ],
+        "codecs": [
+          "bpg"
+        ],
+        "identity_fallback": false,
+        "seed": 20261023,
+        "mode": "full",
+        "scope": "sam2_offline_train_subset_screen_not_paper_schedule",
+        "lr": 0.0001,
+        "beta": 0.5,
+        "alpha": 10.0,
+        "rate_weight": 0.001,
+        "fixed_qp": 35,
+        "proxy_steps": 0,
+        "fixed_steps": 256,
+        "adaptive_steps": 256,
+        "npp_size": 224,
+        "frames": 1,
+        "batch_size": 1,
+        "preset": "medium",
+        "fps": 25,
+        "gop": 16,
+        "checkpoint_every": 250,
+        "log_every": 101,
+        "max_session_seconds": 7200,
+        "validation_sources": 512,
+        "full_validation_sources": 50000,
+        "video_width": 16,
+        "temporal_kernel": 3,
+        "block_size": 8,
+        "motion_radius": 4,
+        "prior_steps": 0,
+        "proxy_quality": {
+          "30": 5,
+          "35": 4,
+          "40": 3,
+          "45": 2
+        },
+        "source_pins": {
+          "image_npp": "6a77c4633cd5bb6750c77ea9d213d38ffc88ee7a",
+          "pytracking": "7eb9e74bd3d40e29dbcec444902237da13de247b"
+        },
+        "input_condition": "released_lambda_over_8",
+        "checkpoint_selection": "last_trained",
+        "use_amp": false,
+        "fidelity_notes": [
+          "Four QPs30/35/40/45 explicitly requested by user.",
+          "One representative published backbone family per original task; Torchvision image/AR adapters differ from original OpenMMLab implementations.",
+          "Full mode evaluates all available original validation sources with resumable per-source caches; pilot mode is a declared subset.",
+          "Official released image NPP used; source conditioning uses loss-lambda/8 rather than raw QP.",
+          "Proxy is CompressAI Minnen2018 pretrained implementation, independently calibrated to actual BPG reconstructions.",
+          "400k proxy updates are global across four QP-specific proxies; paper does not disambiguate per-proxy accounting.",
+          "Image proxy/task lambda values at new QPs are log-linearly interpolated/extrapolated from published tables.",
+          "Separate study: frozen proxy-only warmstart; original NPP/Adam/counters not migrated.",
+          "FCOS family replaces FasterRCNN for OD; Torchvision checkpoint differs from original OpenMMLab.",
+          "QP35 substitutes paper fixedQP34; lambda multiplier is an explicit experiment.",
+          "OD800/1333 geometry; adaptive QPs randomly sampled; short screens are not full schedules.",
+          "SAM 2 extension, not original paper; TRAIN-only automatic prompts.",
+          "Matched 256-source fixed rendered crops, 256 fixed +256 adaptive updates; validation subset."
+        ],
+        "study_task": "ic",
+        "study_profile": "sam2",
+        "lambda_scale": 1.0,
+        "backbone": "resnet50",
+        "evaluation_reserve": 1800,
+        "random_adaptive_qp": true,
+        "sam_arm": "foreground_bg",
+        "train_sources": 256,
+        "mask_prepare_seconds": 1800,
+        "sam2": {
+          "source_commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+          "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69",
+          "model": "sam2.1_hiera_tiny",
+          "model_cfg": "configs/sam2.1/sam2.1_hiera_t.yaml",
+          "points_per_side": 16,
+          "points_per_batch": 32,
+          "pred_iou_thresh": 0.8,
+          "stability_score_thresh": 0.95,
+          "min_area_fraction": 0.005,
+          "max_area_fraction": 0.6,
+          "max_masks": 8,
+          "smoothing": 5,
+          "foreground_extra": 3,
+          "gamma": 1,
+          "mask_kind": "confidence_weighted_smoothed_binary_AMG_not_probability"
+        }
+      },
+      "input_spec": {
+        "kind": "dataset",
+        "ref": "wagur124705/image-paper-proxy-inputs-20261031/1",
+        "member": "ic_proxy.pt",
+        "sha256": "c95598b9a0aad477bca146d1751e10dd14ed8749ec5efdea44ff41541e4213e4",
+        "visibility": "public"
+      },
+      "submission": {
+        "version": 1,
+        "url": "https://www.kaggle.com/code/ngynanhthuw/sam2-image-ic-foreground-bg-20261101",
+        "acknowledged": true,
+        "running_verified": false
+      },
+      "server_verification": {
+        "key": "ic-foreground-bg",
+        "handle": "ngynanhthuw/sam2-image-ic-foreground-bg-20261101",
+        "private_verified": true,
+        "notebook_verified": true,
+        "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+        "checked": 1793466754.4369693
+      },
+      "launch": {
+        "key": "ic-foreground-bg",
+        "handle": "ngynanhthuw/sam2-image-ic-foreground-bg-20261101",
+        "status": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\nngynanhthuw/sam2-image-ic-foreground-bg-20261101 has status \"KernelWorkerStatus.COMPLETE\"",
+        "observed": 1793477937.4319007,
+        "latest": {
+          "stage": "cloud_end",
+          "task": "ic",
+          "mode": "full",
+          "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+          "bootstrap_complete": true,
+          "started": 1793468338.489007,
+          "worker_exit_code": 0,
+          "wall_seconds": 5294.31945848465
+        },
+        "mask_cache_ready": true,
+        "study_ready": true,
+        "training_seen": true,
+        "terminal": [
+          {
+            "stage": "study_end",
+            "time": 1793473630.547697,
+            "task": "ic",
+            "execution_complete": true,
+            "npp_updates": 512,
+            "error": null
+          },
+          {
+            "stage": "cloud_end",
+            "task": "ic",
+            "mode": "full",
+            "source_sha256": "96ed57cf1898d532e9b2ba405eb8dacc14b1c33542d2bd2b5035a3e15bc13b30",
+            "bootstrap_complete": true,
+            "started": 1793468338.489007,
+            "worker_exit_code": 0,
+            "wall_seconds": 5294.31945848465
+          }
+        ]
+      },
+      "status": "COMPLETE"
+    }
+  ],
+  "limitations": [
+    "512-update bounded TRAIN-cohort screens, not full paper schedule.",
+    "No BD-rate or downstream gain established until matched completed real-BPG evaluations.",
+    "Heuristic objectness masks; no semantic mask-consistency loss.",
+    "SAM runs only before training; no SAM/mask inference or transmission.",
+    "Current task-proxy warmstarts; no substitution of still-training Flickr proxy.",
+    "Existing nine source-frozen jobs retain previous code; tensor hashing performance fix applies to these new jobs."
+  ],
+  "verified_results": "SAM2_RESULTS_20261101.json",
+  "results_checked": 1793478426.3324993,
+  "result_summary": {
+    "IC": "all12learnedpoints lower accuracy and higher bpp than BPG; BD invalid from no quality overlap",
+    "OD": "evaluation budget exhausted; one control NPP point, SAM curves incomplete",
+    "Gaussian_IC_BD_percent": -9.936848102040425
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "runs": [
+    {
+      "task": "od",
+      "mode": "full",
+      "url": "https://www.kaggle.com/code/baooo25r/paper-image-od-qp4-full-20261023",
+      "source_sha256": "5e2779d0af69924a64ba34a5f6a5fbffd246a76b157badb79c34b9c13a7b23e4",
+      "source_commit": "8d5fc3c0ef1ec7c13f119f85911d59140472b59f",
+      "preflight_passed": true,
+      "training_seen": true,
+      "observed_unix": 1792772410.120732,
+      "latest": {
+        "stage": "train",
+        "time": 1792772409.2886314,
+        "task": "od",
+        "phase": "proxy",
+        "step": 920,
+        "qp": 45,
+        "source": "coco/54874",
+        "loss": 0.32687443494796753,
+        "rate": 0.20801275968551636,
+        "task_loss": null,
+        "npp_grad_norm": null,
+        "elapsed_seconds": 785.95223382
+      },
+      "qps": [
+        30,
+        35,
+        40,
+        45
+      ],
+      "is_private": true,
+      "scientific_complete": false
+    },
+    {
+      "task": "ic",
+      "mode": "full",
+      "url": "https://www.kaggle.com/code/nguyenhoanglan1232/paper-image-ic-qp4-full-20261023",
+      "source_sha256": "5e2779d0af69924a64ba34a5f6a5fbffd246a76b157badb79c34b9c13a7b23e4",
+      "source_commit": "8d5fc3c0ef1ec7c13f119f85911d59140472b59f",
+      "preflight_passed": true,
+      "training_seen": true,
+      "observed_unix": 1792772406.9450583,
+      "latest": {
+        "stage": "train",
+        "time": 1792772396.9033031,
+        "task": "ic",
+        "phase": "proxy",
+        "step": 480,
+        "qp": 45,
+        "source": "imagenet/n09246464_10533",
+        "loss": 0.3939337730407715,
+        "rate": 0.2744808793067932,
+        "task_loss": null,
+        "npp_grad_norm": null,
+        "elapsed_seconds": 451.70730138800013
+      },
+      "qps": [
+        30,
+        35,
+        40,
+        45
+      ],
+      "is_private": true,
+      "scientific_complete": false
+    },
+    {
+      "task": "ar",
+      "mode": "full",
+      "url": "https://www.kaggle.com/code/baooo25r/paper-video-ar-qp4-full-20261023",
+      "source_sha256": "5e2779d0af69924a64ba34a5f6a5fbffd246a76b157badb79c34b9c13a7b23e4",
+      "source_commit": "8d5fc3c0ef1ec7c13f119f85911d59140472b59f",
+      "preflight_passed": true,
+      "training_seen": true,
+      "observed_unix": 1792772409.2913427,
+      "latest": {
+        "stage": "train",
+        "time": 1792772411.440294,
+        "task": "ar",
+        "phase": "adaptive",
+        "step": 260,
+        "qp": 45,
+        "source": "kinetics/Ro5zHk8flRo",
+        "loss": 1.9940266609191895,
+        "rate": 1.1664179563522339,
+        "task_loss": 1.9451782703399658,
+        "npp_grad_norm": 33.263004302978516,
+        "elapsed_seconds": 1043.812367259
+      },
+      "qps": [
+        30,
+        35,
+        40,
+        45
+      ],
+      "is_private": true,
+      "scientific_complete": false
+    },
+    {
+      "task": "ot",
+      "mode": "full",
+      "url": "https://www.kaggle.com/code/huolgggnuyen/paper-video-ot-qp4-full-20261023",
+      "source_sha256": "3d03d131bebd669d3ba802f2bef65b45d7bfd317a4b238177209a1ea6d5d32d3",
+      "source_commit": "4da1de06b254aa714df0cfaaacda4ab9d0755125",
+      "preflight_passed": true,
+      "training_seen": true,
+      "observed_unix": 1792772409.904328,
+      "latest": {
+        "stage": "train",
+        "time": 1792772394.391343,
+        "task": "ot",
+        "phase": "prior",
+        "step": 180,
+        "qp": 45,
+        "source": "got10k/GOT-10k_Train_004479",
+        "loss": 3.511991262435913,
+        "rate": 3.511991262435913,
+        "task_loss": null,
+        "npp_grad_norm": null,
+        "elapsed_seconds": 282.37282223799997
+      },
+      "qps": [
+        30,
+        35,
+        40,
+        45
+      ],
+      "is_private": true,
+      "scientific_complete": false
+    }
+  ],
+  "note": "Running full-budget jobs; completed full-paper metrics and BD-rate gains are not established.",
+  "latest_check": {
+    "checked_bangkok": "2026-10-25T22:19:55+07:00",
+    "github_fix_commit": "8bcf6d7ee3c893cab4b53d9f0ad1820068fb5730",
+    "core_tests_passed": 66,
+    "operations_tests_passed": 7,
+    "new_full_validation_metrics_available": false,
+    "continuations": [
+      {
+        "task": "od",
+        "url": "https://www.kaggle.com/code/wagur124705/paper-image-od-qp4-full-r4-20261025",
+        "version": 2,
+        "source_sha256": "5e2779d0af69924a64ba34a5f6a5fbffd246a76b157badb79c34b9c13a7b23e4",
+        "r3_phase_steps": {
+          "proxy": 148300,
+          "fixed": 0,
+          "adaptive": 0
+        },
+        "evaluation_only": false,
+        "checkpoint_sha256": "a0cc3cdbce9fc199babce12aa6f81a3520a7ae3112566f776f70dbb5bea8a2bd",
+        "status": "wagur124705/paper-image-od-qp4-full-r4-20261025 has status \"KernelWorkerStatus.RUNNING\"",
+        "latest": {
+          "stage": "payload_verified",
+          "task": "od",
+          "mode": "full",
+          "source_sha256": "5e2779d0af69924a64ba34a5f6a5fbffd246a76b157badb79c34b9c13a7b23e4"
+        },
+        "scientific_complete": false
+      },
+      {
+        "task": "ic",
+        "url": "https://www.kaggle.com/code/nguyenhoanglan1232/paper-image-ic-qp4-full-r4-20261025",
+        "version": 1,
+        "source_sha256": "5e2779d0af69924a64ba34a5f6a5fbffd246a76b157badb79c34b9c13a7b23e4",
+        "r3_phase_steps": {
+          "proxy": 136605,
+          "fixed": 0,
+          "adaptive": 0
+        },
+        "evaluation_only": false,
+        "checkpoint_sha256": null,
+        "status": "nguyenhoanglan1232/paper-image-ic-qp4-full-r4-20261025 has status \"KernelWorkerStatus.RUNNING\"",
+        "latest": {
+          "stage": "train",
+          "time": 1792941223.276909,
+          "task": "ic",
+          "phase": "proxy",
+          "step": 136800,
+          "qp": 45,
+          "source": "imagenet/n04409515_18727",
+          "loss": 0.26704052090644836,
+          "rate": 0.17649316787719727,
+          "task_loss": null,
+          "npp_grad_norm": null,
+          "elapsed_seconds": 139.019274076
+        },
+        "scientific_complete": false
+      },
+      {
+        "task": "ar",
+        "url": "https://www.kaggle.com/code/vtk269/paper-video-ar-qp4-eval-repair-20261025",
+        "version": 1,
+        "source_sha256": "063785ac24511935c71b036ac92fac84b92f2e7a7f7cedd4b08b7c7a6fdac759",
+        "r3_phase_steps": {
+          "prior": 512,
+          "adaptive": 100000
+        },
+        "evaluation_only": true,
+        "checkpoint_sha256": "600865ee2cb2e0364fc95d2023f4425a97d26d1d59078083c0f6dfdcb8a086bb",
+        "status": "vtk269/paper-video-ar-qp4-eval-repair-20261025 has status \"KernelWorkerStatus.RUNNING\"",
+        "latest": {
+          "stage": "validation",
+          "time": 1792941497.02176,
+          "task": "ar",
+          "arm": "codec_only",
+          "codec": "h264",
+          "qp": 30,
+          "source": 200,
+          "total": 13733
+        },
+        "scientific_complete": false
+      },
+      {
+        "task": "ot",
+        "url": "https://www.kaggle.com/code/huolgggnuyen/paper-video-ot-qp4-full-r4-20261025",
+        "version": 1,
+        "source_sha256": "3d03d131bebd669d3ba802f2bef65b45d7bfd317a4b238177209a1ea6d5d32d3",
+        "r3_phase_steps": {
+          "prior": 512,
+          "adaptive": 72344
+        },
+        "evaluation_only": false,
+        "checkpoint_sha256": "e58b03677dfe101b6cb2d174aad82fd18027fa0ca7e3a7cc255d911e85fa8eb2",
+        "status": "huolgggnuyen/paper-video-ot-qp4-full-r4-20261025 has status \"KernelWorkerStatus.RUNNING\"",
+        "latest": {
+          "stage": "train",
+          "time": 1792941207.134831,
+          "task": "ot",
+          "phase": "adaptive",
+          "step": 72600,
+          "qp": 45,
+          "source": "got10k/GOT-10k_Train_001590",
+          "loss": 0.09618570655584335,
+          "rate": 1.209769606590271,
+          "task_loss": 0.0754556953907013,
+          "npp_grad_norm": 0.6320407390594482,
+          "elapsed_seconds": 493.95342777
+        },
+        "scientific_complete": false
+      }
+    ]
+  }
+}

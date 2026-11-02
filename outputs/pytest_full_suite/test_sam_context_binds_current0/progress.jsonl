@@ -1,0 +1,1 @@
+{"stage": "sam_mask_loss", "time": 1793521026.6918545, "arm": "foreground", "qp": 35, "source": "one", "weighted_distortion": 0.010000000707805157, "background_highpass": 0.0, "mask_coverage": 1.0, "residual_mse": 0.010000000707805157}

@@ -1,0 +1,108 @@
+{
+  "study": "sam_residual_20261101_vs_sam_power_20261101_control_arm",
+  "note": "All 4 workers in SAM_2 (ResidualPaperNPP) and SAM_1 (PaperNPP) completed the full control arm (warm-up, mode-power rate calibration, initial/final held-out rate screening gates, 768 task updates, and 4-QP 64-image real-codec validation) before hitting StopIteration in SAMGaussianNPP (fixed in reproduce/sam_structured.py).",
+  "SAM_2_ResidualPaperNPP": {
+    "is-h264": {
+      "handle": "thuha1205/sam-residual-is-h264-20261101",
+      "warmup_steps": 500,
+      "warmup_psnr_db": 105.82739439364187,
+      "initial_audit_passed": true,
+      "initial_content_median_err": 0.06692392552522464,
+      "initial_content_p90_err": 0.1226441500125382,
+      "final_audit_passed": true,
+      "final_content_median_err": 0.060628874819694034,
+      "final_content_p90_err": 0.1458063374777202,
+      "direction_alignment": 1.0,
+      "task_updates": 768,
+      "stop_reason": "task_schedule_finished",
+      "bd_rate_control_vs_codec_only_pct": 8.09776044799135
+    },
+    "is-h265": {
+      "handle": "htran123456/sam-residual-is-h265-20261101",
+      "warmup_steps": 500,
+      "warmup_psnr_db": 105.83587311485529,
+      "initial_audit_passed": true,
+      "initial_content_median_err": 0.06826724282638091,
+      "initial_content_p90_err": 0.1911874294281006,
+      "final_audit_passed": true,
+      "final_content_median_err": 0.06200537506285175,
+      "final_content_p90_err": 0.19826955192100543,
+      "direction_alignment": 1.0,
+      "task_updates": 768,
+      "stop_reason": "task_schedule_finished",
+      "bd_rate_control_vs_codec_only_pct": 3.543134955904856
+    },
+    "od-h264": {
+      "handle": "shungg05/sam-residual-od-h264-20261101",
+      "warmup_steps": 500,
+      "warmup_psnr_db": 105.82026710185656,
+      "initial_audit_passed": true,
+      "initial_content_median_err": 0.06692389165697399,
+      "initial_content_p90_err": 0.1226441500125382,
+      "final_audit_passed": true,
+      "final_content_median_err": 0.05975725833407397,
+      "final_content_p90_err": 0.1673055959332337,
+      "direction_alignment": 1.0,
+      "task_updates": 768,
+      "stop_reason": "task_schedule_finished",
+      "bd_rate_control_vs_codec_only_pct": 15.828720692325954
+    },
+    "od-h265": {
+      "handle": "dieulinhh/sam-residual-od-h265-20261101",
+      "warmup_steps": 500,
+      "warmup_psnr_db": 105.83385481401187,
+      "initial_audit_passed": true,
+      "initial_content_median_err": 0.06826707917755748,
+      "initial_content_p90_err": 0.1911873031545568,
+      "final_audit_passed": true,
+      "final_content_median_err": 0.059664130111307834,
+      "final_content_p90_err": 0.2261127768886555,
+      "direction_alignment": 1.0,
+      "task_updates": 768,
+      "stop_reason": "task_schedule_finished",
+      "bd_rate_control_vs_codec_only_pct": -3.979411822716722
+    }
+  },
+  "SAM_1_PaperNPP": {
+    "is-h264": {
+      "handle": "tranthihongdieu/sam-power-is-h264-20261101",
+      "warmup_steps": 11000,
+      "warmup_psnr_db": 25.66132908445327,
+      "initial_audit_passed": true,
+      "final_audit_passed": true,
+      "task_updates": 768,
+      "stop_reason": "task_schedule_finished",
+      "bd_rate_control_vs_codec_only_pct": 5.060548533640942
+    },
+    "is-h265": {
+      "handle": "dngbolm/sam-power-is-h265-20261101",
+      "warmup_steps": 12000,
+      "warmup_psnr_db": 28.40661446723814,
+      "initial_audit_passed": true,
+      "final_audit_passed": true,
+      "task_updates": 768,
+      "stop_reason": "task_schedule_finished",
+      "bd_rate_control_vs_codec_only_pct": 3.0872733453080237
+    },
+    "od-h264": {
+      "handle": "hoangminhhuy123/sam-power-od-h264-20261101",
+      "warmup_steps": 7000,
+      "warmup_psnr_db": 25.210804195230022,
+      "initial_audit_passed": true,
+      "final_audit_passed": true,
+      "task_updates": 768,
+      "stop_reason": "task_schedule_finished",
+      "bd_rate_control_vs_codec_only_pct": 13.736877224481269
+    },
+    "od-h265": {
+      "handle": "ngynanhthuw/sam-power-od-h265-20261101",
+      "warmup_steps": 7000,
+      "warmup_psnr_db": 25.23918738156202,
+      "initial_audit_passed": true,
+      "final_audit_passed": true,
+      "task_updates": 768,
+      "stop_reason": "task_schedule_finished",
+      "bd_rate_control_vs_codec_only_pct": 12.806719621347682
+    }
+  }
+}

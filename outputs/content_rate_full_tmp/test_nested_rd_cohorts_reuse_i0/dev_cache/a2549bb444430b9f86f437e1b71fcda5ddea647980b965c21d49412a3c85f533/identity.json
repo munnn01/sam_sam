@@ -1,0 +1,10 @@
+{
+  "analyzer": "fixed",
+  "arm": "codec_only",
+  "cfg": "6ee977b40ae83a0c09300d0648f64ea9414ea1b3bd80890ea498e1195f201dae",
+  "diagnostic_source": null,
+  "frames": 64,
+  "npp": "static_filter_v1",
+  "seed": 20261028,
+  "torch": "2.5.1"
+}

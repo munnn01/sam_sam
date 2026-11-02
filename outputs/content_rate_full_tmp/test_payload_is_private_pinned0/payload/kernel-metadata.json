@@ -1,0 +1,17 @@
+{
+  "id": "owner123/paper-p05-test-20261028",
+  "title": "paper-p05-test-20261028",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "abhimanyukarshni/got10k/1",
+    "owner123/state-private/1"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}

@@ -1,0 +1,1209 @@
+{
+  "scope": "diagnostics only; no BD-rate improvement claim",
+  "tasks": {
+    "ar": {
+      "checkpoint_sha256": "600865ee2cb2e0364fc95d2023f4425a97d26d1d59078083c0f6dfdcb8a086bb",
+      "diagnostic_complete": true,
+      "npp_updates": 0,
+      "base_npp_unchanged": true,
+      "selected_prior": "per_qp",
+      "prior_converged": true,
+      "next_action": "eligible_for_bounded_recovery",
+      "cohort_scope": "16 heldout TRAIN sources, 16-frame rate probes; not a task RD/BD-rate evaluation",
+      "prior_candidates": [
+        {
+          "variant": "shared",
+          "updates": 2560,
+          "updates_by_qp": {
+            "30": 640,
+            "35": 640,
+            "40": 640,
+            "45": 640
+          },
+          "lr": 0.01,
+          "initial_loss": 2.094739935360849,
+          "best_loss": 1.6247176928445697,
+          "converged": true,
+          "stop_reason": "converged_dev"
+        },
+        {
+          "variant": "per_qp",
+          "updates": 1280,
+          "updates_by_qp": {
+            "30": 320,
+            "35": 320,
+            "40": 320,
+            "45": 320
+          },
+          "lr": 0.01,
+          "initial_loss": 2.094739935360849,
+          "best_loss": 1.5711457510478795,
+          "converged": true,
+          "stop_reason": "converged_dev"
+        }
+      ],
+      "paired_summaries": {
+        "original": {
+          "gate": {
+            "passed": true,
+            "groups": [
+              {
+                "codec": "h264",
+                "qp": 30,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.14122538663903061,
+                "mean_proxy_delta_bpp": 1.4353700429201126,
+                "median_scale": 13.493406579932028
+              },
+              {
+                "codec": "h264",
+                "qp": 35,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.07583555883290816,
+                "mean_proxy_delta_bpp": 0.7655474096536636,
+                "median_scale": 16.869144888272967
+              },
+              {
+                "codec": "h264",
+                "qp": 40,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.03935459681919643,
+                "mean_proxy_delta_bpp": 0.3722703233361244,
+                "median_scale": 21.013907017115706
+              },
+              {
+                "codec": "h264",
+                "qp": 45,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.02162139269770408,
+                "mean_proxy_delta_bpp": 0.1628180593252182,
+                "median_scale": 27.717238479515004
+              },
+              {
+                "codec": "h265",
+                "qp": 30,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.13485032684948978,
+                "mean_proxy_delta_bpp": 1.4353700429201126,
+                "median_scale": 12.868829212591743
+              },
+              {
+                "codec": "h265",
+                "qp": 35,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.07438753089126275,
+                "mean_proxy_delta_bpp": 0.7655474096536636,
+                "median_scale": 15.352374586181572
+              },
+              {
+                "codec": "h265",
+                "qp": 40,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.03846647301498724,
+                "mean_proxy_delta_bpp": 0.3722703233361244,
+                "median_scale": 18.574644013000317
+              },
+              {
+                "codec": "h265",
+                "qp": 45,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.018473099689094385,
+                "mean_proxy_delta_bpp": 0.1628180593252182,
+                "median_scale": 23.169450400820182
+              }
+            ],
+            "rule": "absolute paired differences; no rejection based on relative rate scale alone"
+          },
+          "groups": [
+            {
+              "codec": "h264",
+              "qp": 30,
+              "sources": 16,
+              "real_raw_bpp": 0.1822235730229592,
+              "real_npp_bpp": 0.3234489596619898,
+              "proxy_raw_bpp": 2.714053511619568,
+              "proxy_npp_bpp": 4.1494235545396805,
+              "real_npp_rate_change_percent": 77.50116205944275
+            },
+            {
+              "codec": "h264",
+              "qp": 35,
+              "sources": 16,
+              "real_raw_bpp": 0.10450090680803571,
+              "real_npp_bpp": 0.18033646564094388,
+              "proxy_raw_bpp": 1.8545781895518303,
+              "proxy_npp_bpp": 2.620125599205494,
+              "real_npp_rate_change_percent": 72.56928303236188
+            },
+            {
+              "codec": "h264",
+              "qp": 40,
+              "sources": 16,
+              "real_raw_bpp": 0.06326418506855867,
+              "real_npp_bpp": 0.1026187818877551,
+              "proxy_raw_bpp": 1.4097164794802666,
+              "proxy_npp_bpp": 1.781986802816391,
+              "real_npp_rate_change_percent": 62.20675533328739
+            },
+            {
+              "codec": "h264",
+              "qp": 45,
+              "sources": 16,
+              "real_raw_bpp": 0.03963112344547194,
+              "real_npp_bpp": 0.06125251614317602,
+              "proxy_raw_bpp": 1.2013290524482727,
+              "proxy_npp_bpp": 1.364147111773491,
+              "real_npp_rate_change_percent": 54.55659799160812
+            },
+            {
+              "codec": "h265",
+              "qp": 30,
+              "sources": 16,
+              "real_raw_bpp": 0.18153848453443877,
+              "real_npp_bpp": 0.31638881138392855,
+              "proxy_raw_bpp": 2.714053511619568,
+              "proxy_npp_bpp": 4.1494235545396805,
+              "real_npp_rate_change_percent": 74.28195029572807
+            },
+            {
+              "codec": "h265",
+              "qp": 35,
+              "sources": 16,
+              "real_raw_bpp": 0.10908103475765306,
+              "real_npp_bpp": 0.1834685656489158,
+              "proxy_raw_bpp": 1.8545781895518303,
+              "proxy_npp_bpp": 2.620125599205494,
+              "real_npp_rate_change_percent": 68.19474261179373
+            },
+            {
+              "codec": "h265",
+              "qp": 40,
+              "sources": 16,
+              "real_raw_bpp": 0.07004282425860969,
+              "real_npp_bpp": 0.10850929727359694,
+              "proxy_raw_bpp": 1.4097164794802666,
+              "proxy_npp_bpp": 1.781986802816391,
+              "real_npp_rate_change_percent": 54.91850653103687
+            },
+            {
+              "codec": "h265",
+              "qp": 45,
+              "sources": 16,
+              "real_raw_bpp": 0.04763607102997449,
+              "real_npp_bpp": 0.06610917071906888,
+              "proxy_raw_bpp": 1.2013290524482727,
+              "proxy_npp_bpp": 1.364147111773491,
+              "real_npp_rate_change_percent": 38.779645948278116
+            }
+          ]
+        },
+        "shared": {
+          "gate": {
+            "passed": true,
+            "groups": [
+              {
+                "codec": "h264",
+                "qp": 30,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.14122538663903061,
+                "mean_proxy_delta_bpp": 1.3375654481351376,
+                "median_scale": 11.467873864809501
+              },
+              {
+                "codec": "h264",
+                "qp": 35,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.07583555883290816,
+                "mean_proxy_delta_bpp": 0.7454226352274418,
+                "median_scale": 13.411704314606549
+              },
+              {
+                "codec": "h264",
+                "qp": 40,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.03935459681919643,
+                "mean_proxy_delta_bpp": 0.3863796442747116,
+                "median_scale": 14.940571414017363
+              },
+              {
+                "codec": "h264",
+                "qp": 45,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.02162139269770408,
+                "mean_proxy_delta_bpp": 0.17863522842526436,
+                "median_scale": 17.211667692087055
+              },
+              {
+                "codec": "h265",
+                "qp": 30,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.13485032684948978,
+                "mean_proxy_delta_bpp": 1.3375654481351376,
+                "median_scale": 10.837777156443353
+              },
+              {
+                "codec": "h265",
+                "qp": 35,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.07438753089126275,
+                "mean_proxy_delta_bpp": 0.7454226352274418,
+                "median_scale": 12.17041327797386
+              },
+              {
+                "codec": "h265",
+                "qp": 40,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.03846647301498724,
+                "mean_proxy_delta_bpp": 0.3863796442747116,
+                "median_scale": 13.44727536498511
+              },
+              {
+                "codec": "h265",
+                "qp": 45,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.018473099689094385,
+                "mean_proxy_delta_bpp": 0.17863522842526436,
+                "median_scale": 14.795684702890359
+              }
+            ],
+            "rule": "absolute paired differences; no rejection based on relative rate scale alone"
+          },
+          "groups": [
+            {
+              "codec": "h264",
+              "qp": 30,
+              "sources": 16,
+              "real_raw_bpp": 0.1822235730229592,
+              "real_npp_bpp": 0.3234489596619898,
+              "proxy_raw_bpp": 2.254906564950943,
+              "proxy_npp_bpp": 3.5924720130860806,
+              "real_npp_rate_change_percent": 77.50116205944275
+            },
+            {
+              "codec": "h264",
+              "qp": 35,
+              "sources": 16,
+              "real_raw_bpp": 0.10450090680803571,
+              "real_npp_bpp": 0.18033646564094388,
+              "proxy_raw_bpp": 1.4060571268200874,
+              "proxy_npp_bpp": 2.151479762047529,
+              "real_npp_rate_change_percent": 72.56928303236188
+            },
+            {
+              "codec": "h264",
+              "qp": 40,
+              "sources": 16,
+              "real_raw_bpp": 0.06326418506855867,
+              "real_npp_bpp": 0.1026187818877551,
+              "proxy_raw_bpp": 0.9512848891317844,
+              "proxy_npp_bpp": 1.337664533406496,
+              "real_npp_rate_change_percent": 62.20675533328739
+            },
+            {
+              "codec": "h264",
+              "qp": 45,
+              "sources": 16,
+              "real_raw_bpp": 0.03963112344547194,
+              "real_npp_bpp": 0.06125251614317602,
+              "proxy_raw_bpp": 0.7287402972579002,
+              "proxy_npp_bpp": 0.9073755256831646,
+              "real_npp_rate_change_percent": 54.55659799160812
+            },
+            {
+              "codec": "h265",
+              "qp": 30,
+              "sources": 16,
+              "real_raw_bpp": 0.18153848453443877,
+              "real_npp_bpp": 0.31638881138392855,
+              "proxy_raw_bpp": 2.254906564950943,
+              "proxy_npp_bpp": 3.5924720130860806,
+              "real_npp_rate_change_percent": 74.28195029572807
+            },
+            {
+              "codec": "h265",
+              "qp": 35,
+              "sources": 16,
+              "real_raw_bpp": 0.10908103475765306,
+              "real_npp_bpp": 0.1834685656489158,
+              "proxy_raw_bpp": 1.4060571268200874,
+              "proxy_npp_bpp": 2.151479762047529,
+              "real_npp_rate_change_percent": 68.19474261179373
+            },
+            {
+              "codec": "h265",
+              "qp": 40,
+              "sources": 16,
+              "real_raw_bpp": 0.07004282425860969,
+              "real_npp_bpp": 0.10850929727359694,
+              "proxy_raw_bpp": 0.9512848891317844,
+              "proxy_npp_bpp": 1.337664533406496,
+              "real_npp_rate_change_percent": 54.91850653103687
+            },
+            {
+              "codec": "h265",
+              "qp": 45,
+              "sources": 16,
+              "real_raw_bpp": 0.04763607102997449,
+              "real_npp_bpp": 0.06610917071906888,
+              "proxy_raw_bpp": 0.7287402972579002,
+              "proxy_npp_bpp": 0.9073755256831646,
+              "real_npp_rate_change_percent": 38.779645948278116
+            }
+          ]
+        },
+        "per_qp": {
+          "gate": {
+            "passed": true,
+            "groups": [
+              {
+                "codec": "h264",
+                "qp": 30,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.14122538663903061,
+                "mean_proxy_delta_bpp": 1.082611806690693,
+                "median_scale": 12.092154059229665
+              },
+              {
+                "codec": "h264",
+                "qp": 35,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.07583555883290816,
+                "mean_proxy_delta_bpp": 0.7868804633617401,
+                "median_scale": 14.378292833387171
+              },
+              {
+                "codec": "h264",
+                "qp": 40,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.03935459681919643,
+                "mean_proxy_delta_bpp": 0.5230301264673471,
+                "median_scale": 14.08159222524036
+              },
+              {
+                "codec": "h264",
+                "qp": 45,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.02162139269770408,
+                "mean_proxy_delta_bpp": 0.314056065864861,
+                "median_scale": 10.993327748230982
+              },
+              {
+                "codec": "h265",
+                "qp": 30,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.13485032684948978,
+                "mean_proxy_delta_bpp": 1.082611806690693,
+                "median_scale": 11.44076976984536
+              },
+              {
+                "codec": "h265",
+                "qp": 35,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.07438753089126275,
+                "mean_proxy_delta_bpp": 0.7868804633617401,
+                "median_scale": 12.675601440703968
+              },
+              {
+                "codec": "h265",
+                "qp": 40,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.03846647301498724,
+                "mean_proxy_delta_bpp": 0.5230301264673471,
+                "median_scale": 11.126245308109661
+              },
+              {
+                "codec": "h265",
+                "qp": 45,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.018473099689094385,
+                "mean_proxy_delta_bpp": 0.314056065864861,
+                "median_scale": 8.648538442448643
+              }
+            ],
+            "rule": "absolute paired differences; no rejection based on relative rate scale alone"
+          },
+          "groups": [
+            {
+              "codec": "h264",
+              "qp": 30,
+              "sources": 16,
+              "real_raw_bpp": 0.1822235730229592,
+              "real_npp_bpp": 0.3234489596619898,
+              "proxy_raw_bpp": 2.3750008791685104,
+              "proxy_npp_bpp": 3.4576126858592033,
+              "real_npp_rate_change_percent": 77.50116205944275
+            },
+            {
+              "codec": "h264",
+              "qp": 35,
+              "sources": 16,
+              "real_raw_bpp": 0.10450090680803571,
+              "real_npp_bpp": 0.18033646564094388,
+              "proxy_raw_bpp": 1.4651063233613968,
+              "proxy_npp_bpp": 2.251986786723137,
+              "real_npp_rate_change_percent": 72.56928303236188
+            },
+            {
+              "codec": "h264",
+              "qp": 40,
+              "sources": 16,
+              "real_raw_bpp": 0.06326418506855867,
+              "real_npp_bpp": 0.1026187818877551,
+              "proxy_raw_bpp": 0.8312045931816101,
+              "proxy_npp_bpp": 1.3542347196489573,
+              "real_npp_rate_change_percent": 62.20675533328739
+            },
+            {
+              "codec": "h264",
+              "qp": 45,
+              "sources": 16,
+              "real_raw_bpp": 0.03963112344547194,
+              "real_npp_bpp": 0.06125251614317602,
+              "proxy_raw_bpp": 0.4259505784139037,
+              "proxy_npp_bpp": 0.7400066442787647,
+              "real_npp_rate_change_percent": 54.55659799160812
+            },
+            {
+              "codec": "h265",
+              "qp": 30,
+              "sources": 16,
+              "real_raw_bpp": 0.18153848453443877,
+              "real_npp_bpp": 0.31638881138392855,
+              "proxy_raw_bpp": 2.3750008791685104,
+              "proxy_npp_bpp": 3.4576126858592033,
+              "real_npp_rate_change_percent": 74.28195029572807
+            },
+            {
+              "codec": "h265",
+              "qp": 35,
+              "sources": 16,
+              "real_raw_bpp": 0.10908103475765306,
+              "real_npp_bpp": 0.1834685656489158,
+              "proxy_raw_bpp": 1.4651063233613968,
+              "proxy_npp_bpp": 2.251986786723137,
+              "real_npp_rate_change_percent": 68.19474261179373
+            },
+            {
+              "codec": "h265",
+              "qp": 40,
+              "sources": 16,
+              "real_raw_bpp": 0.07004282425860969,
+              "real_npp_bpp": 0.10850929727359694,
+              "proxy_raw_bpp": 0.8312045931816101,
+              "proxy_npp_bpp": 1.3542347196489573,
+              "real_npp_rate_change_percent": 54.91850653103687
+            },
+            {
+              "codec": "h265",
+              "qp": 45,
+              "sources": 16,
+              "real_raw_bpp": 0.04763607102997449,
+              "real_npp_bpp": 0.06610917071906888,
+              "proxy_raw_bpp": 0.4259505784139037,
+              "proxy_npp_bpp": 0.7400066442787647,
+              "real_npp_rate_change_percent": 38.779645948278116
+            }
+          ]
+        }
+      }
+    },
+    "ot": {
+      "checkpoint_sha256": "c1f0de67d71a7ff0c89ec6ac31578dcde5c7e929f03c9af5ec1754482af65b4d",
+      "diagnostic_complete": true,
+      "npp_updates": 0,
+      "base_npp_unchanged": true,
+      "selected_prior": "per_qp",
+      "prior_converged": true,
+      "next_action": "eligible_for_bounded_recovery",
+      "cohort_scope": "16 heldout TRAIN sources, 16-frame rate probes; not a task RD/BD-rate evaluation",
+      "prior_candidates": [
+        {
+          "variant": "shared",
+          "updates": 1280,
+          "updates_by_qp": {
+            "30": 320,
+            "35": 320,
+            "40": 320,
+            "45": 320
+          },
+          "lr": 0.003,
+          "initial_loss": 1.9983987072482705,
+          "best_loss": 1.6471506641246378,
+          "converged": true,
+          "stop_reason": "converged_dev"
+        },
+        {
+          "variant": "per_qp",
+          "updates": 1536,
+          "updates_by_qp": {
+            "30": 384,
+            "35": 384,
+            "40": 384,
+            "45": 384
+          },
+          "lr": 0.003,
+          "initial_loss": 1.9983987072482705,
+          "best_loss": 1.5022607820574194,
+          "converged": true,
+          "stop_reason": "converged_dev"
+        }
+      ],
+      "paired_summaries": {
+        "original": {
+          "gate": {
+            "passed": true,
+            "groups": [
+              {
+                "codec": "h264",
+                "qp": 30,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.09064511899594908,
+                "mean_proxy_delta_bpp": 0.5907715335488319,
+                "median_scale": 13.027020841606916
+              },
+              {
+                "codec": "h264",
+                "qp": 35,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.03176390094521605,
+                "mean_proxy_delta_bpp": 0.272100105881691,
+                "median_scale": 17.874342968550398
+              },
+              {
+                "codec": "h264",
+                "qp": 40,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.010075321903935185,
+                "mean_proxy_delta_bpp": 0.10242518037557602,
+                "median_scale": 25.836044691922783
+              },
+              {
+                "codec": "h264",
+                "qp": 45,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 0.875,
+                "passed": true,
+                "mean_real_delta_bpp": 0.0033591941550925935,
+                "mean_proxy_delta_bpp": 0.031139574944972992,
+                "median_scale": 42.35565006234661
+              },
+              {
+                "codec": "h265",
+                "qp": 30,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.0926634235146605,
+                "mean_proxy_delta_bpp": 0.5907715335488319,
+                "median_scale": 13.014481026281636
+              },
+              {
+                "codec": "h265",
+                "qp": 35,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.034483733000578706,
+                "mean_proxy_delta_bpp": 0.272100105881691,
+                "median_scale": 17.134844814794157
+              },
+              {
+                "codec": "h265",
+                "qp": 40,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.010949405623070986,
+                "mean_proxy_delta_bpp": 0.10242518037557602,
+                "median_scale": 24.13395433228781
+              },
+              {
+                "codec": "h265",
+                "qp": 45,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 0.9375,
+                "passed": true,
+                "mean_real_delta_bpp": 0.0028336136429398156,
+                "mean_proxy_delta_bpp": 0.031139574944972992,
+                "median_scale": 36.52799121498094
+              }
+            ],
+            "rule": "absolute paired differences; no rejection based on relative rate scale alone"
+          },
+          "groups": [
+            {
+              "codec": "h264",
+              "qp": 30,
+              "sources": 16,
+              "real_raw_bpp": 0.1856308925298997,
+              "real_npp_bpp": 0.2762760115258488,
+              "proxy_raw_bpp": 2.909837134182453,
+              "proxy_npp_bpp": 3.500608667731285,
+              "real_npp_rate_change_percent": 48.83083723866102
+            },
+            {
+              "codec": "h264",
+              "qp": 35,
+              "sources": 16,
+              "real_raw_bpp": 0.09909585081500771,
+              "real_npp_bpp": 0.13085975176022377,
+              "proxy_raw_bpp": 1.961646981537342,
+              "proxy_npp_bpp": 2.233747087419033,
+              "real_npp_rate_change_percent": 32.05371434220081
+            },
+            {
+              "codec": "h264",
+              "qp": 40,
+              "sources": 16,
+              "real_raw_bpp": 0.055957935474537035,
+              "real_npp_bpp": 0.06603325737847222,
+              "proxy_raw_bpp": 1.4969891458749771,
+              "proxy_npp_bpp": 1.5994143262505531,
+              "real_npp_rate_change_percent": 18.00517088147371
+            },
+            {
+              "codec": "h264",
+              "qp": 45,
+              "sources": 16,
+              "real_raw_bpp": 0.03220056604456018,
+              "real_npp_bpp": 0.035559760199652776,
+              "proxy_raw_bpp": 1.295334979891777,
+              "proxy_npp_bpp": 1.32647455483675,
+              "real_npp_rate_change_percent": 10.432096598687203
+            },
+            {
+              "codec": "h265",
+              "qp": 30,
+              "sources": 16,
+              "real_raw_bpp": 0.18653172622492284,
+              "real_npp_bpp": 0.2791951497395833,
+              "proxy_raw_bpp": 2.909837134182453,
+              "proxy_npp_bpp": 3.500608667731285,
+              "real_npp_rate_change_percent": 49.677031028451154
+            },
+            {
+              "codec": "h265",
+              "qp": 35,
+              "sources": 16,
+              "real_raw_bpp": 0.10132024317611882,
+              "real_npp_bpp": 0.13580397617669754,
+              "proxy_raw_bpp": 1.961646981537342,
+              "proxy_npp_bpp": 2.233747087419033,
+              "real_npp_rate_change_percent": 34.03439620712094
+            },
+            {
+              "codec": "h265",
+              "qp": 40,
+              "sources": 16,
+              "real_raw_bpp": 0.05841554241415895,
+              "real_npp_bpp": 0.06936494803722994,
+              "proxy_raw_bpp": 1.4969891458749771,
+              "proxy_npp_bpp": 1.5994143262505531,
+              "real_npp_rate_change_percent": 18.743993756731836
+            },
+            {
+              "codec": "h265",
+              "qp": 45,
+              "sources": 16,
+              "real_raw_bpp": 0.03533483434606481,
+              "real_npp_bpp": 0.03816844798900463,
+              "proxy_raw_bpp": 1.295334979891777,
+              "proxy_npp_bpp": 1.32647455483675,
+              "real_npp_rate_change_percent": 8.019320580896938
+            }
+          ]
+        },
+        "shared": {
+          "gate": {
+            "passed": true,
+            "groups": [
+              {
+                "codec": "h264",
+                "qp": 30,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.09064511899594908,
+                "mean_proxy_delta_bpp": 0.7712309658527374,
+                "median_scale": 12.30436526398245
+              },
+              {
+                "codec": "h264",
+                "qp": 35,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.03176390094521605,
+                "mean_proxy_delta_bpp": 0.3565882183611393,
+                "median_scale": 13.83771846317803
+              },
+              {
+                "codec": "h264",
+                "qp": 40,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.010075321903935185,
+                "mean_proxy_delta_bpp": 0.13052596524357796,
+                "median_scale": 17.922843424858502
+              },
+              {
+                "codec": "h264",
+                "qp": 45,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 0.875,
+                "passed": true,
+                "mean_real_delta_bpp": 0.0033591941550925935,
+                "mean_proxy_delta_bpp": 0.03780854865908623,
+                "median_scale": 25.858997066486793
+              },
+              {
+                "codec": "h265",
+                "qp": 30,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.0926634235146605,
+                "mean_proxy_delta_bpp": 0.7712309658527374,
+                "median_scale": 11.995399215253617
+              },
+              {
+                "codec": "h265",
+                "qp": 35,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.034483733000578706,
+                "mean_proxy_delta_bpp": 0.3565882183611393,
+                "median_scale": 13.892841258621086
+              },
+              {
+                "codec": "h265",
+                "qp": 40,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.010949405623070986,
+                "mean_proxy_delta_bpp": 0.13052596524357796,
+                "median_scale": 17.28400394709498
+              },
+              {
+                "codec": "h265",
+                "qp": 45,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 0.9375,
+                "passed": true,
+                "mean_real_delta_bpp": 0.0028336136429398156,
+                "mean_proxy_delta_bpp": 0.03780854865908623,
+                "median_scale": 22.219079167527084
+              }
+            ],
+            "rule": "absolute paired differences; no rejection based on relative rate scale alone"
+          },
+          "groups": [
+            {
+              "codec": "h264",
+              "qp": 30,
+              "sources": 16,
+              "real_raw_bpp": 0.1856308925298997,
+              "real_npp_bpp": 0.2762760115258488,
+              "proxy_raw_bpp": 2.696320377290249,
+              "proxy_npp_bpp": 3.4675513431429863,
+              "real_npp_rate_change_percent": 48.83083723866102
+            },
+            {
+              "codec": "h264",
+              "qp": 35,
+              "sources": 16,
+              "real_raw_bpp": 0.09909585081500771,
+              "real_npp_bpp": 0.13085975176022377,
+              "proxy_raw_bpp": 1.5752214901149273,
+              "proxy_npp_bpp": 1.9318097084760666,
+              "real_npp_rate_change_percent": 32.05371434220081
+            },
+            {
+              "codec": "h264",
+              "qp": 40,
+              "sources": 16,
+              "real_raw_bpp": 0.055957935474537035,
+              "real_npp_bpp": 0.06603325737847222,
+              "proxy_raw_bpp": 1.031151071190834,
+              "proxy_npp_bpp": 1.161677036434412,
+              "real_npp_rate_change_percent": 18.00517088147371
+            },
+            {
+              "codec": "h264",
+              "qp": 45,
+              "sources": 16,
+              "real_raw_bpp": 0.03220056604456018,
+              "real_npp_bpp": 0.035559760199652776,
+              "proxy_raw_bpp": 0.7988290265202522,
+              "proxy_npp_bpp": 0.8366375751793385,
+              "real_npp_rate_change_percent": 10.432096598687203
+            },
+            {
+              "codec": "h265",
+              "qp": 30,
+              "sources": 16,
+              "real_raw_bpp": 0.18653172622492284,
+              "real_npp_bpp": 0.2791951497395833,
+              "proxy_raw_bpp": 2.696320377290249,
+              "proxy_npp_bpp": 3.4675513431429863,
+              "real_npp_rate_change_percent": 49.677031028451154
+            },
+            {
+              "codec": "h265",
+              "qp": 35,
+              "sources": 16,
+              "real_raw_bpp": 0.10132024317611882,
+              "real_npp_bpp": 0.13580397617669754,
+              "proxy_raw_bpp": 1.5752214901149273,
+              "proxy_npp_bpp": 1.9318097084760666,
+              "real_npp_rate_change_percent": 34.03439620712094
+            },
+            {
+              "codec": "h265",
+              "qp": 40,
+              "sources": 16,
+              "real_raw_bpp": 0.05841554241415895,
+              "real_npp_bpp": 0.06936494803722994,
+              "proxy_raw_bpp": 1.031151071190834,
+              "proxy_npp_bpp": 1.161677036434412,
+              "real_npp_rate_change_percent": 18.743993756731836
+            },
+            {
+              "codec": "h265",
+              "qp": 45,
+              "sources": 16,
+              "real_raw_bpp": 0.03533483434606481,
+              "real_npp_bpp": 0.03816844798900463,
+              "proxy_raw_bpp": 0.7988290265202522,
+              "proxy_npp_bpp": 0.8366375751793385,
+              "real_npp_rate_change_percent": 8.019320580896938
+            }
+          ]
+        },
+        "per_qp": {
+          "gate": {
+            "passed": true,
+            "groups": [
+              {
+                "codec": "h264",
+                "qp": 30,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.09064511899594908,
+                "mean_proxy_delta_bpp": 0.5157224833965302,
+                "median_scale": 12.09172719745555
+              },
+              {
+                "codec": "h264",
+                "qp": 35,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.03176390094521605,
+                "mean_proxy_delta_bpp": 0.3332419693470001,
+                "median_scale": 14.220817758203406
+              },
+              {
+                "codec": "h264",
+                "qp": 40,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.010075321903935185,
+                "mean_proxy_delta_bpp": 0.17008844017982483,
+                "median_scale": 15.222801325457722
+              },
+              {
+                "codec": "h264",
+                "qp": 45,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 0.875,
+                "passed": true,
+                "mean_real_delta_bpp": 0.0033591941550925935,
+                "mean_proxy_delta_bpp": 0.07023095898330212,
+                "median_scale": 12.41279712863077
+              },
+              {
+                "codec": "h265",
+                "qp": 30,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.0926634235146605,
+                "mean_proxy_delta_bpp": 0.5157224833965302,
+                "median_scale": 11.938119935642929
+              },
+              {
+                "codec": "h265",
+                "qp": 35,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.034483733000578706,
+                "mean_proxy_delta_bpp": 0.3332419693470001,
+                "median_scale": 14.28792364716718
+              },
+              {
+                "codec": "h265",
+                "qp": 40,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 1.0,
+                "passed": true,
+                "mean_real_delta_bpp": 0.010949405623070986,
+                "mean_proxy_delta_bpp": 0.17008844017982483,
+                "median_scale": 14.41974355383725
+              },
+              {
+                "codec": "h265",
+                "qp": 45,
+                "pairs": 16,
+                "resolved": 16,
+                "coverage": 1.0,
+                "sign_agreement": 0.9375,
+                "passed": true,
+                "mean_real_delta_bpp": 0.0028336136429398156,
+                "mean_proxy_delta_bpp": 0.07023095898330212,
+                "median_scale": 11.857632729281699
+              }
+            ],
+            "rule": "absolute paired differences; no rejection based on relative rate scale alone"
+          },
+          "groups": [
+            {
+              "codec": "h264",
+              "qp": 30,
+              "sources": 16,
+              "real_raw_bpp": 0.1856308925298997,
+              "real_npp_bpp": 0.2762760115258488,
+              "proxy_raw_bpp": 2.7556159496307373,
+              "proxy_npp_bpp": 3.2713384330272675,
+              "real_npp_rate_change_percent": 48.83083723866102
+            },
+            {
+              "codec": "h264",
+              "qp": 35,
+              "sources": 16,
+              "real_raw_bpp": 0.09909585081500771,
+              "real_npp_bpp": 0.13085975176022377,
+              "proxy_raw_bpp": 1.6190842241048813,
+              "proxy_npp_bpp": 1.9523261934518814,
+              "real_npp_rate_change_percent": 32.05371434220081
+            },
+            {
+              "codec": "h264",
+              "qp": 40,
+              "sources": 16,
+              "real_raw_bpp": 0.055957935474537035,
+              "real_npp_bpp": 0.06603325737847222,
+              "proxy_raw_bpp": 0.8554350137710571,
+              "proxy_npp_bpp": 1.025523453950882,
+              "real_npp_rate_change_percent": 18.00517088147371
+            },
+            {
+              "codec": "h264",
+              "qp": 45,
+              "sources": 16,
+              "real_raw_bpp": 0.03220056604456018,
+              "real_npp_bpp": 0.035559760199652776,
+              "proxy_raw_bpp": 0.4051251504570246,
+              "proxy_npp_bpp": 0.4753561094403267,
+              "real_npp_rate_change_percent": 10.432096598687203
+            },
+            {
+              "codec": "h265",
+              "qp": 30,
+              "sources": 16,
+              "real_raw_bpp": 0.18653172622492284,
+              "real_npp_bpp": 0.2791951497395833,
+              "proxy_raw_bpp": 2.7556159496307373,
+              "proxy_npp_bpp": 3.2713384330272675,
+              "real_npp_rate_change_percent": 49.677031028451154
+            },
+            {
+              "codec": "h265",
+              "qp": 35,
+              "sources": 16,
+              "real_raw_bpp": 0.10132024317611882,
+              "real_npp_bpp": 0.13580397617669754,
+              "proxy_raw_bpp": 1.6190842241048813,
+              "proxy_npp_bpp": 1.9523261934518814,
+              "real_npp_rate_change_percent": 34.03439620712094
+            },
+            {
+              "codec": "h265",
+              "qp": 40,
+              "sources": 16,
+              "real_raw_bpp": 0.05841554241415895,
+              "real_npp_bpp": 0.06936494803722994,
+              "proxy_raw_bpp": 0.8554350137710571,
+              "proxy_npp_bpp": 1.025523453950882,
+              "real_npp_rate_change_percent": 18.743993756731836
+            },
+            {
+              "codec": "h265",
+              "qp": 45,
+              "sources": 16,
+              "real_raw_bpp": 0.03533483434606481,
+              "real_npp_bpp": 0.03816844798900463,
+              "proxy_raw_bpp": 0.4051251504570246,
+              "proxy_npp_bpp": 0.4753561094403267,
+              "real_npp_rate_change_percent": 8.019320580896938
+            }
+          ]
+        }
+      }
+    }
+  }
+}

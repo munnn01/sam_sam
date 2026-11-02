@@ -1,0 +1,7 @@
+{
+  "complete": false,
+  "task": "ic",
+  "curves": [],
+  "scope": "declared_validation_subset",
+  "stop_reason": "evaluation_session_budget"
+}

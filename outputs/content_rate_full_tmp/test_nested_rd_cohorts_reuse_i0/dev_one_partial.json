@@ -1,0 +1,154 @@
+[
+  {
+    "arm": "codec_only",
+    "codec": "h264",
+    "qp": 30,
+    "bpp": 0.234375,
+    "quality": 1.0,
+    "sources": 1,
+    "frames": 64,
+    "points": [
+      {
+        "source": "0",
+        "record_sha256": "491d8d719915962684aac19e5de026d8165dcc867ee97f44d5b67349ce02cd2c",
+        "bytes": 120,
+        "pixels": 4096,
+        "quality_sum": 1.0,
+        "quality_weight": 1
+      }
+    ]
+  },
+  {
+    "arm": "codec_only",
+    "codec": "h264",
+    "qp": 35,
+    "bpp": 0.224609375,
+    "quality": 1.0,
+    "sources": 1,
+    "frames": 64,
+    "points": [
+      {
+        "source": "0",
+        "record_sha256": "491d8d719915962684aac19e5de026d8165dcc867ee97f44d5b67349ce02cd2c",
+        "bytes": 115,
+        "pixels": 4096,
+        "quality_sum": 1.0,
+        "quality_weight": 1
+      }
+    ]
+  },
+  {
+    "arm": "codec_only",
+    "codec": "h264",
+    "qp": 40,
+    "bpp": 0.21484375,
+    "quality": 1.0,
+    "sources": 1,
+    "frames": 64,
+    "points": [
+      {
+        "source": "0",
+        "record_sha256": "491d8d719915962684aac19e5de026d8165dcc867ee97f44d5b67349ce02cd2c",
+        "bytes": 110,
+        "pixels": 4096,
+        "quality_sum": 1.0,
+        "quality_weight": 1
+      }
+    ]
+  },
+  {
+    "arm": "codec_only",
+    "codec": "h264",
+    "qp": 45,
+    "bpp": 0.205078125,
+    "quality": 1.0,
+    "sources": 1,
+    "frames": 64,
+    "points": [
+      {
+        "source": "0",
+        "record_sha256": "491d8d719915962684aac19e5de026d8165dcc867ee97f44d5b67349ce02cd2c",
+        "bytes": 105,
+        "pixels": 4096,
+        "quality_sum": 1.0,
+        "quality_weight": 1
+      }
+    ]
+  },
+  {
+    "arm": "codec_only",
+    "codec": "h265",
+    "qp": 30,
+    "bpp": 0.234375,
+    "quality": 1.0,
+    "sources": 1,
+    "frames": 64,
+    "points": [
+      {
+        "source": "0",
+        "record_sha256": "491d8d719915962684aac19e5de026d8165dcc867ee97f44d5b67349ce02cd2c",
+        "bytes": 120,
+        "pixels": 4096,
+        "quality_sum": 1.0,
+        "quality_weight": 1
+      }
+    ]
+  },
+  {
+    "arm": "codec_only",
+    "codec": "h265",
+    "qp": 35,
+    "bpp": 0.224609375,
+    "quality": 1.0,
+    "sources": 1,
+    "frames": 64,
+    "points": [
+      {
+        "source": "0",
+        "record_sha256": "491d8d719915962684aac19e5de026d8165dcc867ee97f44d5b67349ce02cd2c",
+        "bytes": 115,
+        "pixels": 4096,
+        "quality_sum": 1.0,
+        "quality_weight": 1
+      }
+    ]
+  },
+  {
+    "arm": "codec_only",
+    "codec": "h265",
+    "qp": 40,
+    "bpp": 0.21484375,
+    "quality": 1.0,
+    "sources": 1,
+    "frames": 64,
+    "points": [
+      {
+        "source": "0",
+        "record_sha256": "491d8d719915962684aac19e5de026d8165dcc867ee97f44d5b67349ce02cd2c",
+        "bytes": 110,
+        "pixels": 4096,
+        "quality_sum": 1.0,
+        "quality_weight": 1
+      }
+    ]
+  },
+  {
+    "arm": "codec_only",
+    "codec": "h265",
+    "qp": 45,
+    "bpp": 0.205078125,
+    "quality": 1.0,
+    "sources": 1,
+    "frames": 64,
+    "points": [
+      {
+        "source": "0",
+        "record_sha256": "491d8d719915962684aac19e5de026d8165dcc867ee97f44d5b67349ce02cd2c",
+        "bytes": 105,
+        "pixels": 4096,
+        "quality_sum": 1.0,
+        "quality_weight": 1
+      }
+    ]
+  }
+]

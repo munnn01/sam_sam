@@ -1,0 +1,13 @@
+{
+  "tests_passed": 173,
+  "warnings": 4,
+  "warning_scope": "third-party pycocotools/NumPy deprecation",
+  "test_seconds": 280.85,
+  "cpu_real_codec_smoke_points": 32,
+  "independent_review": "No Critical or Important findings identified",
+  "original_core_files_unchanged": 42,
+  "local_root": "D:/STUDY/LAB/SAM",
+  "source_commit": "88d26cfdedbc9e388ccfdbad90eafd4eb39e3228",
+  "source_sha256": "aa741f13901d513ba4c1615d03580a55ec3be3703d4c6f263f832df95ec29cb2",
+  "source_blobs_verified": 10
+}

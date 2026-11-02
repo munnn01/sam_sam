@@ -1,0 +1,2 @@
+{"stage": "content_rate_calibrated", "time": 1793512796.494252, "scales": [1.9918566493686185, 1.9918566493686185, 1.9918566493686185, 1.9918566493686185], "rows": 32}
+{"stage": "content_rate_audit", "time": 1793512796.992802, "label": "initial", "passed": true, "median_relative_error": 0.002191614426776123, "p90_relative_error": 0.004563861423068527, "content_median_relative_error": 0.004669730154959639, "content_p90_relative_error": 0.014936273748224482, "direction_alignment": 1.0, "direction_untied": 16}

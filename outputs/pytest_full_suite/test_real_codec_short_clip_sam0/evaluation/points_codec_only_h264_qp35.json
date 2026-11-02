@@ -1,0 +1,43 @@
+[
+  {
+    "source": "kinetics/short",
+    "codec": "h264",
+    "qp": 35,
+    "arm": "codec_only",
+    "bytes": 1021,
+    "bpp": 0.49853515625,
+    "pixels": 16384,
+    "stream_sha256": "38d587fee8965a6af66f96e6939a02d1760130deebc60e7d70533f182eb25c3f",
+    "source_mse": 7.932706648716703e-05,
+    "sampling": {
+      "start_frame": 0,
+      "frame_stride": 2,
+      "frame_indices": [
+        0,
+        2,
+        4,
+        1,
+        3,
+        0,
+        2,
+        4,
+        1,
+        3,
+        0,
+        2,
+        4,
+        1,
+        3,
+        0
+      ],
+      "source_frames": 5,
+      "short_clip_policy": "loop",
+      "short_clip_looped": true,
+      "provider_cadence": "unverified"
+    },
+    "label": 0,
+    "predicted": 5,
+    "correct": 0,
+    "correct5": 1
+  }
+]

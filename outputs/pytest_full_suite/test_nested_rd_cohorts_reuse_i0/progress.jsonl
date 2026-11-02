@@ -1,0 +1,16 @@
+{"stage": "dev_point", "time": 1793521021.558159, "label": "one", "arm": "codec_only", "codec": "h264", "qp": 30, "bpp": 0.234375, "quality": 1.0, "sources": 1, "frames": 64}
+{"stage": "dev_point", "time": 1793521021.5629833, "label": "one", "arm": "codec_only", "codec": "h264", "qp": 35, "bpp": 0.224609375, "quality": 1.0, "sources": 1, "frames": 64}
+{"stage": "dev_point", "time": 1793521021.5668278, "label": "one", "arm": "codec_only", "codec": "h264", "qp": 40, "bpp": 0.21484375, "quality": 1.0, "sources": 1, "frames": 64}
+{"stage": "dev_point", "time": 1793521021.5708282, "label": "one", "arm": "codec_only", "codec": "h264", "qp": 45, "bpp": 0.205078125, "quality": 1.0, "sources": 1, "frames": 64}
+{"stage": "dev_point", "time": 1793521021.573827, "label": "one", "arm": "codec_only", "codec": "h265", "qp": 30, "bpp": 0.234375, "quality": 1.0, "sources": 1, "frames": 64}
+{"stage": "dev_point", "time": 1793521021.5787423, "label": "one", "arm": "codec_only", "codec": "h265", "qp": 35, "bpp": 0.224609375, "quality": 1.0, "sources": 1, "frames": 64}
+{"stage": "dev_point", "time": 1793521021.5831115, "label": "one", "arm": "codec_only", "codec": "h265", "qp": 40, "bpp": 0.21484375, "quality": 1.0, "sources": 1, "frames": 64}
+{"stage": "dev_point", "time": 1793521021.588012, "label": "one", "arm": "codec_only", "codec": "h265", "qp": 45, "bpp": 0.205078125, "quality": 1.0, "sources": 1, "frames": 64}
+{"stage": "dev_point", "time": 1793521021.5966084, "label": "two", "arm": "codec_only", "codec": "h264", "qp": 30, "bpp": 0.234375, "quality": 1.0, "sources": 2, "frames": 64}
+{"stage": "dev_point", "time": 1793521021.6056228, "label": "two", "arm": "codec_only", "codec": "h264", "qp": 35, "bpp": 0.224609375, "quality": 1.0, "sources": 2, "frames": 64}
+{"stage": "dev_point", "time": 1793521021.6115787, "label": "two", "arm": "codec_only", "codec": "h264", "qp": 40, "bpp": 0.21484375, "quality": 1.0, "sources": 2, "frames": 64}
+{"stage": "dev_point", "time": 1793521021.617596, "label": "two", "arm": "codec_only", "codec": "h264", "qp": 45, "bpp": 0.205078125, "quality": 1.0, "sources": 2, "frames": 64}
+{"stage": "dev_point", "time": 1793521021.6216917, "label": "two", "arm": "codec_only", "codec": "h265", "qp": 30, "bpp": 0.234375, "quality": 1.0, "sources": 2, "frames": 64}
+{"stage": "dev_point", "time": 1793521021.6274722, "label": "two", "arm": "codec_only", "codec": "h265", "qp": 35, "bpp": 0.224609375, "quality": 1.0, "sources": 2, "frames": 64}
+{"stage": "dev_point", "time": 1793521021.6304693, "label": "two", "arm": "codec_only", "codec": "h265", "qp": 40, "bpp": 0.21484375, "quality": 1.0, "sources": 2, "frames": 64}
+{"stage": "dev_point", "time": 1793521021.6304693, "label": "two", "arm": "codec_only", "codec": "h265", "qp": 45, "bpp": 0.205078125, "quality": 1.0, "sources": 2, "frames": 64}

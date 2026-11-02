@@ -1,0 +1,18 @@
+{
+  "id": "owner123/image-audit-20261028",
+  "title": "image-audit-20261028",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "awsaf49/coco-2017-dataset/2"
+  ],
+  "kernel_sources": [
+    "owner123/old-image-kernel/1"
+  ],
+  "competition_sources": [],
+  "model_sources": []
+}
